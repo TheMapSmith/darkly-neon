@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.7485,30.2679,16</Parameter>
+  <Parameter name="center">-97.7413,30.2737,16</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -14,7 +14,14 @@
 </Parameters>
 
 <FontSet name="fontset-0">
-  <Font face-name="Clan SC Offc Pro Book"/>
+  <Font face-name="Avenir Medium"/>
+  <Font face-name="Source Sans Pro Semibold"/>
+</FontSet>
+<FontSet name="fontset-1">
+  <Font face-name="Avenir Book Oblique"/>
+  <Font face-name="Source Sans Pro Italic"/>
+</FontSet>
+<FontSet name="fontset-2">
   <Font face-name="Avenir Book"/>
   <Font face-name="Source Sans Pro Regular"/>
 </FontSet>
@@ -1122,8 +1129,726 @@
     <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
+<Style name="place_label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'neighbourhood')</Filter>
+    <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'neighbourhood')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'village')</Filter>
+    <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'village')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="24" orientation="4" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer orientation="4" size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer size="24" orientation="4" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer orientation="4" size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &gt;= 4)</Filter>
+    <TextSymbolizer size="20" orientation="6" face-name="Avenir Heavy Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &gt;= 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="26" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="24" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="22" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="36" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="32" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="28" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer orientation="8" size="24" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="24" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] != 'city') and ([type] != 'town')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass') and ([type] = 'city') and ([localrank] &lt;= 2)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'neighbourhood')</Filter>
+    <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'neighbourhood')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'village')</Filter>
+    <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'village')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="24" orientation="4" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer orientation="4" size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer size="24" orientation="4" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer orientation="4" size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &gt;= 4)</Filter>
+    <TextSymbolizer size="20" orientation="6" face-name="Avenir Heavy Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &gt;= 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="26" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="24" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="22" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="36" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="32" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="28" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer orientation="8" size="24" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="24" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([type] != 'city') and ([type] != 'town')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood') and ([type] = 'city') and ([localrank] &lt;= 2)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'neighbourhood')</Filter>
+    <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'neighbourhood')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'village')</Filter>
+    <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'village')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="24" orientation="4" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer orientation="4" size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer size="24" orientation="4" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer orientation="4" size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &gt;= 4)</Filter>
+    <TextSymbolizer size="20" orientation="6" face-name="Avenir Heavy Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &gt;= 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="26" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="24" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="22" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="36" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="32" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="28" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer orientation="8" size="24" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="24" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] != 'city') and ([type] != 'town')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch') and ([type] = 'city') and ([localrank] &lt;= 2)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'neighbourhood')</Filter>
+    <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'neighbourhood')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'village')</Filter>
+    <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'village')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="24" orientation="4" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer orientation="4" size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer size="24" orientation="4" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer orientation="4" size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &gt;= 4)</Filter>
+    <TextSymbolizer size="20" orientation="6" face-name="Avenir Heavy Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &gt;= 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="26" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="24" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="22" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="36" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="32" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="28" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer orientation="8" size="24" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="24" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([type] != 'city') and ([type] != 'town')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park') and ([type] = 'city') and ([localrank] &lt;= 2)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'neighbourhood')</Filter>
+    <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'neighbourhood')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'village')</Filter>
+    <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'village')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer size="24" orientation="4" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer orientation="4" size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="24" orientation="4" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer orientation="4" size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="20" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &gt;= 4)</Filter>
+    <TextSymbolizer size="20" orientation="6" face-name="Avenir Heavy Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &gt;= 4)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="26" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="24" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer size="22" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] = 3)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="36" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="32" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="28" orientation="8" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer orientation="8" size="24" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2) and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer size="24" face-name="Avenir Black Oblique" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([type] != 'city') and ([type] != 'town')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([type] = 'city') and ([localrank] &lt;= 2)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="20" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
 <Layer name="place_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>place_label</StyleName>
     <StyleName>place_label-outlinefuzz</StyleName>
     <StyleName>place_label-outlinecrisp</StyleName>  </Layer>
 
@@ -1228,8 +1953,191 @@
     <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
+<Style name="poi_label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([scalerank] = 1) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([scalerank] = 2) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([scalerank] = 3) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([scalerank] = 3)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([scalerank] = 1)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([scalerank] = 2)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([scalerank] = 1) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([scalerank] = 2) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([scalerank] = 3) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([scalerank] = 3)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([scalerank] = 1)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'wood') and ([scalerank] = 2)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([scalerank] = 1) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([scalerank] = 2) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([scalerank] = 3) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([scalerank] = 3)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([scalerank] = 1)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([scalerank] = 2)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([scalerank] = 1) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([scalerank] = 2) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([scalerank] = 3) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([scalerank] = 3)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([scalerank] = 1)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([scalerank] = 2)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([scalerank] = 1) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([scalerank] = 2) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([scalerank] = 3) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="20" text-transform="uppercase" fill="#f3d437" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([scalerank] = 3)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([scalerank] = 2)</Filter>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#d82830" stroke-width="3" />
+    <TextSymbolizer fill="#f3d437" face-name="Meta Serif Offc Pro Bold" size="14" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" text-transform="lowercase" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
 <Layer name="poi_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>poi_label</StyleName>
     <StyleName>poi_label-outlinefuzz</StyleName>
     <StyleName>poi_label-outlinecrisp</StyleName>  </Layer>
 
@@ -1283,14 +2191,24 @@
 </Style>
 <Style name="road_label-case" filter-mode="first">
   <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([class] = 'street_limited')</Filter>
+    <TextSymbolizer placement="line" fontset-name="fontset-1" fill="#df6237" size="13" avoid-edges="true" halo-radius="1" halo-fill="#7e0a13" minimum-distance="10000" minimum-padding="25" text-transform="lowercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([class] = 'street')</Filter>
+    <TextSymbolizer placement="line" fontset-name="fontset-1" fill="#df6237" size="13" avoid-edges="true" halo-radius="1" halo-fill="#7e0a13" minimum-distance="10000" minimum-padding="25" text-transform="lowercase" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <TextSymbolizer placement="line" fontset-name="fontset-0" fill="#f3d437" size="13" avoid-edges="true" halo-radius="2" halo-fill="#d82830" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placement="line" fontset-name="fontset-0" fill="#f3d437" size="15" avoid-edges="true" halo-radius="2" halo-fill="#d82830" minimum-distance="10000" minimum-padding="25" text-transform="lowercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <TextSymbolizer placement="line" fontset-name="fontset-0" fill="#ffffff" size="13" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placement="line" fontset-name="fontset-2" fill="#ffffff" size="13" avoid-edges="true" text-transform="lowercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="road_label"

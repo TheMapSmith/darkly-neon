@@ -10,8 +10,8 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -97.7485
-  - 30.2679
+  - -97.7413
+  - 30.2737
   - 16
 description: ''
 format: png24
@@ -24,4 +24,5 @@ source: "mapbox:///mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
   - labels.mss
+  - poi.mss
 template: ''

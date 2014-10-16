@@ -21,7 +21,7 @@
       text-fill: white;      
       text-size: 13;
       text-avoid-edges: true;
-
+      text-transform:lowercase;
       } 
     [class='motorway_link'][zoom>=13] {
 
@@ -29,15 +29,28 @@
     [class='main'] {
       one/text-name: @name;
       one/text-placement: line;
-      one/text-face-name: @sans;
+      one/text-face-name: @sans_bold;
       one/text-fill: @road_bright;
-      one/text-size: 13;
+      one/text-size: (@max - @drk) * 1.5;
       one/text-avoid-edges: true;
       one/text-halo-radius: 2;
       one/text-halo-fill: @road_drk;
+      one/text-min-distance: 10000;
+      one/text-min-padding: 25;
+      one/text-transform:lowercase;
       } 
     [class='street'][zoom>=12],[class='street_limited'][zoom>=12] {
-    
+      one/text-name: @name;
+      one/text-placement: line;
+      one/text-face-name: @sans_italic;
+      one/text-fill: @road_med;
+      one/text-size: (@max - @drk) + 3;
+      one/text-avoid-edges: true;
+      one/text-halo-radius: 1;
+      one/text-halo-fill: @road_drkst;          
+      one/text-min-distance: 10000;      
+      one/text-min-padding: 25;      
+      one/text-transform:lowercase;
       } 
     [class='service'][zoom>=15] {
     

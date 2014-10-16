@@ -10,10 +10,13 @@ N: 30.2487
 @name: '[name_en]';
 
 // Fonts //
-@sans: 'Clan SC Offc Pro Book', 'Avenir Book', 'Source Sans Pro Regular';
-@sans_italic: 'Source Sans Pro Italic';
-@sans_bold: 'Source Sans Pro Semibold';
-
+@sans: 'Avenir Book', 'Source Sans Pro Regular';
+@sans_italic: 'Avenir Book Oblique','Source Sans Pro Italic';
+@sans_bold: 'Avenir Medium','Source Sans Pro Semibold';
+@sans_black_italic: 'Avenir Black Oblique';
+@sans_bold_italic: 'Avenir Heavy Oblique';
+@serif_bold: 'Meta Serif Offc Pro Bold';
+  
 // Common Colors //
 
 @land: rgb(29, 21, 48);
