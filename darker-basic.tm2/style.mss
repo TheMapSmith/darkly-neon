@@ -1,8 +1,16 @@
+/* Export Settings
+Zoom: 16
+W: -97.7599
+S: 30.2362
+E: -97.7315
+N: 30.2487
+*/
+
 // Languages: name (local), name_en, name_fr, name_es, name_de
 @name: '[name_en]';
 
 // Fonts //
-@sans: 'Source Sans Pro Regular';
+@sans: 'Clan SC Offc Pro Book', 'Avenir Book', 'Source Sans Pro Regular';
 @sans_italic: 'Source Sans Pro Italic';
 @sans_bold: 'Source Sans Pro Semibold';
 
@@ -16,27 +24,34 @@
 @road_med: rgba(223, 98, 55, 1);
 @road_drk: rgba(216, 40, 48, 1);
 @road_drkst: rgba(126, 10, 19, 1);
-/* orig green
+
+/* original greens
 @park_bright: rgb(48,124,57); // first park rgb(240, 255, 101);
 @park_med: rgb(184, 208, 62);
 @park_drk: rgb(114, 113, 34);
 @park_drkst: rgb(64, 75, 21);
 */
 
+/* second attempt at greens
 @park_bright: rgb(59,250,137); 
 @park_med: rgb(47,245,95);
 @park_drk: rgb(4,142,3);
 @park_drkst: rgb(2,90,3);
+*/
+// another greens attempt.
+@park_bright: rgb(57, 241, 3); 
+@park_med: rgb(51, 215, 3);
+@park_drk: rgb(42,177,2);
+@park_drkst: rgb(27,113,1);
 
 @water_bright: rgb(186, 237, 243 );
 @water_med: rgb(149, 207, 246);
 @water_drk: rgb(106, 155, 239);
 @water_drkst: rgb(49, 82, 180);
 
-
 // Line Widths
 
-@max: 11; //motorway
+@max: 12; //motorway
 @link: @max - 2;
 @main: @max - 4;
 @street: @max - 6;
@@ -49,6 +64,7 @@
 @drk: 2;
 @med: 4;
 @bright: 6;
+@parkratio: .5;
 
 // Map
 
@@ -178,7 +194,121 @@ Map { background-color: @land; }
   }
 
 /////////////// Parks
-/* let's rebuild the parks
+
+#landuse [class='cemetery'],[class='park'],
+    [class='pitch'],[class='wood'], [class='grass'] {
+/* Try to see what only glowy borders looks like  
+  ::fill {
+    polygon-fill: @park_bright;//mix(@park_drkst, @land, 60%);
+    line-color: mix(@park_drk, @land, 60%);
+    line-width: 1.5;
+    }      
+  ::hollow {
+    polygon-fill: #f0f0ff;
+    comp-op: soft-light;
+    image-filters: agg-stack-blur(1,1);
+    polygon-geometry-transform: translate(0,3);
+    polygon-clip: false;    
+    } */
+  ::outlinefuzz {
+    drkst/line-color: @park_drkst;  
+    drkst/line-width: (@max - @drkst) * @parkratio;
+    drkst/line-cap: round;
+    drkst/line-join: round;
+    drkst/line-gamma: .5;      
+    drkst/image-filters:agg-stack-blur(3,3);
+    drk/line-color: @park_drk;
+    drk/line-width: (@max - @drk) * @parkratio;
+    drk/line-cap: round;
+    drk/line-join: round;
+    drk/line-gamma: .5;    
+    drk/image-filters:agg-stack-blur(3,3);
+    med/line-color: @park_med;
+    med/line-width: (@max - @med) * @parkratio;
+    med/line-cap: round;
+    med/line-join: round;
+    med/line-gamma: .5;
+    drk/image-filters:agg-stack-blur(3,3);
+    }  
+  ::outlinecrisp {
+    bright/line-color: @park_bright;
+    bright/line-width: (@max - @bright);
+    bright/line-cap: round;
+    bright/line-join: round;
+    bright/line-gamma: .5;
+    white/line-color: white;
+    white/line-width: 1;    
+    }
+  }
+
+/////////////// Water
+
+#waterway {
+  ::case {
+    line-join: round;
+    image-filters-inflate: true;
+    drkst/line-color: @water_drkst;
+    drkst/line-width: @max;
+    drkst/image-filters: agg-stack-blur(3,3);
+    drkst/line-cap:round;
+    drk/line-color: @water_drk;
+    drk/line-width: @max - @drk;
+    drk/image-filters: agg-stack-blur(1,1);
+    drk/line-cap: round;
+    med/line-color: @water_med;
+    med/line-width: @max - @med;
+    med/image-filters: agg-stack-blur(1,1);
+    med/line-cap: round;
+      } 
+  ::top {
+    bright/line-color: @water_bright;
+    bright/line-width: @max - @bright;
+    bright/line-cap: round;
+    white/line-color: white;
+    white/line-width: 2;
+    white/line-cap: round;
+    }
+  }
+
+#water {
+  ::fill {
+    image-filters-inflate: true;
+    drkst/line-color: @water_drkst;
+    drkst/line-width: @max;
+    drkst/image-filters: agg-stack-blur(3,3);
+    drk/line-color: @water_drk;
+    drk/line-width: @max - @drk;
+    drk/image-filters: agg-stack-blur(1,1);
+    med/line-color: @water_med;
+    med/line-width: @max - @med;
+    med/image-filters: agg-stack-blur(1,1);    
+    }  
+  ::outline {
+    bright/polygon-fill: @water_bright;
+    bright/line-color: @water_bright;
+    bright/line-width: @max - @bright;
+    white/line-color: white;
+    white/line-width: 1.5;    
+    }
+  }
+
+/////////////// Buildings
+
+#building {
+  polygon-fill: @building;
+  line-color: lighten(@building, 10);
+  line-gamma: .5;
+  line-width: .5;
+  }
+
+// Ian's pro tip for stylizing text halos
+/*
+text-halo-fill: fadeout(white, 98%);
+fat halos, high fadeout
+*/
+
+
+/* old parks - rebuild above
 #landuse  [class='cemetery'],[class='park'],
     [class='pitch'],[class='wood'], [class='grass'] {
   ::outlines {
@@ -216,117 +346,3 @@ Map { background-color: @land; }
     one/line-opacity: .25;
     }  
   }*/
-
-#landuse  [class='cemetery'],[class='park'],
-    [class='pitch'],[class='wood'], [class='grass'] {
-
-  ::outlines {
-    drkst/line-color: @park_drkst;  
-    drkst/line-width: 20;//@max - @drkst;
-    drkst/line-cap: round;
-    drkst/line-join: round;
-    drkst/line-gamma: .5;      
-    drkst/image-filters:agg-stack-blur(3,3);
-    drk/line-color: @park_drk;
-    drk/line-width: 15;//@max - @drk;
-    drk/line-cap: round;
-    drk/line-join: round;
-    drk/line-gamma: .5;    
-    med/line-color: @park_med;
-    med/line-width: 10;//@max - @med;
-    med/line-cap: round;
-    med/line-join: round;
-    med/line-gamma: .5;
-    bright/line-color: @park_bright;
-    bright/line-width: 5;//@max - @bright;
-    bright/line-cap: round;
-    bright/line-join: round;
-    bright/line-gamma: .5;
-    
-    }
-::filloffset {
-    polygon-geometry-transform: translate(-3,-3);
-    polygon-fill: @park_bright;
-    comp-op: screen;
-    }  
-  ::fill {
-    polygon-fill: mix(@park_drkst, @land, 50%);
-    line-color: mix(@park_drkst, @land, 50%);
-    line-width: 1.5;
-    polygon-simplify: .1;
-    }  
-  
-  }
-
-
-/////////////// Water
-
-#waterway {
-  ::case {
-    line-join: round;
-    image-filters-inflate: true;
-    drkst/line-color: @water_drkst;
-    drkst/line-width: @max;
-    drkst/image-filters: agg-stack-blur(3,3);
-    drk/line-color: @water_drk;
-    drk/line-width: @max - @drk;
-    drk/image-filters: agg-stack-blur(1,1);
-    med/line-color: @water_med;
-    med/line-width: @max - @med;
-    med/image-filters: agg-stack-blur(1,1);
-      }
-  ::fill {
-    bright/line-color: @water_bright;
-    bright/line-width: @max - @bright;
-    }
-  }
-
-#water {
-  ::case {
-    bright/polygon-fill: @water_bright;
-    }
-  ::fill {
-    image-filters-inflate: true;
-    drkst/line-color: @water_drkst;
-    drkst/line-width: @max;
-    drkst/image-filters: agg-stack-blur(3,3);
-    drk/line-color: @water_drk;
-    drk/line-width: @max - @drk;
-    drk/image-filters: agg-stack-blur(1,1);
-    med/line-color: @water_med;
-    med/line-width: @max - @med;
-    med/image-filters: agg-stack-blur(1,1);    
-    }
-  }
-
-/* OLD WATER
-#waterway [class='stream'] {
-  ::drkst {line-color: @water_drkst; line-width: 10; line-cap: round; }
-  ::drk {line-color: @water_drk; line-width: 7; line-cap: round; }
-  ::med {line-color: @water_med; line-width: 4; line-cap: round; }
-  ::bright {line-color: @water_bright; line-width: 2; line-cap: round; }  
-  }
-
-#water {
-  ::drkst {line-color: @water_drkst; line-width: 10 }
-  ::drk {line-color: @water_drk; line-width: 7; }
-  ::med {line-color: @water_med; line-width: 4; }
-  ::bright {line-color: @water_bright; line-width: 2; }
-  polygon-fill: @water_bright;
-  }*/
-
-
-/////////////// Buildings
-
-#building {
-  polygon-fill: @building;
-  line-color: lighten(@building, 10);
-  line-gamma: .5;
-  line-width: .5;
-  }
-
-// Ian's pro tip for stylizing text halos
-/*
-text-halo-fill: fadeout(white, 98%);
-fat halos, high fadeout
-*/
