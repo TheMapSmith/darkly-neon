@@ -287,7 +287,7 @@ Map { background-color: @land; }
     med/image-filters: agg-stack-blur(1,1);    
     }  
   ::outline {
-    bright/polygon-fill: @water_bright;
+    bright/polygon-fill: @water_med; 
     bright/line-color: @water_bright;
     bright/line-width: @max - @bright;
     white/line-color: white;
