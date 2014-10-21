@@ -69,6 +69,14 @@ N: 30.2487
 @bright: 6;
 @parkratio: .5;
 
+// Road Blurs
+// When exporting @2x or @4x the agg stack will have 
+// to be larger. Change these before exporting
+
+@agg: 1; //@1x
+//@agg: 2; //@2x
+//@agg: 4; //@4x
+
 // Map
 
 Map { background-color: @land; }
@@ -83,10 +91,10 @@ Map { background-color: @land; }
       image-filters-inflate: true;
       drkst/line-color: @road_drkst;
       drkst/line-width: @max - @drkst;
-      drkst/image-filters: agg-stack-blur(3,3);
+      drkst/image-filters: agg-stack-blur(3*@agg,3*@agg);
       drk/line-color: @road_drk;
       drk/line-width: @max - @drk;
-      drk/image-filters: agg-stack-blur(1,1);
+      drk/image-filters: agg-stack-blur(1*@agg,1*@agg);
       med/line-color: @road_med;
       med/line-width: @max - @med;     
       } 
@@ -95,10 +103,10 @@ Map { background-color: @land; }
       image-filters-inflate: true;
       drkst/line-color: @road_drkst;
       drkst/line-width: @link - @drkst;
-      drkst/image-filters: agg-stack-blur(3,3);
+      drkst/image-filters: agg-stack-blur(3*@agg,3*@agg);
       drk/line-color: @road_drk;
       drk/line-width: @link - @drk;
-      drk/image-filters: agg-stack-blur(1,1);
+      drk/image-filters: agg-stack-blur(1*@agg,1*@agg);
       med/line-color: @road_med;
       med/line-width: @link - @med;      
       } 
@@ -107,10 +115,10 @@ Map { background-color: @land; }
       image-filters-inflate: true;
       drkst/line-color: @road_drkst;
       drkst/line-width: @main - @drkst;
-      drkst/image-filters: agg-stack-blur(3,3);
+      drkst/image-filters: agg-stack-blur(3*@agg,3*@agg);
       drk/line-color: @road_drk;
       drk/line-width: @main - @drk;
-      drk/image-filters: agg-stack-blur(1,1);
+      drk/image-filters: agg-stack-blur(1*@agg,1*@agg);
       med/line-color: @road_med;
       med/line-width: @main - @med;         
       } 
@@ -119,10 +127,10 @@ Map { background-color: @land; }
       image-filters-inflate: true;
       drkst/line-color: @road_drkst;
       drkst/line-width: @street - @drkst;
-      drkst/image-filters: agg-stack-blur(3,3);
+      drkst/image-filters: agg-stack-blur(3*@agg,3*@agg);
       drk/line-color: @road_drk;
       drk/line-width: @street - @drk;
-      drk/image-filters: agg-stack-blur(1,1);
+      drk/image-filters: agg-stack-blur(1*@agg,1*@agg);
       med/line-color: @road_med;
       med/line-width: @street - @med;             
       } 
@@ -131,20 +139,20 @@ Map { background-color: @land; }
       image-filters-inflate: true;
       drkst/line-color: @road_drkst;
       drkst/line-width: @service - @drkst;
-      drkst/image-filters: agg-stack-blur(3,3);
+      drkst/image-filters: agg-stack-blur(3*@agg,3*@agg);
       drk/line-color: @road_drk;
       drk/line-width: @service - @drk;
-      drk/image-filters: agg-stack-blur(1,1);        
+      drk/image-filters: agg-stack-blur(1*@agg,1*@agg);        
       } 
     [class='path'][zoom>=15] {
       line-gamma: .6;
       image-filters-inflate: true;
       drkst/line-color: @road_drkst;
       drkst/line-width: @path - @drkst;
-      drkst/image-filters: agg-stack-blur(3,3);
+      drkst/image-filters: agg-stack-blur(3*@agg,3*@agg);
       drk/line-color: @road_drk;
       drk/line-width: .5;
-      drk/image-filters: agg-stack-blur(1,1);        
+      drk/image-filters: agg-stack-blur(1*@agg,1*@agg);        
       } 
     }
   
@@ -214,28 +222,32 @@ Map { background-color: @land; }
     polygon-clip: false;    
     } */
   ::outlinefuzz {
-    image-filters-inflate:  true;
-    back/line-color: darken(@park_drkst, 20);
-    back/line-width: @max * 1.5;
-    back/image-filters: agg-stack-blur(6,6);
+    back/line-color: darken(@park_drkst,20);  
+    back/line-width: (@max - @drkst) * 1.5; 
+    back/line-cap: round;
+    back/line-join: round;
+    back/line-gamma: .5;      
+    back/image-filters:agg-stack-blur(5*@agg,5*@agg);
+    back/image-filters-inflate: true;    
     drkst/line-color: @park_drkst;  
     drkst/line-width: (@max - @drkst); //* @parkratio; don't cut in half - make the back colors spread farther
     drkst/line-cap: round;
     drkst/line-join: round;
     drkst/line-gamma: .5;      
-    drkst/image-filters:agg-stack-blur(4,4);
+    drkst/image-filters:agg-stack-blur(4*@agg,4*@agg);
+    drkst/image-filters-inflate: true; 
     drk/line-color: @park_drk;
     drk/line-width: (@max - @drk) * @parkratio;
     drk/line-cap: round;
     drk/line-join: round;
     drk/line-gamma: .5;    
-    drk/image-filters:agg-stack-blur(3,3);
+    drk/image-filters:agg-stack-blur(3*@agg,3*@agg);
+    drk/image-filters-inflate: true; 
     med/line-color: @park_med;
     med/line-width: (@max - @med) * @parkratio;
     med/line-cap: round;
     med/line-join: round;
     med/line-gamma: .5;
-    drk/image-filters:agg-stack-blur(3,3);
     }  
   ::outlinecrisp {
     bright/line-color: @park_bright;
@@ -256,15 +268,15 @@ Map { background-color: @land; }
     image-filters-inflate: true;
     drkst/line-color: @water_drkst;
     drkst/line-width: @max;
-    drkst/image-filters: agg-stack-blur(3,3);
+    drkst/image-filters: agg-stack-blur(3*@agg,3*@agg);
     drkst/line-cap:round;
     drk/line-color: @water_drk;
     drk/line-width: @max - @drk;
-    drk/image-filters: agg-stack-blur(1,1);
+    drk/image-filters: agg-stack-blur(1*@agg,1*@agg);
     drk/line-cap: round;
     med/line-color: @water_med;
     med/line-width: @max - @med;
-    med/image-filters: agg-stack-blur(1,1);
+    med/image-filters: agg-stack-blur(1*@agg,1*@agg);
     med/line-cap: round;
       } 
   ::top {
@@ -282,13 +294,13 @@ Map { background-color: @land; }
     image-filters-inflate: true;
     drkst/line-color: @water_drkst;
     drkst/line-width: @max;
-    drkst/image-filters: agg-stack-blur(3,3);
+    drkst/image-filters: agg-stack-blur(3*@agg,3*@agg);
     drk/line-color: @water_drk;
     drk/line-width: @max - @drk;
-    drk/image-filters: agg-stack-blur(1,1);
+    drk/image-filters: agg-stack-blur(1*@agg,1*@agg);
     med/line-color: @water_med;
     med/line-width: @max - @med;
-    med/image-filters: agg-stack-blur(1,1);    
+    med/image-filters: agg-stack-blur(1*@agg,1*@agg);    
     }  
   ::outline {
     bright/polygon-fill: @water_med; 
