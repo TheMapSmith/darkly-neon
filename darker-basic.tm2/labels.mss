@@ -33,7 +33,7 @@
 
 #road_label { 
   ::case[zoom>=6]{
-   [class='motorway'] {
+/*   [class='motorway'] {
       shield-name:  "[ref]";
       shield-file:  url("img/motorway_[reflen]x1.svg");
       shield-size: 11;
@@ -51,11 +51,11 @@
       text-fill: white;      
       text-size: 13;
       text-avoid-edges: true;
-      text-transform:lowercase; */
+      text-transform:lowercase; 
       } 
     [class='motorway_link'][zoom>=13] {
 
-    } 
+    } */
     [class='main'] {
       one/text-name: @name;
       one/text-placement: line;
@@ -73,11 +73,11 @@
       one/text-name: @name;
       one/text-placement: line;
       one/text-face-name: @sans_italic;
-      one/text-fill: @road_med;
+      one/text-fill: @road_med * 1.5;
       one/text-size: (@max - @drk) + 3;
       one/text-avoid-edges: true;
       one/text-halo-radius: 1;
-      one/text-halo-fill: @road_drkst;          
+      one/text-halo-fill: @road_drkst * 1.5;
       one/text-min-distance: 10000;      
       one/text-min-padding: 25;      
       one/text-transform:lowercase;

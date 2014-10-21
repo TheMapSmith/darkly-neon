@@ -79,16 +79,16 @@
   }
   // --- dots ---------
   marker-width: 8;
-  marker-fill: #000;
+  marker-fill: @land;
   marker-line-color: @road_drk;
-  marker-line-width: 3;
+  marker-line-width: 2.5;
   // --- text ---------
   text-name: @name;
   text-fill: @road_bright;
   text-face-name: @serif_bold;
   text-size: 14;
   text-halo-fill: @road_drk;
-  text-halo-radius: 3;
+  text-halo-radius: 2.5;
   text-halo-rasterizer: fast;
   text-avoid-edges: true;
   text-transform: lowercase;

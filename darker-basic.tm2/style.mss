@@ -214,12 +214,16 @@ Map { background-color: @land; }
     polygon-clip: false;    
     } */
   ::outlinefuzz {
+    image-filters-inflate:  true;
+    back/line-color: darken(@park_drkst, 20);
+    back/line-width: @max * 1.5;
+    back/image-filters: agg-stack-blur(6,6);
     drkst/line-color: @park_drkst;  
-    drkst/line-width: (@max - @drkst) * @parkratio;
+    drkst/line-width: (@max - @drkst); //* @parkratio; don't cut in half - make the back colors spread farther
     drkst/line-cap: round;
     drkst/line-join: round;
     drkst/line-gamma: .5;      
-    drkst/image-filters:agg-stack-blur(3,3);
+    drkst/image-filters:agg-stack-blur(4,4);
     drk/line-color: @park_drk;
     drk/line-width: (@max - @drk) * @parkratio;
     drk/line-cap: round;
@@ -240,7 +244,7 @@ Map { background-color: @land; }
     bright/line-join: round;
     bright/line-gamma: .5;
     white/line-color: white;
-    white/line-width: 1;    
+    white/line-width: 1.25;    
     }
   }
 
@@ -268,7 +272,7 @@ Map { background-color: @land; }
     bright/line-width: @max - @bright;
     bright/line-cap: round;
     white/line-color: white;
-    white/line-width: 2;
+    white/line-width: 1.5;
     white/line-cap: round;
     }
   }
@@ -302,6 +306,24 @@ Map { background-color: @land; }
   line-color: lighten(@building, 10);
   line-gamma: .5;
   line-width: .5;
+  }
+
+/////////////// Airport
+
+#aeroway { 
+  [type='taxiway'] {
+    line-color: mix(@land, grey, 80%);
+    line-width: 10;  
+    line-cap: square;
+    line-join: round;
+    }
+  [type='runway'] {
+    line-color: mix(@land, grey, 80%);
+    line-width: 25;  
+    line-cap: square;
+    line-join: round;
+    }
+  
   }
 
 // Ian's pro tip for stylizing text halos
