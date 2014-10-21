@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.7243,30.2728,16</Parameter>
+  <Parameter name="center">-97.7389,30.2564,16</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -24,27 +24,27 @@
 <Style name="landuse-outlinecrisp" filter-mode="first">
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
@@ -54,35 +54,35 @@
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Style name="landuse" filter-mode="first">
@@ -114,54 +114,54 @@
 </Style>
 <Style name="waterway-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="waterway-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="waterway"
@@ -187,54 +187,54 @@
 </Style>
 <Style name="water-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="water-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="water"
@@ -256,54 +256,54 @@
 </Style>
 <Style name="aeroway-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="aeroway-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="aeroway"
@@ -314,54 +314,54 @@
 
 <Style name="barrier_line-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="barrier_line-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="barrier_line"
@@ -377,54 +377,54 @@
 </Style>
 <Style name="building-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="building-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="building"
@@ -435,54 +435,54 @@
 
 <Style name="landuse_overlay-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="landuse_overlay-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="landuse_overlay"
@@ -492,54 +492,54 @@
 
 <Style name="tunnel-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="tunnel-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="tunnel"
@@ -549,54 +549,24 @@
 
 <Style name="road-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-</Style>
-<Style name="road-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
-  <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="road-fill" filter-mode="first">
@@ -642,6 +612,36 @@
     <LineSymbolizer stroke="#f3d437" stroke-width="6" stroke-linecap="round" />
   </Rule>
 </Style>
+<Style name="road-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+</Style>
 <Style name="road-case" filter-mode="first" image-filters="agg-stack-blur(3,3),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(1,1)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -659,7 +659,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" stroke-width="6" />
     <LineSymbolizer stroke="#d82830" stroke-width="4" />
@@ -667,7 +667,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" stroke-width="6" />
     <LineSymbolizer stroke="#d82830" stroke-width="4" />
@@ -701,60 +701,30 @@
 <Layer name="road"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>road-case</StyleName>
-    <StyleName>road-fill</StyleName>
     <StyleName>road-outlinefuzz</StyleName>
+    <StyleName>road-fill</StyleName>
     <StyleName>road-outlinecrisp</StyleName>  </Layer>
 
 <Style name="bridge-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-</Style>
-<Style name="bridge-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
-  <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="bridge-fill" filter-mode="first">
@@ -800,6 +770,36 @@
     <LineSymbolizer stroke="#f3d437" stroke-width="2" stroke-linecap="round" />
   </Rule>
 </Style>
+<Style name="bridge-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+</Style>
 <Style name="bridge-case" filter-mode="first" image-filters="agg-stack-blur(3,3),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(1,1)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -817,7 +817,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" stroke-width="6" />
     <LineSymbolizer stroke="#d82830" stroke-width="4" />
@@ -825,7 +825,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" stroke-width="6" />
     <LineSymbolizer stroke="#d82830" stroke-width="4" />
@@ -860,60 +860,60 @@
   group-by="layer"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>bridge-case</StyleName>
-    <StyleName>bridge-fill</StyleName>
     <StyleName>bridge-outlinefuzz</StyleName>
+    <StyleName>bridge-fill</StyleName>
     <StyleName>bridge-outlinecrisp</StyleName>  </Layer>
 
 <Style name="admin-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="admin-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="admin"
@@ -923,54 +923,54 @@
 
 <Style name="country_label_line-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="country_label_line-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="country_label_line"
@@ -980,54 +980,54 @@
 
 <Style name="country_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="country_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="country_label"
@@ -1037,54 +1037,54 @@
 
 <Style name="marine_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="marine_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="marine_label"
@@ -1094,54 +1094,54 @@
 
 <Style name="state_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="state_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="state_label"
@@ -1151,54 +1151,54 @@
 
 <Style name="place_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="place_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Style name="place_label" filter-mode="first">
@@ -1926,54 +1926,54 @@
 
 <Style name="water_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="water_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="water_label"
@@ -1983,54 +1983,54 @@
 
 <Style name="poi_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="poi_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Style name="poi_label" filter-mode="first">
@@ -2223,54 +2223,54 @@
 
 <Style name="road_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="road_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Style name="road_label-case" filter-mode="first">
@@ -2335,54 +2335,54 @@
 
 <Style name="waterway_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="waterway_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="waterway_label"
@@ -2392,54 +2392,54 @@
 
 <Style name="housenum_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="housenum_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Layer name="housenum_label"
