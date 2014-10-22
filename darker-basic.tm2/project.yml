@@ -10,8 +10,8 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -97.7389
-  - 30.2564
+  - -97.7457
+  - 30.2625
   - 16
 description: ''
 format: png24
@@ -26,4 +26,5 @@ styles:
   - labels.mss
   - poi.mss
   - road.mss
+  - locs.mss
 template: ''

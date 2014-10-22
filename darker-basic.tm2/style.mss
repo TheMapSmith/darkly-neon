@@ -73,9 +73,9 @@ N: 30.2487
 // When exporting @2x or @4x the agg stack will have 
 // to be larger. Change these before exporting
 
-@agg: 1; //@1x
+//@agg: 1; //@1x
 //@agg: 2; //@2x
-//@agg: 4; //@4x
+@agg: 4; //@4x
 
 // Map
 
