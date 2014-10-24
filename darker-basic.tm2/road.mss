@@ -13,7 +13,7 @@
       drk/line-width: @max - @drk;
       drk/image-filters: agg-stack-blur(1*@agg,1*@agg);
       med/line-color: @road_med;
-      med/line-width: @max - @med;     
+      med/line-width: @max - @med;
       } 
     [class='motorway_link'][zoom>=13] {
       line-gamma: .6;

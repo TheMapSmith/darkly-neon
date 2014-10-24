@@ -55,7 +55,7 @@ N: 30.2487
 // Line Widths
 
 @max: 12; //motorway
-@link: @max - 2;
+@link: @max - 3;
 @main: @max - 4;
 @street: @max - 6;
 @service: @max - 8;
@@ -73,9 +73,9 @@ N: 30.2487
 // When exporting @2x or @4x the agg stack will have 
 // to be larger. Change these before exporting
 
-//@agg: 1; //@1x
+@agg: 1; //@1x
 //@agg: 2; //@2x
-@agg: 4; //@4x
+//@agg: 4; //@4x
 
 // Map
 
@@ -91,7 +91,7 @@ Map { background-color: @land; }
 /////////////// Parks
 
 #landuse [class='cemetery'],[class='park'],
-    [class='pitch'],[class='wood'], [class='grass'] {
+    [class='pitch'], [class='grass'] { //,[class='wood']
 /* Try to see what only glowy borders looks like  
   ::fill {
     polygon-fill: @park_bright;//mix(@park_drkst, @land, 60%);
