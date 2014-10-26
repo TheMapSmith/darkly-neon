@@ -9,23 +9,23 @@ N: 30.2487 */
 @name: '[name_en]';
 
 // Fonts //
-@sans: 'Avenir Book', 'Source Sans Pro Regular';
-@sans_italic: 'Avenir Book Oblique','Source Sans Pro Italic';
-@sans_bold: 'Avenir Medium','Source Sans Pro Semibold';
-@sans_black_italic: 'Avenir Black Oblique';
-@sans_bold_italic: 'Avenir Heavy Oblique';
-@serif_bold: 'Meta Serif Offc Pro Bold';
+@fallback: 'Open Sans Regular';
+@sans: 'Avenir Book', 'Source Sans Pro Regular', @fallback;
+@sans_italic: 'Avenir Book Oblique','Source Sans Pro Italic', @fallback;
+@sans_bold: 'Avenir Medium','Source Sans Pro Semibold', @fallback;
+@sans_black_italic: 'Avenir Black Oblique', @fallback;
+@sans_bold_italic: 'Avenir Heavy Oblique',@fallback;
+@serif_bold: 'Meta Serif Offc Pro Bold',@fallback;
   
 // Common Colors //
 
 @land: rgb(29, 21, 48);
-@water: rgb(202, 249, 253);
 @building: lighten(@land, 20);
 
-@road_bright: rgba(243,212,55,1);
-@road_med: rgba(223, 98, 55, 1);
-@road_drk: rgba(216, 40, 48, 1);
-@road_drkst: rgba(126, 10, 19, 1);
+@road_bright: rgb(243,212,55);
+@road_med: rgb(223, 98, 55);
+@road_drk: rgb(216, 40, 48);
+@road_drkst: rgb(126, 10, 19);
 
 @park_bright: rgb(57, 241, 3); 
 @park_med: rgb(51, 215, 3);
@@ -37,28 +37,56 @@ N: 30.2487 */
 @water_drk: rgb(106, 155, 239);
 @water_drkst: rgb(49, 82, 180);
 
-// Line Widths
+@rail_bright: rgb(218,213,246);
+@rail_med: rgb(153,138,245);
+@rail_drk: rgb(73,66,117);
+@rail_drkst: darken(@rail_drk, 20);
 
-@max: 12; //motorway
+// Line Widths
+// Starting with @max, road widths are systematically subtracted
+// Putting all the widths in one place like this allows easy
+// global changes
+
+@max: 12; //used for motorway
 @link: @max - 3;
 @main: @max - 4;
 @street: @max - 6;
 @service: @max - 8;
 @path: @max - 9;
 
-// Color Widths
+// Color Width mods
+// These get subtracted from the values above to get the neon glow look
 
 @drkst: 0;
 @drk: 2;
 @med: 4;
 @bright: 6;
-@parkratio: .5;
+
+// This let's me use the same line widths as above
+// and apply a tweak if needed
+@parkratio: .5; 
+
+// Scale width mods
+// This will setup the zoom scheme (eventually)
+// Like the color widths, these are subtracted
+
+@zoom6: 10; // [zoom<=6]
+@zoom7: 9;
+@zoom8: 8;
+@zoom10: 7;
+@zoom13: 6;
+@zoom14: 5;
+@zoom15: 3;
+@zoom16: -3; // subtracting a negative = adding
+@zoom17: -5;
+@zoom18: -11; //[zoom>=18]
+
 
 // Road Agg Blur Ratios
 // When exporting @2x or @4x the agg stack will have 
 // to be larger. Change these before exporting
 
-@agg: 1; //@1x
+@agg: 1; //@1x - for normal viewing
 //@agg: 2; //@2x
 //@agg: 4; //@4x
 
