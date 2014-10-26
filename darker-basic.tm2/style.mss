@@ -3,8 +3,7 @@ Zoom: 16
 W: -97.7599
 S: 30.2362
 E: -97.7315
-N: 30.2487
-*/
+N: 30.2487 */
 
 // Languages: name (local), name_en, name_fr, name_es, name_de
 @name: '[name_en]';
@@ -28,20 +27,6 @@ N: 30.2487
 @road_drk: rgba(216, 40, 48, 1);
 @road_drkst: rgba(126, 10, 19, 1);
 
-/* original greens
-@park_bright: rgb(48,124,57); // first park rgb(240, 255, 101);
-@park_med: rgb(184, 208, 62);
-@park_drk: rgb(114, 113, 34);
-@park_drkst: rgb(64, 75, 21);
-*/
-
-/* second attempt at greens
-@park_bright: rgb(59,250,137); 
-@park_med: rgb(47,245,95);
-@park_drk: rgb(4,142,3);
-@park_drkst: rgb(2,90,3);
-*/
-// another greens attempt.
 @park_bright: rgb(57, 241, 3); 
 @park_med: rgb(51, 215, 3);
 @park_drk: rgb(42,177,2);
@@ -69,7 +54,7 @@ N: 30.2487
 @bright: 6;
 @parkratio: .5;
 
-// Road Blurs
+// Road Agg Blur Ratios
 // When exporting @2x or @4x the agg stack will have 
 // to be larger. Change these before exporting
 
@@ -81,7 +66,6 @@ N: 30.2487
 
 Map { background-color: @land; }
 
-
 #landuse [class='parking'] {
   polygon-fill: mix(@land, grey, 80%);
   line-color: darken(mix(@land, grey, 80%), 20);
@@ -91,20 +75,7 @@ Map { background-color: @land; }
 /////////////// Parks
 
 #landuse [class='cemetery'],[class='park'],
-    [class='pitch'], [class='grass'] { //,[class='wood']
-/* Try to see what only glowy borders looks like  
-  ::fill {
-    polygon-fill: @park_bright;//mix(@park_drkst, @land, 60%);
-    line-color: mix(@park_drk, @land, 60%);
-    line-width: 1.5;
-    }      
-  ::hollow {
-    polygon-fill: #f0f0ff;
-    comp-op: soft-light;
-    image-filters: agg-stack-blur(1,1);
-    polygon-geometry-transform: translate(0,3);
-    polygon-clip: false;    
-    } */
+    [class='pitch'], [class='grass'] { 
   ::outlinefuzz {
     back/line-color: darken(@park_drkst,20);  
     back/line-width: (@max - @drkst) * 1.5; 
@@ -114,7 +85,7 @@ Map { background-color: @land; }
     back/image-filters:agg-stack-blur(5*@agg,5*@agg);
     back/image-filters-inflate: true;    
     drkst/line-color: @park_drkst;  
-    drkst/line-width: (@max - @drkst); //* @parkratio; don't cut in half - make the back colors spread farther
+    drkst/line-width: (@max - @drkst); // @parkratio; don't cut in half - make the back colors spread farther
     drkst/line-cap: round;
     drkst/line-join: round;
     drkst/line-gamma: .5;      
@@ -226,43 +197,3 @@ Map { background-color: @land; }
 text-halo-fill: fadeout(white, 98%);
 fat halos, high fadeout
 */
-
-
-/* old parks - rebuild above
-#landuse  [class='cemetery'],[class='park'],
-    [class='pitch'],[class='wood'], [class='grass'] {
-  ::outlines {
-    line-gamma: .6;
-    image-filters-inflate: true;
-    drkst/line-color: @park_drkst;
-    drkst/line-width: @max - @drkst;
-    drkst/image-filters: agg-stack-blur(3,3);
-    drkst/line-cap: round;
-    drkst/line-join: round;
-    drk/line-color: @park_drk;
-    drk/line-width: @max - @drk;
-    drk/image-filters: agg-stack-blur(1,1);
-    drk/line-cap: round;
-    drk/line-join: round;
-    med/line-color: @park_med;
-    med/line-width: @max - @med;
-    med/line-cap: round;
-    med/line-join: round;
-    }
-  ::fill {
-    image-filters-inflate: true;
-    line-gamma: .5;
-    line-comp-op: screen;
-    polygon-fill: mix(@park_drkst, @land, 50%);
-    two/line-color: @park_drk;
-    two/line-width: 30;
-    two/line-join: round;
-    two/line-cap: round;
-    two/line-opacity: .25;
-    one/line-color: @park_bright; //try having a "glowy" look
-    one/line-width: 15;
-    one/line-join: round;
-    one/line-cap: round;
-    one/line-opacity: .25;
-    }  
-  }*/
