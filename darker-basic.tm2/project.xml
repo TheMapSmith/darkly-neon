@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.7386,30.2621,16</Parameter>
+  <Parameter name="center">-97.742,30.2612,16</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">20</Parameter>
   <Parameter name="minzoom">16</Parameter>
@@ -1057,27 +1057,27 @@
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
-    <LineSymbolizer stroke-width="19" stroke="#201d34" />
-    <LineSymbolizer stroke-width="17" stroke="#494275" />
-    <LineSymbolizer stroke-width="15" stroke="#998af5" />
+    <LineSymbolizer stroke-width="20" stroke="#201d34" />
+    <LineSymbolizer stroke-width="18" stroke="#494275" />
+    <LineSymbolizer stroke-width="16" stroke="#998af5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
-    <LineSymbolizer stroke-width="13" stroke="#201d34" />
-    <LineSymbolizer stroke-width="11" stroke="#494275" />
-    <LineSymbolizer stroke-width="9" stroke="#998af5" />
+    <LineSymbolizer stroke-width="14" stroke="#201d34" />
+    <LineSymbolizer stroke-width="12" stroke="#494275" />
+    <LineSymbolizer stroke-width="10" stroke="#998af5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
-    <LineSymbolizer stroke-width="8" stroke="#201d34" />
-    <LineSymbolizer stroke-width="6" stroke="#494275" />
-    <LineSymbolizer stroke-width="4" stroke="#998af5" />
+    <LineSymbolizer stroke-width="9" stroke="#201d34" />
+    <LineSymbolizer stroke-width="7" stroke="#494275" />
+    <LineSymbolizer stroke-width="5" stroke="#998af5" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
@@ -1683,27 +1683,27 @@
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
-    <LineSymbolizer stroke-width="19" stroke="#201d34" />
-    <LineSymbolizer stroke-width="17" stroke="#494275" />
-    <LineSymbolizer stroke-width="15" stroke="#998af5" />
+    <LineSymbolizer stroke-width="20" stroke="#201d34" />
+    <LineSymbolizer stroke-width="18" stroke="#494275" />
+    <LineSymbolizer stroke-width="16" stroke="#998af5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
-    <LineSymbolizer stroke-width="13" stroke="#201d34" />
-    <LineSymbolizer stroke-width="11" stroke="#494275" />
-    <LineSymbolizer stroke-width="9" stroke="#998af5" />
+    <LineSymbolizer stroke-width="14" stroke="#201d34" />
+    <LineSymbolizer stroke-width="12" stroke="#494275" />
+    <LineSymbolizer stroke-width="10" stroke="#998af5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
-    <LineSymbolizer stroke-width="8" stroke="#201d34" />
-    <LineSymbolizer stroke-width="6" stroke="#494275" />
-    <LineSymbolizer stroke-width="4" stroke="#998af5" />
+    <LineSymbolizer stroke-width="9" stroke="#201d34" />
+    <LineSymbolizer stroke-width="7" stroke="#494275" />
+    <LineSymbolizer stroke-width="5" stroke="#998af5" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
@@ -5384,36 +5384,36 @@
 <Style name="road_label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
+    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
     <ShieldSymbolizer spacing="400" size="11" file="img/motorway_[reflen]x1.svg" minimum-distance="80" fontset-name="fontset-0" fill="#ffffff" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
+    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
     <ShieldSymbolizer minimum-distance="80" file="img/motorway_[reflen]x1.svg" size="9" fontset-name="fontset-0" fill="#ffffff" spacing="300" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
+    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
     <ShieldSymbolizer file="img/motorway_[reflen]x1.svg" size="9" fontset-name="fontset-0" fill="#ffffff" spacing="300" avoid-edges="true" minimum-padding="10" minimum-distance="40" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
+    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
     <ShieldSymbolizer spacing="400" size="11" file="img/motorway_[reflen]x1.svg" minimum-distance="80" fontset-name="fontset-0" fill="#ffffff" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
+    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
     <ShieldSymbolizer minimum-distance="80" file="img/motorway_[reflen]x1.svg" size="9" fontset-name="fontset-0" fill="#ffffff" spacing="300" avoid-edges="true" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
+    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
     <ShieldSymbolizer file="img/motorway_[reflen]x1.svg" size="9" fontset-name="fontset-0" fill="#ffffff" spacing="300" avoid-edges="true" minimum-padding="10" minimum-distance="40" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
 </Style>
@@ -5466,24 +5466,114 @@
 </Style>
 <Style name="waterway_label" filter-mode="first">
   <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] = 'grass')</Filter>
+    <TextSymbolizer size="17" halo-radius="4" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([class] = 'grass')</Filter>
+    <TextSymbolizer size="15" halo-radius="3" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass')</Filter>
     <TextSymbolizer size="13" halo-radius="2" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'grass')</Filter>
+    <TextSymbolizer fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] = 'pitch')</Filter>
+    <TextSymbolizer size="17" halo-radius="4" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([class] = 'pitch')</Filter>
+    <TextSymbolizer size="15" halo-radius="3" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
     <TextSymbolizer size="13" halo-radius="2" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'pitch')</Filter>
+    <TextSymbolizer fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] = 'park')</Filter>
+    <TextSymbolizer size="17" halo-radius="4" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([class] = 'park')</Filter>
+    <TextSymbolizer size="15" halo-radius="3" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park')</Filter>
     <TextSymbolizer size="13" halo-radius="2" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'park')</Filter>
+    <TextSymbolizer fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] = 'river')</Filter>
+    <TextSymbolizer size="20" halo-radius="5" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([class] = 'river')</Filter>
+    <TextSymbolizer size="18" halo-radius="4" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'river')</Filter>
     <TextSymbolizer size="16" halo-radius="3" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'river')</Filter>
+    <TextSymbolizer fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] != 'river')</Filter>
+    <TextSymbolizer size="17" halo-radius="4" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([class] != 'river')</Filter>
+    <TextSymbolizer size="15" halo-radius="3" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] != 'river')</Filter>
     <TextSymbolizer size="13" halo-radius="2" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] != 'river')</Filter>
+    <TextSymbolizer fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <TextSymbolizer fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>

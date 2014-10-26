@@ -208,19 +208,19 @@
       med/line-color: @rail_med;        
       med/image-filters: agg-stack-blur(1 * @agg, 1 * @agg);       
       [zoom>=16] {
-        drkst/line-width: @main - @drkst;
-        drk/line-width: @main - @drk;
-        med/line-width: @main - @med;
+        drkst/line-width: @link - @drkst;
+        drk/line-width: @link - @drk;
+        med/line-width: @link - @med;
         }
       [zoom>=17] {
-        drkst/line-width: @main - @drkst - @zoom17;
-        drk/line-width: @main - @drk - @zoom17;
-        med/line-width: @main - @med - @zoom17;        
+        drkst/line-width: @link - @drkst - @zoom17;
+        drk/line-width: @link - @drk - @zoom17;
+        med/line-width: @link - @med - @zoom17;        
         }
       [zoom>=18] {
-        drkst/line-width: @main - @drkst - @zoom18;
-        drk/line-width: @main - @drk  - @zoom18;
-        med/line-width: @main - @med  - @zoom18;        
+        drkst/line-width: @link - @drkst - @zoom18;
+        drk/line-width: @link - @drk  - @zoom18;
+        med/line-width: @link - @med  - @zoom18;        
         }      
     }
    ::fill {

@@ -87,15 +87,31 @@
   text-halo-fill: fadeout(@water_drk, 90%);  
   text-halo-rasterizer: fast;  
   [class!='river'] {
-    text-size: 13;    
-    text-halo-radius: 2;    
+    [zoom>=16] {
+      text-size: 13;    
+      text-halo-radius: 2;          
+      }
+    [zoom>=17] {
+      text-size: 15;    
+      text-halo-radius: 3;                
+      }
+    [zoom>=18] {
+      text-size: 17;    
+      text-halo-radius: 4;                
+      }
     }
   [class='river'] {
-    text-size: 16;        
-    text-halo-radius: 3;
+    [zoom>=16] {
+      text-size: 16;    
+      text-halo-radius: 3;          
+      }
+    [zoom>=17] {
+      text-size: 18;    
+      text-halo-radius: 4;                
+      }
+    [zoom>=18] {
+      text-size: 20;    
+      text-halo-radius: 5;                
+      }    
     }
-
-  
-
-
   }
