@@ -16,6 +16,7 @@ N: 30.2487 */
 @sans_black_italic: 'Avenir Black Oblique', @fallback;
 @sans_bold_italic: 'Avenir Heavy Oblique',@fallback;
 @serif_bold: 'Meta Serif Offc Pro Bold',@fallback;
+@serif_italic: 'Meta Serif Offc Pro Italic',@fallback;
   
 // Common Colors //
 
@@ -150,21 +151,21 @@ Map { background-color: @land; }
     line-join: round;
     image-filters-inflate: true;
     drkst/line-color: @water_drkst;
-    drkst/line-width: @max;
+    drkst/line-width: @link;
     drkst/image-filters: agg-stack-blur(3*@agg,3*@agg);
     drkst/line-cap:round;
     drk/line-color: @water_drk;
-    drk/line-width: @max - @drk;
+    drk/line-width: @link - @drk;
     drk/image-filters: agg-stack-blur(1*@agg,1*@agg);
     drk/line-cap: round;
     med/line-color: @water_med;
-    med/line-width: @max - @med;
+    med/line-width: @link - @med;
     med/image-filters: agg-stack-blur(1*@agg,1*@agg);
     med/line-cap: round;
       } 
   ::top {
     bright/line-color: @water_bright;
-    bright/line-width: @max - @bright;
+    bright/line-width: @link - @bright;
     bright/line-cap: round;
     white/line-color: white;
     white/line-width: 1.5;

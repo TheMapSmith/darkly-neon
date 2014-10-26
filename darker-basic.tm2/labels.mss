@@ -76,3 +76,26 @@
     }   
   } 
 }
+
+#waterway_label {
+  text-name: @name;
+  text-face-name: @serif_italic;
+  text-fill: @water_bright;
+  text-character-spacing: 7;
+  text-placement: line;
+  text-avoid-edges: true;
+  text-halo-fill: fadeout(@water_drk, 90%);  
+  text-halo-rasterizer: fast;  
+  [class!='river'] {
+    text-size: 13;    
+    text-halo-radius: 2;    
+    }
+  [class='river'] {
+    text-size: 16;        
+    text-halo-radius: 3;
+    }
+
+  
+
+
+  }

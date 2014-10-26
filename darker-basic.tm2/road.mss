@@ -229,16 +229,16 @@
       med/line-color: @road_med;
       bright/line-color: @rail_bright;
       [zoom>=16] {
-        med/line-width: @main - @med;
-        bright/line-width: @main - @bright;
+        med/line-width: @link - @med;
+        bright/line-width: @link - @bright;
         }
       [zoom>=17] {
-        med/line-width: @main - @med - @zoom16;
-        bright/line-width: @main - @bright - @zoom16;        
+        med/line-width: @link - @med - @zoom16;
+        bright/line-width: @link - @bright - @zoom16;        
         }
       [zoom>=18] {
-        med/line-width: @main - @med  - @zoom17;        
-        bright/line-width: @main - @bright - @zoom17;
+        med/line-width: @link - @med  - @zoom17;        
+        bright/line-width: @link - @bright - @zoom17;
         }   
       }
   }

@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.7544,30.2666,16</Parameter>
+  <Parameter name="center">-97.7386,30.2621,16</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">20</Parameter>
   <Parameter name="minzoom">16</Parameter>
@@ -33,6 +33,10 @@
 <FontSet name="fontset-4">
   <Font face-name="Avenir Book Oblique"/>
   <Font face-name="Source Sans Pro Italic"/>
+  <Font face-name="Open Sans Regular"/>
+</FontSet>
+<FontSet name="fontset-5">
+  <Font face-name="Meta Serif Offc Pro Italic"/>
   <Font face-name="Open Sans Regular"/>
 </FontSet>
 <Style name="landuse-outlinecrisp" filter-mode="first">
@@ -102,16 +106,16 @@
 
 <Style name="waterway-top" filter-mode="first">
   <Rule>
-    <LineSymbolizer stroke="#baedf3" stroke-width="6" stroke-linecap="round" />
+    <LineSymbolizer stroke="#baedf3" stroke-width="3" stroke-linecap="round" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
   </Rule>
 </Style>
 <Style name="waterway-case" filter-mode="first" image-filters="agg-stack-blur(3,3),agg-stack-blur(1,1),agg-stack-blur(1,1)" image-filters-inflate="true">
   <Rule>
     <LineSymbolizer stroke-linejoin="round" />
-    <LineSymbolizer stroke="#3152b4" stroke-width="12" stroke-linecap="round" />
-    <LineSymbolizer stroke="#6a9bef" stroke-width="10" stroke-linecap="round" />
-    <LineSymbolizer stroke="#95cff6" stroke-width="8" stroke-linecap="round" />
+    <LineSymbolizer stroke="#3152b4" stroke-width="9" stroke-linecap="round" />
+    <LineSymbolizer stroke="#6a9bef" stroke-width="7" stroke-linecap="round" />
+    <LineSymbolizer stroke="#95cff6" stroke-width="5" stroke-linecap="round" />
   </Rule>
 </Style>
 <Style name="waterway-outlinecrisp" filter-mode="first">
@@ -728,24 +732,24 @@
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="9" stroke="#df6237" />
-    <LineSymbolizer stroke-width="7" stroke="#dad5f6" />
+    <LineSymbolizer stroke-width="10" stroke="#df6237" />
+    <LineSymbolizer stroke-width="8" stroke="#dad5f6" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="7" stroke="#df6237" />
-    <LineSymbolizer stroke-width="5" stroke="#dad5f6" />
+    <LineSymbolizer stroke-width="8" stroke="#df6237" />
+    <LineSymbolizer stroke-width="6" stroke="#dad5f6" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="4" stroke="#df6237" />
-    <LineSymbolizer stroke-width="2" stroke="#dad5f6" />
+    <LineSymbolizer stroke-width="5" stroke="#df6237" />
+    <LineSymbolizer stroke-width="3" stroke="#dad5f6" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
@@ -1354,24 +1358,24 @@
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="9" stroke="#df6237" />
-    <LineSymbolizer stroke-width="7" stroke="#dad5f6" />
+    <LineSymbolizer stroke-width="10" stroke="#df6237" />
+    <LineSymbolizer stroke-width="8" stroke="#dad5f6" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="7" stroke="#df6237" />
-    <LineSymbolizer stroke-width="5" stroke="#dad5f6" />
+    <LineSymbolizer stroke-width="8" stroke="#df6237" />
+    <LineSymbolizer stroke-width="6" stroke="#dad5f6" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'rail')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="4" stroke="#df6237" />
-    <LineSymbolizer stroke-width="2" stroke="#dad5f6" />
+    <LineSymbolizer stroke-width="5" stroke="#df6237" />
+    <LineSymbolizer stroke-width="3" stroke="#dad5f6" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
@@ -5460,8 +5464,34 @@
     <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
+<Style name="waterway_label" filter-mode="first">
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
+    <TextSymbolizer size="13" halo-radius="2" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <TextSymbolizer size="13" halo-radius="2" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <TextSymbolizer size="13" halo-radius="2" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'river')</Filter>
+    <TextSymbolizer size="16" halo-radius="3" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([class] != 'river')</Filter>
+    <TextSymbolizer size="13" halo-radius="2" fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <TextSymbolizer fontset-name="fontset-5" fill="#baedf3" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(106, 155, 239, 0.09999999999999998)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
 <Layer name="waterway_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>waterway_label</StyleName>
     <StyleName>waterway_label-outlinefuzz</StyleName>
     <StyleName>waterway_label-outlinecrisp</StyleName>  </Layer>
 
