@@ -65,8 +65,7 @@
         med/line-width: @main - @med  - @zoom18;        
         }      
       } 
-    [class='street'][zoom>=12],
-    [class='street_limited'][zoom>=12]
+    [class='street'][zoom>=12]
       {
       [zoom>=16] {
         drkst/line-width: @street - @drkst;
@@ -85,7 +84,9 @@
         }       
       }
     [class='service'][zoom>=15],
-    [class='path'][zoom>=15]   {
+    [class='path'][zoom>=15],
+    [class='street_limited'][zoom>=12]      
+      {
       [zoom>=16] {
         drkst/line-width: @service - @drkst;
         drk/line-width: @service - @drk;
@@ -108,13 +109,14 @@
   ::fill[zoom>=6]['mapnik::geometry_type'=2] {
     line-gamma: .6;
     line-join: round;
-    med/line-color: @road_med;
+//    I moved the @road_med into each section because reason
 //    bright/line-color: @road_bright;    
 //    bright actually needs to be defined individually
-//    because the smaller roads dont' use it
+//    because the smaller roads don't use it
 //    #bridge {line-cap: butt;} 
     [class='motorway'] {
-      bright/line-color: @road_bright;    
+        bright/line-color: @road_bright;    
+        med/line-color: @road_med;
       [zoom>=16] {
         med/line-width: @max - @med;
         bright/line-width: @max - @bright;
@@ -129,7 +131,8 @@
         }      
       }
     [class='motorway_link'][zoom>=13] {
-      bright/line-color: @road_bright;    
+        med/line-color: @road_med;
+        bright/line-color: @road_bright;    
       [zoom>=16] {
         med/line-width: @link - @med;
         bright/line-width: @link - @bright;
@@ -144,7 +147,8 @@
         }           
       } 
     [class='main'] {
-      bright/line-color: @road_bright;    
+        bright/line-color: @road_bright;  
+        med/line-color: @road_med;
       [zoom>=16] {
         med/line-width: @main - @med;
         bright/line-width: @main - @bright;
@@ -158,10 +162,10 @@
         bright/line-width: @main - @bright - @zoom18;
         }
       } 
-    [class='street'][zoom>=12],
-    [class='street_limited'][zoom>=12]
+    [class='street'][zoom>=12]
       {
-      bright/line-color: @road_bright;    
+        bright/line-color: @road_bright;    
+        med/line-color: @road_med;        
       [zoom>=16] {
         med/line-width: .5;
         bright/line-width: .75;        
@@ -176,24 +180,27 @@
         }
       }
     [class='service'][zoom>=15], 
-    [class='path'][zoom>=15]   {
-      bright/line-color: @road_bright;           
+    [class='path'][zoom>=15],
+    [class='street_limited'][zoom>=12]
+        // I'm not including the @road_bright lines here
+        // because I think it's too bright
+      {
+        med/line-color: @road_med;        
       [zoom>=16] {
         med/line-width: 1;
-        bright/line-width: 1;
         }
       [zoom>=17] {
-        med/line-width: 1.25;
-        bright/line-width: 1.125;        
+        med/line-width: 1.5;
         }
       [zoom>=18] {
-        med/line-width: 2.25;
-        bright/line-width: 2.125;        
+        med/line-width: 2.5;
         }       
-      }    
+      }   
    } 
   }
 }
+
+///////// Railroads
 
 #road, #bridge {
   [type='rail'] {

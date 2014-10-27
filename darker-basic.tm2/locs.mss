@@ -1,3 +1,8 @@
+
+
+
+/////////// Old POI
+/*
 #poi_label {
   [maki='restaurant'] {
     marker-file: url("src/restaurant-18.svg");
@@ -62,4 +67,4 @@
     marker-line-color: @road_drkst;
     marker-line-width: 2;            
     }  
-  }
+  } */
