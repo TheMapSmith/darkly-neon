@@ -80,38 +80,38 @@
 #waterway_label {
   text-name: @name;
   text-face-name: @serif_italic;
-  text-fill: @water_bright;
+  text-fill: @water_drkst;
   text-character-spacing: 7;
   text-placement: line;
   text-avoid-edges: true;
-  text-halo-fill: fadeout(@water_drk, 90%);  
+  text-halo-fill: fadeout(@water_bright, 80%);  
   text-halo-rasterizer: fast;  
   [class!='river'] {
     [zoom>=16] {
       text-size: 13;    
-      text-halo-radius: 2;          
+      text-halo-radius: 3;          
       }
     [zoom>=17] {
       text-size: 15;    
-      text-halo-radius: 3;                
+      text-halo-radius: 4;                
       }
     [zoom>=18] {
       text-size: 17;    
-      text-halo-radius: 4;                
+      text-halo-radius: 5;                
       }
     }
   [class='river'] {
     [zoom>=16] {
       text-size: 16;    
-      text-halo-radius: 3;          
+      text-halo-radius: 4;          
       }
     [zoom>=17] {
       text-size: 18;    
-      text-halo-radius: 4;                
+      text-halo-radius: 5;                
       }
     [zoom>=18] {
       text-size: 20;    
-      text-halo-radius: 5;                
+      text-halo-radius: 6;                
       }    
     }
   }

@@ -5,6 +5,9 @@ S: 30.2362
 E: -97.7315
 N: 30.2487 */
 
+// Right now I'm struggling to get the bright fill to be aligned
+// For some reason there's a break between bridge/road
+
 // Languages: name (local), name_en, name_fr, name_es, name_de
 @name: '[name_en]';
 
