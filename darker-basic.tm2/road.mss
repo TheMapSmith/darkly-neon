@@ -2,7 +2,7 @@
 
 #road, #bridge { 
   // exclude railroads and golf
-  [type!='rail'][class!='golf'] {
+  [type!='rail'][class!='golf'][type!='cycleway'] {
     // casing/outlines & single lines 
   ::case[zoom>=6]['mapnik::geometry_type'=2] { 
    [class='motorway'] {      
@@ -20,14 +20,14 @@
         med/line-width: @max - @med;
         }
       [zoom>=17] {
-        drkst/line-width: @max - @drkst - @zoom17;
-        drk/line-width: @max - @drk - @zoom17;
-        med/line-width: @max - @med - @zoom17;        
+        drkst/line-width: @max - @drkst - (@zoom17 * 1.5);
+        drk/line-width: @max - @drk - (@zoom17 * 1.5);
+        med/line-width: @max - @med - (@zoom17 * 1.5);        
         }
       [zoom>=18] {
-        drkst/line-width: @max - @drkst - @zoom18;
-        drk/line-width: @max - @drk  - @zoom18;
-        med/line-width: @max - @med  - @zoom18;        
+        drkst/line-width: @max - @drkst - (@zoom18 * 1.5);
+        drk/line-width: @max - @drk  - (@zoom18 * 1.5);
+        med/line-width: @max - @med  - (@zoom18 * 1.5);        
         }
       } 
     [class='motorway_link'][zoom>=13] {
@@ -45,14 +45,14 @@
         med/line-width: @link - @med;
         }
       [zoom>=17] {
-        drkst/line-width: @link - @drkst - @zoom17;
-        drk/line-width: @link - @drk - @zoom17;
-        med/line-width: @link - @med - @zoom17;        
+        drkst/line-width: @link - @drkst - (@zoom17 * 1.5);
+        drk/line-width: @link - @drk - (@zoom17 * 1.5);
+        med/line-width: @link - @med - (@zoom17 * 1.5);        
         }
       [zoom>=18] {
-        drkst/line-width: @link - @drkst - @zoom18;
-        drk/line-width: @link - @drk  - @zoom18;
-        med/line-width: @link - @med  - @zoom18;        
+        drkst/line-width: @link - @drkst - (@zoom18 * 2);
+        drk/line-width: @link - @drk  - (@zoom18 * 2);
+        med/line-width: @link - @med  - (@zoom18 * 2);        
         }      
       } 
     [class='main'] {
@@ -70,14 +70,14 @@
         med/line-width: @main - @med;
         }
       [zoom>=17] {
-        drkst/line-width: @main - @drkst - @zoom17;
-        drk/line-width: @main - @drk - @zoom17;
-        med/line-width: @main - @med - @zoom17;        
+        drkst/line-width: @main - @drkst - (@zoom17 * 1.5);
+        drk/line-width: @main - @drk - (@zoom17 * 1.5);
+        med/line-width: @main - @med - (@zoom17 * 1.5);
         }
       [zoom>=18] {
-        drkst/line-width: @main - @drkst - @zoom18;
-        drk/line-width: @main - @drk  - @zoom18;
-        med/line-width: @main - @med  - @zoom18;        
+        drkst/line-width: @main - @drkst - (@zoom18 * 2);
+        drk/line-width: @main - @drk  - (@zoom18 * 2);
+        med/line-width: @main - @med  - (@zoom18 * 2);        
         }      
       } 
     [class='street'][zoom>=12] {
@@ -95,14 +95,14 @@
         med/line-width: @street - @med;
         }
       [zoom>=17] {
-        drkst/line-width: @street - @drkst; // - @zoom17;
-        drk/line-width: @street - @drk; // - @zoom17;
-        med/line-width: @street - @med; // - @zoom17;        
+        drkst/line-width: @street - @drkst - (@zoom17 * 1.5);
+        drk/line-width: @street - @drk - (@zoom17 * 1.5);
+        med/line-width: @street - @med - (@zoom17 * 1.5); 
         }
       [zoom>=18] {
-        drkst/line-width: @street - @drkst; // - @zoom17;
-        drk/line-width: @street - @drk; //  - @zoom17;
-        med/line-width: @street - @med; //  - @zoom17;        
+        drkst/line-width: @street - @drkst - (@zoom18 * 2);
+        drk/line-width: @street - @drk - (@zoom18 * 2);
+        med/line-width: @street - @med - (@zoom18 * 2);
         }       
       }
     [class='service'][zoom>=15],
@@ -122,14 +122,14 @@
         med/line-width: @service - @med;
         }
       [zoom>=17] {
-        drkst/line-width: @service - @drkst; // - @zoom17;
-        drk/line-width: @service - @drk; // - @zoom17;
-        med/line-width: @service - @med; // - @zoom17;        
+        drkst/line-width: @service - @drkst - @zoom17;
+        drk/line-width: @service - @drk - @zoom17;
+        med/line-width: @service - @med - @zoom17;        
         }
       [zoom>=18] {
-        drkst/line-width: @service - @drkst; // - @zoom17;
-        drk/line-width: @service - @drk; //  - @zoom17;
-        med/line-width: @service - @med; //  - @zoom17;        
+        drkst/line-width: @service - @drkst - @zoom18;
+        drk/line-width: @service - @drk - @zoom18;
+        med/line-width: @service - @med - @zoom18;        
         }       
       } 
     } 
@@ -160,20 +160,35 @@
       } 
     [class='street'][zoom>=12],
     [class='street_limited'][zoom>=12] {
-        line-gamma: .6;
-        line-color: @road_med;
-      [zoom>=16] { line-width: 1.5; }
-      [zoom>=17] { line-width: 2.0; }
-      [zoom>=18] { line-width: 2.5; }
+        med/line-gamma: .6;
+        med/line-color: @road_med;
+      [zoom>=16] { med/line-width: 1.5; }
+      [zoom>=17] { 
+          med/line-width: 2.0 - @zoom17;           
+          bright/line-color: @road_bright;
+          bright/line-width: .1 - @zoom17;
+        }
+      [zoom>=18] { 
+          med/line-width: 2.5 - @zoom18; 
+        }
       } 
     [class='service'][zoom>=15], 
     [class='path'][zoom>=15],
     [class='street_limited'][zoom>=12] {
-        line-gamma: .6;
-        line-color: @road_med;        
-      [zoom>=16] { line-width: 1.0; }
-      [zoom>=17] { line-width: 1.5; }
-      [zoom>=18] { line-width: 2.5; }       
+        med/line-gamma: .6;
+        med/line-color: @road_med;        
+      [zoom>=16] { med/line-width: 1.0; }
+      [zoom>=17] { 
+          med/line-width: 1.5 - @zoom17; 
+          bright/line-color: @road_bright;
+          bright/line-width: .1 - @zoom17;
+        }
+      [zoom>=18] { 
+          med/line-width: 2.5 - @zoom18; 
+          bright/line-color: @road_bright;
+          bright/line-width: .1 - @zoom17;
+        
+        }       
       }   
     }  
   } 
@@ -229,3 +244,12 @@
       }
   }
 }
+
+#road, #bridge {
+  [type='cycleway'] {
+    line-color: white;
+    line-width: 5;
+    line-join: round;
+    line-cap: round;
+    }
+  }

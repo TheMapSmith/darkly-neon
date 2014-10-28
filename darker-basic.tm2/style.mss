@@ -3,7 +3,12 @@ Zoom: 16
 W: -97.7599
 S: 30.2362
 E: -97.7315
-N: 30.2487 */
+N: 30.2487 
+
+Center: 30.2625, -97.7457
+11005w x 12327h
+
+*/
 
 // Right now I'm struggling to get the bright fill to be aligned
 // For some reason there's a break between bridge/road
@@ -81,18 +86,18 @@ N: 30.2487 */
 @zoom13: 6;
 @zoom14: 5;
 @zoom15: 3;
-@zoom16: -3; // subtracting a negative = adding
-@zoom17: -5;
-@zoom18: -11; //[zoom>=18]
+@zoom16: -3; // subtracting a negative = adding -3
+@zoom17: -5; //-5
+@zoom18: -7; //[zoom>=18] -11
 
 
 // Road Agg Blur Ratios
 // When exporting @2x or @4x the agg stack will have 
 // to be larger. Change these before exporting
 
-@agg: 1; //@1x - for normal viewing
+//@agg: 1; //@1x - for normal viewing
 //@agg: 2; //@2x
-//@agg: 4; //@4x
+@agg: 4; //@4x
 
 @fadeout: @agg + 90;
 
