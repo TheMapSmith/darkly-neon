@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.7457,30.2625,16</Parameter>
+  <Parameter name="center">-97.713,30.3208,17</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">20</Parameter>
   <Parameter name="minzoom">14</Parameter>
@@ -61,7 +61,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="landuse-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="landuse-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -110,7 +110,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
   </Rule>
 </Style>
-<Style name="waterway-case" filter-mode="first" image-filters="agg-stack-blur(12,12),agg-stack-blur(4,4),agg-stack-blur(4,4)" image-filters-inflate="true">
+<Style name="waterway-case" filter-mode="first" image-filters="agg-stack-blur(3,3),agg-stack-blur(1,1),agg-stack-blur(1,1)" image-filters-inflate="true">
   <Rule>
     <LineSymbolizer stroke-linejoin="round" />
     <LineSymbolizer stroke="#3152b4" stroke-width="9" stroke-linecap="round" />
@@ -135,7 +135,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="waterway-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="waterway-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -172,7 +172,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.5" />
   </Rule>
 </Style>
-<Style name="water-fill" filter-mode="first" image-filters="agg-stack-blur(12,12),agg-stack-blur(4,4),agg-stack-blur(4,4)" image-filters-inflate="true">
+<Style name="water-fill" filter-mode="first" image-filters="agg-stack-blur(3,3),agg-stack-blur(1,1),agg-stack-blur(1,1)" image-filters-inflate="true">
   <Rule>
     <LineSymbolizer stroke="#3152b4" stroke-width="12" />
     <LineSymbolizer stroke="#6a9bef" stroke-width="10" />
@@ -196,7 +196,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="water-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="water-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -253,7 +253,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="aeroway-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="aeroway-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -299,7 +299,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="barrier_line-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="barrier_line-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -350,7 +350,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="building-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="building-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -396,7 +396,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="landuse_overlay-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="landuse_overlay-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -441,7 +441,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="tunnel-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="tunnel-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -491,15 +491,15 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -516,15 +516,15 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -541,15 +541,15 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -566,15 +566,15 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="4" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="7" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1.5" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -705,7 +705,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="road-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="road-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -728,7 +728,7 @@
     <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
-<Style name="road-case" filter-mode="first" image-filters="agg-stack-blur(12,12),agg-stack-blur(8,8),agg-stack-blur(4,4),agg-stack-blur(12,12),agg-stack-blur(8,8),agg-stack-blur(4,4),agg-stack-blur(12,12),agg-stack-blur(8,8),agg-stack-blur(4,4),agg-stack-blur(12,12),agg-stack-blur(8,8),agg-stack-blur(4,4),agg-stack-blur(12,12),agg-stack-blur(8,8),agg-stack-blur(4,4)" image-filters-inflate="true">
+<Style name="road-case" filter-mode="first" image-filters="agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
@@ -1039,15 +1039,15 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1064,15 +1064,15 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1089,15 +1089,15 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1114,15 +1114,15 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="4" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="7" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="5.1" />
+    <LineSymbolizer stroke-width="1.5" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1253,7 +1253,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="bridge-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="bridge-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -1276,7 +1276,7 @@
     <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
-<Style name="bridge-case" filter-mode="first" image-filters="agg-stack-blur(12,12),agg-stack-blur(8,8),agg-stack-blur(4,4),agg-stack-blur(12,12),agg-stack-blur(8,8),agg-stack-blur(4,4),agg-stack-blur(12,12),agg-stack-blur(8,8),agg-stack-blur(4,4),agg-stack-blur(12,12),agg-stack-blur(8,8),agg-stack-blur(4,4),agg-stack-blur(12,12),agg-stack-blur(8,8),agg-stack-blur(4,4)" image-filters-inflate="true">
+<Style name="bridge-case" filter-mode="first" image-filters="agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
@@ -1583,7 +1583,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="admin-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="admin-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -1628,7 +1628,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="country_label_line-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="country_label_line-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -1673,7 +1673,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="country_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="country_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -1718,7 +1718,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="marine_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="marine_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -1763,7 +1763,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="state_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="state_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -1808,7 +1808,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="place_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="place_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -2428,7 +2428,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="water_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="water_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -2473,7 +2473,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="poi_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="poi_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -2665,7 +2665,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="road_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="road_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -2765,7 +2765,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="waterway_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="waterway_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -2792,115 +2792,115 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([class] = 'grass')</Filter>
-    <TextSymbolizer size="17" halo-radius="5" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="17" halo-radius="5" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([class] = 'grass')</Filter>
-    <TextSymbolizer size="15" halo-radius="4" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="15" halo-radius="4" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass')</Filter>
-    <TextSymbolizer size="13" halo-radius="3" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="13" halo-radius="3" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([class] = 'grass')</Filter>
-    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
-    <TextSymbolizer size="17" halo-radius="5" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="17" halo-radius="5" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
-    <TextSymbolizer size="15" halo-radius="4" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="15" halo-radius="4" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
-    <TextSymbolizer size="13" halo-radius="3" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="13" halo-radius="3" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
-    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([class] = 'park')</Filter>
-    <TextSymbolizer size="17" halo-radius="5" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="17" halo-radius="5" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([class] = 'park')</Filter>
-    <TextSymbolizer size="15" halo-radius="4" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="15" halo-radius="4" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park')</Filter>
-    <TextSymbolizer size="13" halo-radius="3" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="13" halo-radius="3" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([class] = 'park')</Filter>
-    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([class] = 'river')</Filter>
-    <TextSymbolizer size="20" halo-radius="6" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="20" halo-radius="6" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([class] = 'river')</Filter>
-    <TextSymbolizer size="18" halo-radius="5" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="18" halo-radius="5" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'river')</Filter>
-    <TextSymbolizer size="16" halo-radius="4" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="16" halo-radius="4" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([class] = 'river')</Filter>
-    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([class] != 'river')</Filter>
-    <TextSymbolizer size="17" halo-radius="5" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="17" halo-radius="5" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([class] != 'river')</Filter>
-    <TextSymbolizer size="15" halo-radius="4" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="15" halo-radius="4" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] != 'river')</Filter>
-    <TextSymbolizer size="13" halo-radius="3" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="13" halo-radius="3" fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([class] != 'river')</Filter>
-    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.06000000000000005)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-5" fill="#3152b4" character-spacing="7" placement="line" avoid-edges="true" halo-fill="rgba(186, 237, 243, 0.08999999999999997)" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="waterway_label"
@@ -2926,7 +2926,7 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
-<Style name="housenum_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+<Style name="housenum_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#030c00" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />

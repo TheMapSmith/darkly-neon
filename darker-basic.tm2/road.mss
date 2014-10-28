@@ -1,5 +1,3 @@
-/////////////// Roads
-
 #road, #bridge { 
   // exclude railroads and golf
   [type!='rail'][class!='golf'][type!='cycleway'] {
@@ -82,13 +80,15 @@
       } 
     [class='street'][zoom>=12] {
         line-gamma: .6;
-        image-filters-inflate: true;        
         drkst/line-color: @road_drkst;
         drkst/image-filters: agg-stack-blur(3 * @agg, 3 * @agg);
         drk/line-color: @road_drk;
         drk/image-filters: agg-stack-blur(2 * @agg, 2 * @agg);
         med/line-color: @road_med;        
         med/image-filters: agg-stack-blur(1 * @agg, 1 * @agg);                    
+        drkst/image-filters-inflate: true;
+        drk/image-filters-inflate: true;
+        med/image-filters-inflate: true;        
       [zoom>=16] {
         drkst/line-width: @street - @drkst;
         drk/line-width: @street - @drk;
@@ -104,7 +104,7 @@
         drk/line-width: @street - @drk - (@zoom18 * 2);
         med/line-width: @street - @med - (@zoom18 * 2);
         }       
-      }
+      } 
     [class='service'][zoom>=15],
     [class='path'][zoom>=15],
     [class='street_limited'][zoom>=12] {
@@ -164,12 +164,11 @@
         med/line-color: @road_med;
       [zoom>=16] { med/line-width: 1.5; }
       [zoom>=17] { 
-          med/line-width: 2.0 - @zoom17;           
           bright/line-color: @road_bright;
-          bright/line-width: .1 - @zoom17;
+          bright/line-width: 3;
         }
       [zoom>=18] { 
-          med/line-width: 2.5 - @zoom18; 
+          med/line-width: 4; 
         }
       } 
     [class='service'][zoom>=15], 
@@ -179,15 +178,12 @@
         med/line-color: @road_med;        
       [zoom>=16] { med/line-width: 1.0; }
       [zoom>=17] { 
-          med/line-width: 1.5 - @zoom17; 
           bright/line-color: @road_bright;
-          bright/line-width: .1 - @zoom17;
+          bright/line-width: 1;
         }
       [zoom>=18] { 
-          med/line-width: 2.5 - @zoom18; 
           bright/line-color: @road_bright;
-          bright/line-width: .1 - @zoom17;
-        
+          bright/line-width: 2;
         }       
       }   
     }  

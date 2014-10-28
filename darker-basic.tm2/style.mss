@@ -95,9 +95,9 @@ Center: 30.2625, -97.7457
 // When exporting @2x or @4x the agg stack will have 
 // to be larger. Change these before exporting
 
-//@agg: 1; //@1x - for normal viewing
+@agg: 1; //@1x - for normal viewing
 //@agg: 2; //@2x
-@agg: 4; //@4x
+//@agg: 4; //@4x
 
 @fadeout: @agg + 90;
 
