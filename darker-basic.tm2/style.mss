@@ -94,6 +94,8 @@ N: 30.2487 */
 //@agg: 2; //@2x
 //@agg: 4; //@4x
 
+@fadeout: @agg + 90;
+
 // Map
 
 Map { background-color: @land; }

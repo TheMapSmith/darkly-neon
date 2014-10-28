@@ -84,7 +84,7 @@
   text-character-spacing: 7;
   text-placement: line;
   text-avoid-edges: true;
-  text-halo-fill: fadeout(@water_bright, 80%);  
+  text-halo-fill: fadeout(@water_bright, @fadeout);  
   text-halo-rasterizer: fast;  
   [class!='river'] {
     [zoom>=16] {
