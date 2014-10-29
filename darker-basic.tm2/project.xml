@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.713,30.3208,17</Parameter>
+  <Parameter name="center">-97.7371,30.2745,18</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">20</Parameter>
   <Parameter name="minzoom">14</Parameter>
@@ -469,6 +469,32 @@
     <StyleName>tunnel-outlinefuzz</StyleName>
     <StyleName>tunnel-outlinecrisp</StyleName>  </Layer>
 
+<Style name="road-fills" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#df6237" stroke-dasharray="3, 5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke="#df6237" stroke-dasharray="3, 5" />
+  </Rule>
+</Style>
+<Style name="road-cases" filter-mode="first" image-filters="agg-stack-blur(5,5)" image-filters-inflate="true">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke="#7e0a13" stroke-width="2" />
+  </Rule>
+</Style>
 <Style name="road" filter-mode="first">
   <Rule>
     <Filter>([class] = 'grass') and ([type] = 'cycleway')</Filter>
@@ -490,171 +516,171 @@
 <Style name="road-fill" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-width="4" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-width="1.5" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-width="1.5" stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="10" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="3" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-width="9" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-width="7" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-width="2" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="13" stroke-gamma="0.6" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="11" stroke-gamma="0.6" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="6" stroke-gamma="0.6" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
@@ -731,7 +757,7 @@
 <Style name="road-case" filter-mode="first" image-filters="agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="11" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="9" stroke="#d82830" />
@@ -740,7 +766,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="9" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="7" stroke="#d82830" />
@@ -749,7 +775,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="2" stroke="#d82830" />
@@ -758,7 +784,7 @@
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -766,7 +792,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="11" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="9" stroke="#d82830" />
@@ -775,7 +801,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="9" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="7" stroke="#d82830" />
@@ -784,7 +810,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="2" stroke="#d82830" />
@@ -793,7 +819,7 @@
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -801,7 +827,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="11" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="9" stroke="#d82830" />
@@ -810,7 +836,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="9" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="7" stroke="#d82830" />
@@ -819,7 +845,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="2" stroke="#d82830" />
@@ -828,7 +854,7 @@
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -836,7 +862,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="20" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="18" stroke="#d82830" />
@@ -845,7 +871,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="13.5" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="11.5" stroke="#d82830" />
@@ -854,7 +880,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="6" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="4" stroke="#d82830" />
@@ -863,7 +889,7 @@
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -871,7 +897,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="23" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="21" stroke="#d82830" />
@@ -880,7 +906,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="16.5" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="14.5" stroke="#d82830" />
@@ -889,7 +915,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="9" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="7" stroke="#d82830" />
@@ -898,7 +924,7 @@
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -906,7 +932,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="22" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="20" stroke="#d82830" />
@@ -915,7 +941,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="15.5" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="13.5" stroke="#d82830" />
@@ -924,7 +950,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="8" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="6" stroke="#d82830" />
@@ -933,7 +959,7 @@
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -941,7 +967,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="22.5" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="20.5" stroke="#d82830" />
@@ -950,7 +976,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="19.5" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="17.5" stroke="#d82830" />
@@ -959,7 +985,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="12" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="10" stroke="#d82830" />
@@ -968,7 +994,7 @@
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -1015,8 +1041,36 @@
     <StyleName>road-outlinefuzz</StyleName>
     <StyleName>road-outlinecrisp</StyleName>
     <StyleName>road-fill</StyleName>
-    <StyleName>road</StyleName>  </Layer>
+    <StyleName>road</StyleName>
+    <StyleName>road-cases</StyleName>
+    <StyleName>road-fills</StyleName>  </Layer>
 
+<Style name="bridge-fills" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#df6237" stroke-dasharray="3, 5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke="#df6237" stroke-dasharray="3, 5" />
+  </Rule>
+</Style>
+<Style name="bridge-cases" filter-mode="first" image-filters="agg-stack-blur(5,5)" image-filters-inflate="true">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke="#7e0a13" stroke-width="2" />
+  </Rule>
+</Style>
 <Style name="bridge" filter-mode="first">
   <Rule>
     <Filter>([class] = 'grass') and ([type] = 'cycleway')</Filter>
@@ -1038,171 +1092,171 @@
 <Style name="bridge-fill" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-gamma="0.6" stroke="#df6237" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
-    <LineSymbolizer stroke="#f3d437" stroke-width="1" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+    <LineSymbolizer stroke="#f3d437" stroke-width="1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-gamma="0.6" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-gamma="0.6" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-width="4" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-width="1.5" stroke-gamma="0.6" stroke="#df6237" />
     <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-width="1.5" stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="10" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="3" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-width="9" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-width="7" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-width="2" stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="13" stroke-gamma="0.6" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="11" stroke-gamma="0.6" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="6" stroke-gamma="0.6" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-gamma="0.6" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
@@ -1279,7 +1333,7 @@
 <Style name="bridge-case" filter-mode="first" image-filters="agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1),agg-stack-blur(3,3),agg-stack-blur(2,2),agg-stack-blur(1,1)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="11" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="9" stroke="#d82830" />
@@ -1288,7 +1342,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="9" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="7" stroke="#d82830" />
@@ -1297,7 +1351,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="2" stroke="#d82830" />
@@ -1306,7 +1360,7 @@
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -1314,7 +1368,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="11" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="9" stroke="#d82830" />
@@ -1323,7 +1377,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="9" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="7" stroke="#d82830" />
@@ -1332,7 +1386,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="2" stroke="#d82830" />
@@ -1341,7 +1395,7 @@
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -1349,7 +1403,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="11" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="9" stroke="#d82830" />
@@ -1358,7 +1412,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="9" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="7" stroke="#d82830" />
@@ -1367,7 +1421,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="2" stroke="#d82830" />
@@ -1376,7 +1430,7 @@
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -1384,7 +1438,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="20" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="18" stroke="#d82830" />
@@ -1393,7 +1447,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="13.5" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="11.5" stroke="#d82830" />
@@ -1402,7 +1456,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="6" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="4" stroke="#d82830" />
@@ -1411,7 +1465,7 @@
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -1419,7 +1473,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="23" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="21" stroke="#d82830" />
@@ -1428,7 +1482,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="16.5" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="14.5" stroke="#d82830" />
@@ -1437,7 +1491,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="9" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="7" stroke="#d82830" />
@@ -1446,7 +1500,7 @@
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -1454,7 +1508,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="22" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="20" stroke="#d82830" />
@@ -1463,7 +1517,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="15.5" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="13.5" stroke="#d82830" />
@@ -1472,7 +1526,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="8" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="6" stroke="#d82830" />
@@ -1481,7 +1535,7 @@
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'main')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -1489,7 +1543,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="22.5" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="20.5" stroke="#d82830" />
@@ -1498,7 +1552,7 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="19.5" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="17.5" stroke="#d82830" />
@@ -1507,7 +1561,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke-width="12" stroke="#7e0a13" />
     <LineSymbolizer stroke-width="10" stroke="#d82830" />
@@ -1516,7 +1570,7 @@
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([mapnik::geometry_type] = 2) and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-gamma="0.6" />
     <LineSymbolizer stroke="#7e0a13" />
     <LineSymbolizer stroke="#d82830" />
@@ -1564,7 +1618,9 @@
     <StyleName>bridge-outlinefuzz</StyleName>
     <StyleName>bridge-outlinecrisp</StyleName>
     <StyleName>bridge-fill</StyleName>
-    <StyleName>bridge</StyleName>  </Layer>
+    <StyleName>bridge</StyleName>
+    <StyleName>bridge-cases</StyleName>
+    <StyleName>bridge-fills</StyleName>  </Layer>
 
 <Style name="admin-outlinecrisp" filter-mode="first">
   <Rule>

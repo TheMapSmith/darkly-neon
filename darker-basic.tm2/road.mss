@@ -1,17 +1,19 @@
 #road, #bridge { 
   // exclude railroads and golf
-  [type!='rail'][class!='golf'][type!='cycleway'] {
+  [type!='rail'][class!='golf'][type!='cycleway'][type!='footway'] {
     // casing/outlines & single lines 
   ::case[zoom>=6]['mapnik::geometry_type'=2] { 
    [class='motorway'] {      
-        line-gamma: .6;
-        image-filters-inflate: true;        
+        line-gamma: .6;  
         drkst/line-color: @road_drkst;
         drkst/image-filters: agg-stack-blur(4 * @agg, 4 * @agg);
+        drkst/image-filters-inflate: true;        
         drk/line-color: @road_drk;
         drk/image-filters: agg-stack-blur(3 * @agg, 3 * @agg);
+        drk/image-filters-inflate: true;        
         med/line-color: @road_med;        
         med/image-filters: agg-stack-blur(2 * @agg, 2 * @agg);            
+        med/image-filters-inflate: true;        
       [zoom>=16] {
         drkst/line-width: @max - @drkst;
         drk/line-width: @max - @drk;
@@ -29,14 +31,16 @@
         }
       } 
     [class='motorway_link'][zoom>=13] {
-        line-gamma: .6;
-        image-filters-inflate: true;        
+        line-gamma: .6;     
         drkst/line-color: @road_drkst;
         drkst/image-filters: agg-stack-blur(3 * @agg, 3 * @agg);
+        drkst/image-filters-inflate: true;        
         drk/line-color: @road_drk;
         drk/image-filters: agg-stack-blur(2 * @agg, 2 * @agg);
+        drk/image-filters-inflate: true;        
         med/line-color: @road_med;        
         med/image-filters: agg-stack-blur(1 * @agg, 1 * @agg);                    
+        med/image-filters-inflate: true;        
       [zoom>=16] {
         drkst/line-width: @link - @drkst;
         drk/line-width: @link - @drk;
@@ -247,5 +251,22 @@
     line-width: 5;
     line-join: round;
     line-cap: round;
+    }
+  }
+
+#road, #bridge {
+  [zoom>=17][type='footway'] {
+    ::cases {
+      line-color: @road_drkst;
+      line-width: 2;
+      image-filters: agg-stack-blur(5,5);
+      image-filters-inflate: true;
+      [zoom>=18] { line-width: 4;}
+      }
+    ::fills {
+      line-color: @road_med;
+      line-dasharray: 3,5;        
+      [zoom>=18] { line-width: 2;}      
+      }
     }
   }

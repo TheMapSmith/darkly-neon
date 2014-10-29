@@ -8,6 +8,9 @@ N: 30.2487
 Center: 30.2625, -97.7457
 11005w x 12327h
 
+For the final export, re-export the road fills 
+and overlay in Photoshop because the agg-stack-blur
+interrupts the smooth top
 */
 
 // Right now I'm struggling to get the bright fill to be aligned
