@@ -16,65 +16,53 @@
     shield-size: 11;
     shield-file: url("img/motorway_[reflen]x1.svg");
   }
+  [zoom>=18] {
+    shield-spacing: 400;
+    shield-size: 16;
+    shield-file: url("img/motorway_[reflen]x1.svg");    
+    }
 }
 
 #road_label { 
   ::case[zoom>=6]{
     [class='main'][name=~'^((?!Frontage).)*$'] { //this regex is for eliminating "frontage" labels 
-      one/text-name: @name;
-      one/text-placement: line;
-      one/text-face-name: @sans_bold;
-      one/text-fill: @road_bright;
-      one/text-size: (@max - @drk) * 1.5;
-      one/text-avoid-edges: true;
-      one/text-halo-radius: 2;
-      one/text-halo-fill: @road_drk;
-      one/text-min-distance: 10000;
-      one/text-min-padding: 25;
-      one/text-transform:lowercase;
+      text-name: @name;
+      text-placement: line;
+      text-face-name: @sans_bold;
+      text-fill: @road_bright;
+      text-avoid-edges: true;
+      text-halo-radius: 2;
+      text-halo-fill: @road_drk;
+      text-min-distance: 10000;
+      text-min-padding: 25;
+      text-transform:lowercase;
+      [zoom>=16] {
+        text-size: (@max - @drk) * 1.5;
+        }
+      [zoom>=18] {
+        text-size: (@max - @drkst) * 1.5;
+        }        
       } 
     [class='street'][zoom>=12],[class='street_limited'][zoom>=12] {
-      one/text-name: @name;
-      one/text-placement: line;
-      one/text-face-name: @sans_italic;
-      one/text-fill: @road_med * 1.5;
-      one/text-size: (@max - @drk) + 3;
-      one/text-avoid-edges: true;
-      one/text-halo-radius: 1;
-      one/text-halo-fill: @road_drkst * 1.5;
-      one/text-min-distance: 10000;      
-      one/text-min-padding: 25;      
-      one/text-transform:lowercase;
+      text-name: @name;
+      text-placement: line;
+      text-face-name: @sans_italic;
+      text-fill: @road_med * 1.5;
+      text-avoid-edges: true;
+      text-halo-radius: 1;
+      text-halo-fill: @road_drkst * 1.5;
+      text-min-distance: 10000;      
+      text-min-padding: 25;      
+      text-transform:lowercase;
+      [zoom>=16] {
+        text-size: (@max - @drk) + 3;        
+        }
+      [zoom>=18] {
+        text-face-name: @sans_black_italic;        
+        text-size: (@max - @drkst) + 6;
+        }
       } 
-    [class='service'][zoom>=15] {
-    
-      } 
-    [class='path'][zoom>=15] {
-    
-      } 
-    }
-  
-  // fill/inlines
-  ::fill[zoom>=6]['mapnik::geometry_type'=2] {
-    [class='motorway'] {
-    
-      }
-    [class='motorway_link'][zoom>=13] {
-    
-      } 
-    [class='main'] {
-    
-      } 
-    [class='street'][zoom>=12],[class='street_limited'][zoom>=12] {
-    
-      }
-    [class='service'][zoom>=15] {
-    
-      } 
-    [class='path'][zoom>=15] {
-    
-    }   
-  } 
+   }
 }
 
 #waterway_label {

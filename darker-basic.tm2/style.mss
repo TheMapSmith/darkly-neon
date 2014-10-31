@@ -29,6 +29,7 @@ interrupts the smooth top
 @serif_bold: 'Meta Serif Offc Pro Bold',@fallback;
 @serif_italic: 'Meta Serif Offc Pro Italic',@fallback;
   
+
 // Common Colors //
 
 @land: rgb(29, 21, 48);
@@ -53,6 +54,10 @@ interrupts the smooth top
 @rail_med: rgb(153,138,245);
 @rail_drk: rgb(73,66,117);
 @rail_drkst: darken(@rail_drk, 20);
+
+@cycle_bright: rgb(229,47,53);
+@cycle_med: rgb(152,31,35);
+@cycle_drk: rgb(88,18,20);
 
 // Line Widths
 // Starting with @max, road widths are systematically subtracted

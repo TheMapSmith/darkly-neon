@@ -247,10 +247,28 @@
 
 #road, #bridge {
   [type='cycleway'] {
-    line-color: white;
-    line-width: 5;
     line-join: round;
-    line-cap: round;
+    line-cap: round; 
+    [zoom>=16] {
+      drk/line-color: @cycle_drk;
+      drk/line-width: @max - @drk - 3;
+      med/line-color: @cycle_med;
+      med/line-width: @max - @med - 3;
+      bright/line-color: @cycle_bright;
+      bright/line-width: @max - @bright - 3;
+      white/line-color: white;
+      white/line-width: 1.5;      
+      }
+    [zoom>=18] {
+      drk/line-color: @cycle_drk;
+      drk/line-width: @max - @drk;
+      med/line-color: @cycle_med;
+      med/line-width: @max - @med;
+      bright/line-color: @cycle_bright;
+      bright/line-width: @max - @bright;
+      white/line-color: white;
+      white/line-width: 1.5;
+      }
     }
   }
 
