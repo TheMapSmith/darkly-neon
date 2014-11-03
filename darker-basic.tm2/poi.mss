@@ -1,5 +1,5 @@
 // --- places ------------------------------------
-#place_label[type='city'][localrank<=2]{
+#place_label[type='city'][localrank<=2][name!='Austin']{
   text-name: @name;
   text-face-name: @sans_bold;
   text-halo-fill: @road_drk;
@@ -66,6 +66,7 @@
   }
 }
 
+/* temp remove wheatpaste labels while trying osm bright pois
 // --- pois ------------------------------------
 #poi_label[scalerank=1][zoom>=14],
 #poi_label[scalerank=2][zoom>=16],
@@ -91,6 +92,7 @@
   text-halo-radius: 2.5;
   text-halo-rasterizer: fast;
   text-avoid-edges: true;
+  text-min-padding: 5; //i added this to keep Sam Houston from doubling
   text-transform: lowercase;
   text-wrap-width: 80;
   text-placement-type: simple;
@@ -98,4 +100,4 @@
   text-placements: NE,SE,NW,SW;
   text-dx: 5;
   text-dx: -5;
-}
+} */

@@ -19,7 +19,8 @@
   [zoom>=18] {
     shield-spacing: 400;
     shield-size: 16;
-    shield-file: url("img/motorway_[reflen]x1.svg");    
+    shield-file: url("img/motorway_[reflen]x1.svg");
+    shield-transform: scale(1.3,1.3);
     }
 }
 
@@ -58,7 +59,7 @@
         text-size: (@max - @drk) + 3;        
         }
       [zoom>=18] {
-        text-face-name: @sans_black_italic;        
+        text-face-name: @sans_med_italic;        
         text-size: (@max - @drkst) + 6;
         }
       } 

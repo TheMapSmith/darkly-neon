@@ -21,11 +21,16 @@ interrupts the smooth top
 
 // Fonts //
 @fallback: 'Open Sans Regular';
+
 @sans: 'Avenir Book', 'Source Sans Pro Regular', @fallback;
+@sans_med: 'Avenir Medium', @fallback;
+@sans_bold: 'Avenir Heavy','Source Sans Pro Semibold', @fallback;
+
 @sans_italic: 'Avenir Book Oblique','Source Sans Pro Italic', @fallback;
-@sans_bold: 'Avenir Medium','Source Sans Pro Semibold', @fallback;
+@sans_med_italic: 'Avenir Medium Oblique', @fallback;
 @sans_black_italic: 'Avenir Black Oblique', @fallback;
 @sans_bold_italic: 'Avenir Heavy Oblique',@fallback;
+
 @serif_bold: 'Meta Serif Offc Pro Bold',@fallback;
 @serif_italic: 'Meta Serif Offc Pro Italic',@fallback;
   
@@ -220,7 +225,21 @@ Map { background-color: @land; }
   line-color: lighten(@building, 10);
   line-gamma: .5;
   line-width: .5;
-  }
+  [zoom>=18] {
+    ::wall { 
+	  polygon-fill:mix(@building, @land, 85); 
+	}
+    ::roof {
+      polygon-fill: @building;
+      polygon-geometry-transform:translate(-2,-2.5);
+      polygon-clip:false;  
+      line-width: 0.5;
+      line-color: mix(@building, #000, 85);
+      line-geometry-transform:translate(-2,-2.5);
+      line-clip:false;
+     }
+   }
+ }
 
 /////////////// Airport
 

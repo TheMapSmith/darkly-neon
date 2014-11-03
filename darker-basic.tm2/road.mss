@@ -158,6 +158,7 @@
     [class='main'] { 
         line-gamma: .6;
         line-color: @road_bright;
+        line-cap: round; // this is to make street corners with non-main streets look smoother like W 12th near capital
       [zoom>=16] { line-width: @main - @bright; }
       [zoom>=17] { line-width: @main - @bright - @zoom17; }
       [zoom>=18] { line-width: @main - @bright - @zoom18; }
@@ -245,6 +246,8 @@
   }
 }
 
+/////// Cycleway
+
 #road, #bridge {
   [type='cycleway'] {
     line-join: round;
@@ -260,17 +263,27 @@
       white/line-width: 1.5;      
       }
     [zoom>=18] {
-      drk/line-color: @cycle_drk;
-      drk/line-width: @max - @drk;
-      med/line-color: @cycle_med;
-      med/line-width: @max - @med;
-      bright/line-color: @cycle_bright;
-      bright/line-width: @max - @bright;
-      white/line-color: white;
-      white/line-width: 1.5;
+      ::case {
+        drk/line-color: @cycle_drk;
+        drk/line-width: @max - @drk;
+        drk/image-filters: agg-stack-blur(3 * @agg, 3 * @agg);
+        drk/image-filters-inflate: true;
+        med/line-color: @cycle_med;
+        med/line-width: @max - @med;
+        med/image-filters: agg-stack-blur(2 * @agg, 2 * @agg);
+        med/image-filters-inflate: true;
+        }
+      ::fill {
+        bright/line-color: @cycle_bright;
+        bright/line-width: @max - @bright;
+//        white/line-color: white;
+//        white/line-width: 1.5;        
+        }
       }
     }
   }
+
+//////// Footway
 
 #road, #bridge {
   [zoom>=17][type='footway'] {
