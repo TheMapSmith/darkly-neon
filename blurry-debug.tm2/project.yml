@@ -1,5 +1,4 @@
 _prefs: 
-  mapid: srsjojo.4e8d7947
   saveCenter: true
 _properties: 
   bridge: 
@@ -11,22 +10,19 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -97.7407
-  - 30.2671
+  - -97.7395
+  - 30.2748
   - 16
 description: ''
-format: png24
+format: "png8:m=h"
 interactivity_layer: ''
 layers: null
-maxzoom: 20
-minzoom: 16
-name: Neon Avast
+maxzoom: 22
+minzoom: 0
+name: ''
 source: "mapbox:///mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
-  - labels.mss
-  - poi.mss
   - road.mss
-  - locs.mss
-  - top.mss
+  - rdtst.mss
 template: ''
