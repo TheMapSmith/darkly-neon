@@ -99,9 +99,9 @@ interrupts the smooth top
 @zoom13: 6;
 @zoom14: 5;
 @zoom15: 3;
-@zoom16: -3; // subtracting a negative = adding -3
-@zoom17: -5; //-5
-@zoom18: -7; //[zoom>=18] -11
+@zoom16: 0; // subtracting a negative = adding -3
+@zoom17: -3; //-5
+@zoom18: -5; //[zoom>=18] -11
 
 
 // Road Agg Blur Ratios

@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.7395,30.2748,16</Parameter>
+  <Parameter name="center">-97.7394,30.2756,17</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -45,39 +45,93 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
+<Style name="road-fills" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" />
+  </Rule>
+</Style>
+<Style name="road-cases" filter-mode="first" image-filters="agg-stack-blur(5,5)" image-filters-inflate="true">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke="#7e0a13" stroke-width="2" />
+  </Rule>
+</Style>
+<Style name="road-fill/brightwhite" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#edeafb" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#edeafb" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#edeafb" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#edeafb" />
+  </Rule>
+  <Rule>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke="#ffffff" />
+  </Rule>
+</Style>
 <Style name="road-fill/med" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="#f3d437" stroke-width="1.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke="#f3d437" stroke-width="1.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-width="1" />
   </Rule>
   <Rule>
@@ -113,19 +167,41 @@
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-width="1.5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="10" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="8" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="5" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#998af5" />
   </Rule>
 </Style>
 <Style name="road-fill/bright" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="9" stroke="#f3d437" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="7" stroke="#f3d437" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="5" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -141,13 +217,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-width="10" stroke="#f3d437" />
+    <LineSymbolizer stroke-width="8" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-width="8" stroke="#f3d437" />
+    <LineSymbolizer stroke-width="6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -163,13 +239,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="13" stroke="#f3d437" />
+    <LineSymbolizer stroke-width="11" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="11" stroke="#f3d437" />
+    <LineSymbolizer stroke-width="9" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -182,41 +258,62 @@
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#f3d437" />
   </Rule>
-</Style>
-<Style name="road-case/med" filter-mode="first" image-filters="agg-stack-blur(6,6),agg-stack-blur(4,6),agg-stack-blur(2,6)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="10.5" stroke="#df6237" />
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="8" stroke="#dad5f6" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="7.5" stroke="#df6237" />
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="6" stroke="#dad5f6" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="0" stroke="#df6237" />
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#dad5f6" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke="#df6237" />
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#dad5f6" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="7" stroke="#e52f35" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="5" stroke="#e52f35" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#e52f35" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke="#e52f35" stroke-linecap="round" />
+  </Rule>
+</Style>
+<Style name="road-case/med" filter-mode="first" image-filters="agg-stack-blur(6,6),agg-stack-blur(4,6),agg-stack-blur(2,6)" image-filters-inflate="true">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="10.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="7.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="7.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="4.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -233,13 +330,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="10.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="7.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="7.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="4.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -255,14 +352,37 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="7.5" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="4.5" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="0" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="12.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="9.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="9.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="6.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -279,13 +399,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="14.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="8.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -302,13 +422,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="15.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="12.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="12.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="9.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -325,13 +445,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="18.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="15.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="15.5" stroke="#df6237" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="12.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -345,64 +465,62 @@
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#df6237" />
   </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="12.5" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="9.5" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="5" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="9.5" stroke="#981f23" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="6.5" stroke="#981f23" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="2" stroke="#981f23" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke="#981f23" />
+  </Rule>
 </Style>
 <Style name="road-case/drk" filter-mode="first" image-filters="agg-stack-blur(7,7),agg-stack-blur(5,5),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="12.5" stroke="#d82830" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="9.5" stroke="#d82830" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="2" stroke="#d82830" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke="#d82830" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="12.5" stroke="#d82830" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="9.5" stroke="#d82830" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="2" stroke="#d82830" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke="#d82830" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="12.5" stroke="#d82830" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="9.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="9.5" stroke="#d82830" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="6.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -418,14 +536,60 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="9.5" stroke="#d82830" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="6.5" stroke="#d82830" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="2" stroke="#d82830" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke="#d82830" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="9.5" stroke="#d82830" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="6.5" stroke="#d82830" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="2" stroke="#d82830" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke="#d82830" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="14.5" stroke="#d82830" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#d82830" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="8.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -442,13 +606,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="16.5" stroke="#d82830" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="13.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="13.5" stroke="#d82830" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="10.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -465,13 +629,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="17.5" stroke="#d82830" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="14.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="14.5" stroke="#d82830" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -488,13 +652,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="20.5" stroke="#d82830" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="17.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="17.5" stroke="#d82830" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="14.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -508,18 +672,62 @@
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#d82830" />
   </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="14.5" stroke="#494275" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#494275" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="7" stroke="#494275" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#494275" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#581214" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="8.5" stroke="#581214" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="4" stroke="#581214" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke="#581214" />
+  </Rule>
 </Style>
 <Style name="road-case/drkst" filter-mode="first" image-filters="agg-stack-blur(8,8),agg-stack-blur(6,6),agg-stack-blur(4,4)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="14.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="8.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -536,13 +744,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="14.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="8.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -559,13 +767,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="14.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="11.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="8.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -582,13 +790,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="16.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="13.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="13.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="10.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -605,13 +813,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="18.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="15.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="15.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="12.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -628,13 +836,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="19.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="16.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="16.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="13.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -651,13 +859,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="22.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="19.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="19.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-linecap="square" stroke-width="16.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -671,6 +879,28 @@
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#7e0a13" />
   </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="16.5" stroke="#201d34" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="13.5" stroke="#201d34" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="9" stroke="#201d34" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#201d34" />
+  </Rule>
 </Style>
 <Layer name="road"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
@@ -678,41 +908,98 @@
     <StyleName>road-case/drk</StyleName>
     <StyleName>road-case/med</StyleName>
     <StyleName>road-fill/bright</StyleName>
-    <StyleName>road-fill/med</StyleName>  </Layer>
+    <StyleName>road-fill/med</StyleName>
+    <StyleName>road-fill/brightwhite</StyleName>
+    <StyleName>road-cases</StyleName>
+    <StyleName>road-fills</StyleName>  </Layer>
 
+<Style name="bridge-fills" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" />
+  </Rule>
+</Style>
+<Style name="bridge-cases" filter-mode="first" image-filters="agg-stack-blur(5,5)" image-filters-inflate="true">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'footway')</Filter>
+    <LineSymbolizer stroke="#7e0a13" stroke-width="2" />
+  </Rule>
+</Style>
+<Style name="bridge-fill/brightwhite" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#edeafb" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#edeafb" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#edeafb" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#edeafb" />
+  </Rule>
+  <Rule>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke="#ffffff" />
+  </Rule>
+</Style>
 <Style name="bridge-fill/med" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="#f3d437" stroke-width="1.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-width="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke="#f3d437" stroke-width="3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke="#f3d437" stroke-width="1.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-width="1" />
   </Rule>
   <Rule>
@@ -748,19 +1035,41 @@
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-width="1.5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="10" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="8" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="5" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#998af5" />
   </Rule>
 </Style>
 <Style name="bridge-fill/bright" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="9" stroke="#f3d437" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="7" stroke="#f3d437" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="5" stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -776,13 +1085,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-width="10" stroke="#f3d437" />
+    <LineSymbolizer stroke-width="8" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-width="8" stroke="#f3d437" />
+    <LineSymbolizer stroke-width="6" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -798,13 +1107,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="13" stroke="#f3d437" />
+    <LineSymbolizer stroke-width="11" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="11" stroke="#f3d437" />
+    <LineSymbolizer stroke-width="9" stroke="#f3d437" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -817,18 +1126,108 @@
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#f3d437" />
   </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="8" stroke="#dad5f6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="6" stroke="#dad5f6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#dad5f6" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#dad5f6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="7" stroke="#e52f35" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="5" stroke="#e52f35" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#e52f35" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke="#e52f35" stroke-linecap="round" />
+  </Rule>
 </Style>
 <Style name="bridge-case/med" filter-mode="first" image-filters="agg-stack-blur(6,6),agg-stack-blur(4,6),agg-stack-blur(2,6)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-width="7.5" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-width="4.5" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="7.5" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="4.5" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="10.5" stroke="#df6237" />
+    <LineSymbolizer stroke-width="7.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#df6237" />
+    <LineSymbolizer stroke-width="4.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -844,60 +1243,14 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="10.5" stroke="#df6237" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#df6237" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#df6237" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke="#df6237" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="10.5" stroke="#df6237" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#df6237" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#df6237" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke="#df6237" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="12.5" stroke="#df6237" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-width="9.5" stroke="#df6237" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
+    <LineSymbolizer stroke-width="6.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -914,13 +1267,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="14.5" stroke="#df6237" />
+    <LineSymbolizer stroke-width="11.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="11.5" stroke="#df6237" />
+    <LineSymbolizer stroke-width="8.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -937,13 +1290,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-width="15.5" stroke="#df6237" />
+    <LineSymbolizer stroke-width="12.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-width="12.5" stroke="#df6237" />
+    <LineSymbolizer stroke-width="9.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -960,13 +1313,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="18.5" stroke="#df6237" />
+    <LineSymbolizer stroke-width="15.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="15.5" stroke="#df6237" />
+    <LineSymbolizer stroke-width="12.5" stroke="#df6237" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -980,18 +1333,62 @@
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#df6237" />
   </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="12.5" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="9.5" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="5" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="9.5" stroke="#981f23" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="6.5" stroke="#981f23" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#981f23" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke="#981f23" />
+  </Rule>
 </Style>
 <Style name="bridge-case/drk" filter-mode="first" image-filters="agg-stack-blur(7,7),agg-stack-blur(5,5),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="12.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="9.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="6.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1008,13 +1405,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="12.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="9.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="6.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1031,13 +1428,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="12.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="9.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="6.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1054,13 +1451,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="14.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="11.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="11.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="8.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1077,13 +1474,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="16.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="13.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="13.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="10.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1100,13 +1497,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-width="17.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="14.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-width="14.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="11.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1123,13 +1520,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="20.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="17.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="17.5" stroke="#d82830" />
+    <LineSymbolizer stroke-width="14.5" stroke="#d82830" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1143,18 +1540,108 @@
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#d82830" />
   </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="14.5" stroke="#494275" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="11.5" stroke="#494275" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="7" stroke="#494275" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#494275" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="11.5" stroke="#581214" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="8.5" stroke="#581214" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#581214" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'cycleway')</Filter>
+    <LineSymbolizer stroke="#581214" />
+  </Rule>
 </Style>
 <Style name="bridge-case/drkst" filter-mode="first" image-filters="agg-stack-blur(8,8),agg-stack-blur(6,6),agg-stack-blur(4,4)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="11.5" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="8.5" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-width="11.5" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-width="8.5" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="14.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-width="11.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
-    <LineSymbolizer stroke-width="11.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-width="8.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1170,60 +1657,14 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="14.5" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="11.5" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="14.5" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="11.5" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="16.5" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-width="13.5" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
+    <LineSymbolizer stroke-width="10.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1240,13 +1681,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="18.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-width="15.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="15.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-width="12.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1263,13 +1704,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-width="19.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-width="16.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke-width="16.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-width="13.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1286,13 +1727,13 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="22.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-width="19.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="19.5" stroke="#7e0a13" />
+    <LineSymbolizer stroke-width="16.5" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -1306,6 +1747,28 @@
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#7e0a13" />
   </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="16.5" stroke="#201d34" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="13.5" stroke="#201d34" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="9" stroke="#201d34" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke="#201d34" />
+  </Rule>
 </Style>
 <Layer name="bridge"
   group-by="layer"
@@ -1314,7 +1777,10 @@
     <StyleName>bridge-case/drk</StyleName>
     <StyleName>bridge-case/med</StyleName>
     <StyleName>bridge-fill/bright</StyleName>
-    <StyleName>bridge-fill/med</StyleName>  </Layer>
+    <StyleName>bridge-fill/med</StyleName>
+    <StyleName>bridge-fill/brightwhite</StyleName>
+    <StyleName>bridge-cases</StyleName>
+    <StyleName>bridge-fills</StyleName>  </Layer>
 
 <Layer name="admin"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
