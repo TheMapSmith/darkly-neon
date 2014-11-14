@@ -1,3 +1,4 @@
+/* commented out to put in the new road
 #road, #bridge { 
   // exclude railroads and golf
   [type!='rail'][class!='golf'][type!='cycleway'][type!='footway'] {
@@ -300,4 +301,4 @@
       [zoom>=18] { line-width: 2;}      
       }
     }
-  }
+  } */
