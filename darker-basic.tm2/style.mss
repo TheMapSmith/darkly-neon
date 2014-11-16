@@ -1,4 +1,8 @@
-/* Export Settings
+/* 
+TODO
+Retaining walls a la auditorium shores
+
+Export Settings
 Zoom: 16
 W: -97.7599
 S: 30.2362

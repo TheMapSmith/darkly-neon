@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.7457,30.2625,16</Parameter>
+  <Parameter name="center">-97.7379,30.2594,18</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">20</Parameter>
   <Parameter name="minzoom">16</Parameter>
@@ -488,6 +488,30 @@
     <StyleName>tunnel-outlinefuzz</StyleName>
     <StyleName>tunnel-outlinecrisp</StyleName>  </Layer>
 
+<Style name="road-fill/hatched" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="7" stroke-dasharray="1, 8" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="5" stroke-dasharray="1, 8" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-dasharray="1, 8" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-dasharray="1, 8" stroke="#998af5" />
+  </Rule>
+</Style>
 <Style name="road-fills" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -657,46 +681,46 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#e99b37" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#e99b37" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
     <LineSymbolizer stroke="#e99b37" stroke-width="1" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
     <LineSymbolizer stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#e99b37" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#e99b37" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke="#e99b37" stroke-width="1" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke="#f3d437" stroke-linecap="round" />
   </Rule>
   <Rule>
@@ -1227,52 +1251,6 @@
 <Style name="road-case/drkst" filter-mode="first" image-filters="agg-stack-blur(8,8),agg-stack-blur(6,6),agg-stack-blur(4,4)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="10" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="7" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="4" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="10" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="7" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-linecap="square" stroke-width="4" stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke="#7e0a13" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-linecap="square" stroke-width="10" stroke="#7e0a13" />
   </Rule>
@@ -1292,6 +1270,52 @@
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
+    <LineSymbolizer stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="10" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="7" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="4" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="10" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="7" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-linecap="square" stroke-width="4" stroke="#7e0a13" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="#7e0a13" />
   </Rule>
   <Rule>
@@ -1421,8 +1445,33 @@
     <StyleName>road-fill/bright</StyleName>
     <StyleName>road-fill/brightwhite</StyleName>
     <StyleName>road-cases</StyleName>
-    <StyleName>road-fills</StyleName>  </Layer>
+    <StyleName>road-fills</StyleName>
+    <StyleName>road-fill/hatched</StyleName>  </Layer>
 
+<Style name="bridge-fill/hatched" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="7" stroke-dasharray="1, 8" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="5" stroke-dasharray="1, 8" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-dasharray="1, 8" stroke="#998af5" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'rail')</Filter>
+    <LineSymbolizer stroke-dasharray="1, 8" stroke="#998af5" />
+  </Rule>
+</Style>
 <Style name="bridge-fills" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -2357,7 +2406,8 @@
     <StyleName>bridge-fill/bright</StyleName>
     <StyleName>bridge-fill/brightwhite</StyleName>
     <StyleName>bridge-cases</StyleName>
-    <StyleName>bridge-fills</StyleName>  </Layer>
+    <StyleName>bridge-fills</StyleName>
+    <StyleName>bridge-fill/hatched</StyleName>  </Layer>
 
 <Style name="admin-outlinecrisp" filter-mode="first">
   <Rule>
@@ -2627,24 +2677,24 @@
 <Style name="place_label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([class] = 'grass') and ([type] = 'neighbourhood')</Filter>
+    <Filter>([class] = 'grass') and ([type] = 'village')</Filter>
     <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'grass') and ([type] = 'neighbourhood')</Filter>
+    <Filter>([class] = 'grass') and ([type] = 'village')</Filter>
     <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([class] = 'grass') and ([type] = 'village')</Filter>
+    <Filter>([class] = 'grass') and ([type] = 'neighbourhood')</Filter>
     <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'grass') and ([type] = 'village')</Filter>
+    <Filter>([class] = 'grass') and ([type] = 'neighbourhood')</Filter>
     <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2709,29 +2759,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer size="24" orientation="4" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer orientation="4" size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
     <TextSymbolizer size="24" orientation="4" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
@@ -2751,6 +2778,29 @@
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="24" orientation="4" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer orientation="4" size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'grass') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
     <TextSymbolizer fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2764,24 +2814,24 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([class] = 'pitch') and ([type] = 'neighbourhood')</Filter>
+    <Filter>([class] = 'pitch') and ([type] = 'village')</Filter>
     <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'pitch') and ([type] = 'neighbourhood')</Filter>
+    <Filter>([class] = 'pitch') and ([type] = 'village')</Filter>
     <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([class] = 'pitch') and ([type] = 'village')</Filter>
+    <Filter>([class] = 'pitch') and ([type] = 'neighbourhood')</Filter>
     <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'pitch') and ([type] = 'village')</Filter>
+    <Filter>([class] = 'pitch') and ([type] = 'neighbourhood')</Filter>
     <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2846,29 +2896,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer size="24" orientation="4" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer orientation="4" size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
     <TextSymbolizer size="24" orientation="4" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
@@ -2888,6 +2915,29 @@
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="24" orientation="4" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer orientation="4" size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'pitch') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
     <TextSymbolizer fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2901,24 +2951,24 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([class] = 'park') and ([type] = 'neighbourhood')</Filter>
+    <Filter>([class] = 'park') and ([type] = 'village')</Filter>
     <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'park') and ([type] = 'neighbourhood')</Filter>
+    <Filter>([class] = 'park') and ([type] = 'village')</Filter>
     <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([class] = 'park') and ([type] = 'village')</Filter>
+    <Filter>([class] = 'park') and ([type] = 'neighbourhood')</Filter>
     <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'park') and ([type] = 'village')</Filter>
+    <Filter>([class] = 'park') and ([type] = 'neighbourhood')</Filter>
     <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2983,29 +3033,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer size="24" orientation="4" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer orientation="4" size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
-    <TextSymbolizer fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 1)</Filter>
     <TextSymbolizer size="24" orientation="4" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
@@ -3028,6 +3055,29 @@
     <TextSymbolizer fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="24" orientation="4" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer orientation="4" size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer size="20" fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'park') and ([type] = 'town') and ([localrank] &lt;= 3)</Filter>
+    <TextSymbolizer fontset-name="fontset-2" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="16" wrap-width="80" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <Filter>([class] = 'park') and ([type] != 'city') and ([type] != 'town')</Filter>
     <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
@@ -3038,24 +3088,24 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'neighbourhood')</Filter>
+    <Filter>([type] = 'village')</Filter>
     <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'neighbourhood')</Filter>
+    <Filter>([type] = 'village')</Filter>
     <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'village')</Filter>
+    <Filter>([type] = 'neighbourhood')</Filter>
     <TextSymbolizer size="18" orientation="5" fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'village')</Filter>
+    <Filter>([type] = 'neighbourhood')</Filter>
     <TextSymbolizer fontset-name="fontset-0" halo-fill="#d82830" halo-radius="3" halo-rasterizer="fast" size="14" line-spacing="-2" wrap-width="50" text-transform="lowercase" fill="#f3d437" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3242,6 +3292,18 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
+<Style name="poi_label-label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] != 'Antone\'s') and ([name] != 'Fonda San Miguel') and ([name] != 'Halcyon') and ([name] != 'HandleBar') and ([name] != 'Home Slice Pizza') and ([name] != 'More Home Slice Pizza') and ([name] != 'Houndstooth Coffee') and ([name] != 'Magnolia Cafe') and ([name] != 'Pinthouse Pizza') and ([name] != 'Rio Rita') and ([name] != 'South Congress Cafe') and ([name] != 'Summermoon Coffee Bar') and ([name] != 'Tacodeli') and ([name] != 'Uchiko') and ([name] != 'Whole Foods') and ([name] != 'Torchy\'s Tacos') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="14" fontset-name="fontset-3" size="13" fill="#f3d437" halo-fill="rgba(126, 10, 19, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] != 'Antone\'s') and ([name] != 'Fonda San Miguel') and ([name] != 'Halcyon') and ([name] != 'HandleBar') and ([name] != 'Home Slice Pizza') and ([name] != 'More Home Slice Pizza') and ([name] != 'Houndstooth Coffee') and ([name] != 'Magnolia Cafe') and ([name] != 'Pinthouse Pizza') and ([name] != 'Rio Rita') and ([name] != 'South Congress Cafe') and ([name] != 'Summermoon Coffee Bar') and ([name] != 'Tacodeli') and ([name] != 'Uchiko') and ([name] != 'Whole Foods') and ([name] != 'Torchy\'s Tacos')</Filter>
+    <TextSymbolizer fontset-name="fontset-3" size="13" fill="#f3d437" halo-fill="rgba(126, 10, 19, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
 <Style name="poi_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'grass')</Filter>
@@ -3265,126 +3327,324 @@
     <LineSymbolizer stroke="#33d703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
-<Style name="poi_label-Toplabel" filter-mode="first">
+<Style name="poi_label-icon" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'The Driskill') and ([maki] != null)</Filter>
+    <Filter>([maki] != null) and ([name] != 'Antone\'s') and ([name] != 'Fonda San Miguel') and ([name] != 'Halcyon') and ([name] != 'HandleBar') and ([name] != 'Home Slice Pizza') and ([name] != 'More Home Slice Pizza') and ([name] != 'Houndstooth Coffee') and ([name] != 'Magnolia Cafe') and ([name] != 'Pinthouse Pizza') and ([name] != 'Rio Rita') and ([name] != 'South Congress Cafe') and ([name] != 'Summermoon Coffee Bar') and ([name] != 'Tacodeli') and ([name] != 'Uchiko') and ([name] != 'Whole Foods') and ([name] != 'Torchy\'s Tacos')</Filter>
+    <MarkersSymbolizer fill="#f3d437" file="icon/[maki]-18.svg" />
+  </Rule>
+</Style>
+<Style name="poi_label-Toplabel" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Fonda San Miguel') and ([maki] != null)</Filter>
     <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Halcyon') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'HandleBar') and ([maki] != null)</Filter>
     <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Blind Pig') and ([maki] != null)</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Home Slice Pizza') and ([maki] != null)</Filter>
     <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Parish') and ([maki] != null)</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'More Home Slice Pizza') and ([maki] != null)</Filter>
     <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Iron Cactus') and ([maki] != null)</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Houndstooth Coffee') and ([maki] != null)</Filter>
     <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Blind Pig')</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Magnolia Cafe') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Pinthouse Pizza') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Rio Rita') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'South Congress Cafe') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Summermoon Coffee Bar') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Tacodeli') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Whole Foods') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Torchy\'s Tacos') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'The Elephant Room') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'The Gingerman') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Cantina Laredo') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Alamo Drafthouse') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Uchiko') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Antone\'s') and ([maki] != null)</Filter>
+    <TextSymbolizer dy="20" fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Tacodeli')</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Parish')</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Home Slice Pizza')</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Iron Cactus')</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'More Home Slice Pizza')</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'The Driskill')</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Houndstooth Coffee')</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Magnolia Cafe')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Pinthouse Pizza')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Rio Rita')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'South Congress Cafe')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Summermoon Coffee Bar')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'HandleBar')</Filter>
     <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
-</Style>
-<Style name="poi_label-label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] != 'Parish') and ([name] != 'Iron Cactus') and ([name] != 'The Driskill') and ([name] != 'HandleBar') and ([maki] != null)</Filter>
-    <TextSymbolizer dy="14" fontset-name="fontset-3" size="13" fill="#f3d437" halo-fill="rgba(126, 10, 19, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Uchiko')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] != 'Parish') and ([name] != 'Iron Cactus') and ([name] != 'The Driskill') and ([name] != 'HandleBar') and ([name] != 'Blind Pig') and ([maki] != null)</Filter>
-    <TextSymbolizer fontset-name="fontset-3" size="13" fill="#f3d437" halo-fill="rgba(126, 10, 19, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="14" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Whole Foods')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] != 'Parish') and ([name] != 'Iron Cactus') and ([name] != 'The Driskill') and ([name] != 'HandleBar')</Filter>
-    <TextSymbolizer fontset-name="fontset-3" size="13" fill="#f3d437" halo-fill="rgba(126, 10, 19, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Torchy\'s Tacos')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] != 'Blind Pig') and ([maki] != null)</Filter>
-    <TextSymbolizer dy="14" fontset-name="fontset-3" size="13" fill="#f3d437" halo-fill="rgba(126, 10, 19, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'The Elephant Room')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] != 'Blind Pig')</Filter>
-    <TextSymbolizer fontset-name="fontset-3" size="13" fill="#f3d437" halo-fill="rgba(126, 10, 19, 0.19999999999999996)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'The Gingerman')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
-</Style>
-<Style name="poi_label-icon" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([maki] != null) and ([name] != 'Blind Pig') and ([name] != 'Parish') and ([name] != 'Iron Cactus') and ([name] != 'The Driskill') and ([name] != 'HandleBar')</Filter>
-    <MarkersSymbolizer fill="#f3d437" file="icon/[maki]-18.svg" />
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Cantina Laredo')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Alamo Drafthouse')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Antone\'s')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Halcyon')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Fonda San Miguel')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" size="16" fill="#39f103" halo-fill="rgba(27, 113, 1, 0.15000000000000002)" halo-radius="2" halo-rasterizer="fast" wrap-width="30" line-spacing="-5" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="poi_label-Topicon" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([maki] != null) and ([name] = 'Blind Pig')</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'More Home Slice Pizza')</Filter>
     <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([maki] != null) and ([name] = 'Iron Cactus')</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Houndstooth Coffee')</Filter>
     <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([maki] != null) and ([name] = 'The Driskill')</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Magnolia Cafe')</Filter>
     <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([maki] != null) and ([name] = 'HandleBar')</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Pinthouse Pizza')</Filter>
     <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([maki] != null) and ([name] = 'Parish')</Filter>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Rio Rita')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'South Congress Cafe')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Summermoon Coffee Bar')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Tacodeli')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Uchiko')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Whole Foods')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Fonda San Miguel')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Torchy\'s Tacos')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'The Elephant Room')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'The Gingerman')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Cantina Laredo')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Alamo Drafthouse')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Antone\'s')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Halcyon')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'HandleBar')</Filter>
+    <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([name] = 'Home Slice Pizza')</Filter>
     <MarkersSymbolizer fill="#39f103" file="icon/[maki]-24.svg" height="30" />
   </Rule>
 </Style>
 <Layer name="poi_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>poi_label-Topicon</StyleName>
-    <StyleName>poi_label-icon</StyleName>
-    <StyleName>poi_label-label</StyleName>
     <StyleName>poi_label-Toplabel</StyleName>
+    <StyleName>poi_label-icon</StyleName>
     <StyleName>poi_label-outlinefuzz</StyleName>
+    <StyleName>poi_label-label</StyleName>
     <StyleName>poi_label-outlinecrisp</StyleName>  </Layer>
 
 <Style name="road_label-outlinecrisp" filter-mode="first">
@@ -3430,36 +3690,36 @@
 <Style name="road_label-case" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'street_limited')</Filter>
+    <Filter>([class] = 'street')</Filter>
     <TextSymbolizer fontset-name="fontset-4" size="18" placement="line" fill="#ff9353" avoid-edges="true" halo-radius="1" halo-fill="#bd0f1d" minimum-distance="10000" minimum-padding="25" text-transform="lowercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'street_limited')</Filter>
+    <Filter>([class] = 'street')</Filter>
     <TextSymbolizer size="13" placement="line" fontset-name="fontset-5" fill="#ff9353" avoid-edges="true" halo-radius="1" halo-fill="#bd0f1d" minimum-distance="10000" minimum-padding="25" text-transform="lowercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'street_limited')</Filter>
+    <Filter>([class] = 'street')</Filter>
     <TextSymbolizer placement="line" fontset-name="fontset-5" fill="#ff9353" avoid-edges="true" halo-radius="1" halo-fill="#bd0f1d" minimum-distance="10000" minimum-padding="25" text-transform="lowercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'street')</Filter>
+    <Filter>([class] = 'street_limited')</Filter>
     <TextSymbolizer fontset-name="fontset-4" size="18" placement="line" fill="#ff9353" avoid-edges="true" halo-radius="1" halo-fill="#bd0f1d" minimum-distance="10000" minimum-padding="25" text-transform="lowercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'street')</Filter>
+    <Filter>([class] = 'street_limited')</Filter>
     <TextSymbolizer size="13" placement="line" fontset-name="fontset-5" fill="#ff9353" avoid-edges="true" halo-radius="1" halo-fill="#bd0f1d" minimum-distance="10000" minimum-padding="25" text-transform="lowercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'street')</Filter>
+    <Filter>([class] = 'street_limited')</Filter>
     <TextSymbolizer placement="line" fontset-name="fontset-5" fill="#ff9353" avoid-edges="true" halo-radius="1" halo-fill="#bd0f1d" minimum-distance="10000" minimum-padding="25" text-transform="lowercase" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>

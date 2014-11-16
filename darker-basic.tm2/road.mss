@@ -585,7 +585,14 @@
           [zoom>=16] { line-width: 1; }
           [zoom>=17] { line-width: 2; }
           [zoom>=18] { line-width: 3; }        
-        }      
+        }
+      ::hatched {
+        line-dasharray: 1,8;
+        line-color: @rail_med;
+          [zoom>=16] { line-width: @link - @bright; }
+          [zoom>=17] { line-width: @link - @bright - @zoom17; }
+          [zoom>=18] { line-width: @link - @bright - @zoom18; }        
+        }
       } // end fill
     } //end rail
   } //end road
