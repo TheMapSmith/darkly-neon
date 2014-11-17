@@ -1,7 +1,3 @@
-#road { //temp add roads for reference while editing POIs
-  line-color: lighten(@land, 20);
-  }
-
 #poi_label [zoom>=16] {
   ::Topicon {
 		[name="Torchy's Tacos"],[name="Whole Foods"],

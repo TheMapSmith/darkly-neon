@@ -1477,42 +1477,8 @@
     <LineSymbolizer stroke="#201d34" />
   </Rule>
 </Style>
-<Style name="road" filter-mode="first">
-  <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#483477" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#483477" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#483477" />
-  </Rule>
-  <Rule>
-    <Filter>([type] != 'rail') and ([class] != 'golf') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] != 'driveway')</Filter>
-    <LineSymbolizer stroke="#483477" />
-  </Rule>
-  <Rule>
-    <Filter>([type] = 'footway') and ([osm_id] != 255963751) and ([osm_id] != 255963752)</Filter>
-    <LineSymbolizer stroke="#483477" />
-  </Rule>
-  <Rule>
-    <Filter>([type] = 'rail')</Filter>
-    <LineSymbolizer stroke="#483477" />
-  </Rule>
-  <Rule>
-    <Filter>([type] = 'cycleway')</Filter>
-    <LineSymbolizer stroke="#483477" />
-  </Rule>
-  <Rule>
-    <LineSymbolizer stroke="#483477" />
-  </Rule>
-</Style>
 <Layer name="road"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>road</StyleName>
     <StyleName>road-case/drkst</StyleName>
     <StyleName>road-case/drk</StyleName>
     <StyleName>road-case/med</StyleName>
@@ -3391,24 +3357,24 @@
 <Style name="poi_label-uchikoicon" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([osm_id] = 1000003181780245)</Filter>
+    <Filter>([osm_id] = 1000003181780246)</Filter>
     <MarkersSymbolizer stroke-width="8" height="36" allow-overlap="true" fill="#39f103" stroke="#2ab102" file="icon/[maki]-24.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([osm_id] = 1000003181780245)</Filter>
+    <Filter>([osm_id] = 1000003181780246)</Filter>
     <MarkersSymbolizer fill="#39f103" stroke="#2ab102" stroke-width="6" height="32" file="icon/[maki]-24.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([osm_id] = 1000003181780246)</Filter>
+    <Filter>([osm_id] = 1000003181780245)</Filter>
     <MarkersSymbolizer stroke-width="8" height="36" allow-overlap="true" fill="#39f103" stroke="#2ab102" file="icon/[maki]-24.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([osm_id] = 1000003181780246)</Filter>
+    <Filter>([osm_id] = 1000003181780245)</Filter>
     <MarkersSymbolizer fill="#39f103" stroke="#2ab102" stroke-width="6" height="32" file="icon/[maki]-24.svg" />
   </Rule>
   <Rule>
