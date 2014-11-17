@@ -4,27 +4,27 @@
 		[name="Home Slice Pizza"],[name="Hopdoddy"],
 		[name="Tacodeli"][osm_id!=1000003181780245],[name="Magnolia Cafe"],
 		[name="Rudy's Texas Bar-B-Q"],[name="Easy Tiger"],
-		[name="Franklin Barbecue"],[name="Draught House Pub & Brewery"],
+		[name="Franklin Barbecue"],[name="Draught House"],
 		[name="Banger's Sausage House & Beer Garden"],[name="Magnolia Cafe"],
-		[name="Kerbey Lane"],[name="The Mohawk"],
+		[name="Kerbey Lane"],[name="Mohawk"],
 		[name="East Side Pies"],[name="East Side King"],
 		[name="Uchi"],[name="Ramen Tatsu-Ya"],
 		[name="Chi'Lantro"],
-		[name="la Barbecue"],[name="Epoch"],
+		[name="la Barbecue"],[name="Epoch Coffee"],
 		[name="South Congress Cafe"],[name="Mozart's Coffee Roasters"],
 		[name="The Continental Club"],[name="Pinthouse Pizza"],
 		[name="Qui"],[name="Eastside Cafe"],
 		[name="Casino El Camino"],[name="Barley Swine"],
-		[name="Halcyon"],[name="Moonshine Patio Bar & Grill"],
+		[name="Halcyon"],[name="Moonshine Bar & Grill"],
 		[name="G'Raj Mahal"],[name="Fonda San Miguel"],
 		[name="Antone's"],[name="Craft Pride"],
-		[name="Via 313 Pizza"],[name="The Jackalope"],
+        [name="The Jackalope"], //no via 313 icon since it's inside other places
 		[name="Jo's Coffee"],[name="Salty Sow"],
-        [name="Rio Rita"],
+        [name="Rio Rita"],[name="Violet Crown"], //add VC b/c Via 313 inside
 		[name="Clive Bar"],[name="Cactus Cafe"],
 		[name="Icenhauer's"],[name="Donn's Depot"],
 		[name="Bennu Coffee"],[name="HandleBar"],
-		[name="Dominican Joe"],[name="Summermoon Coffee Bar"],
+		[name="Dominican Joe Coffee Shop"],[name="Summermoon Coffee Bar"],
         [name="Alamo Drafthouse"]
       {
       marker-fill:@park_bright;
@@ -39,6 +39,7 @@
         [osm_id=1000002676032286], //home slice
         [osm_id=1000000919336155],// s congress cafe
         [osm_id=1000003181872973], //the continental club
+        [osm_id=1000003181804697] //craft pride
         [name="G'Raj Mahal"]
         { marker-allow-overlap: true; } 
       [zoom>=18] {
@@ -53,27 +54,27 @@
 		[name="Home Slice Pizza"],[name="Hopdoddy"],
         [name="Magnolia Cafe"],
 		[name="Rudy's Texas Bar-B-Q"],[name="Easy Tiger"],
-		[name="Franklin Barbecue"],[name="Draught House Pub & Brewery"],
+		[name="Franklin Barbecue"],[name="Draught House"],
 		[name="Banger's Sausage House & Beer Garden"],[name="Magnolia Cafe"],
-		[name="Kerbey Lane"],[name="The Mohawk"],
+		[name="Kerbey Lane"],[name="Mohawk"],
 		[name="East Side Pies"],[name="East Side King"],
 		[name="Uchi"],[name="Ramen Tatsu-Ya"],
 		[name="Chi'Lantro"],[name="Tacodeli"][osm_id!=1000003181780245],
-		[name="la Barbecue"],[name="Epoch"],
+		[name="la Barbecue"],[name="Epoch Coffee"],
 		[name="South Congress Cafe"],[name="Mozart's Coffee Roasters"],
 		[name="The Continental Club"],[name="Pinthouse Pizza"],
 		[name="Qui"],[name="Eastside Cafe"],
 		[name="Casino El Camino"],[name="Barley Swine"],
-		[name="Halcyon"],[name="Moonshine Patio Bar & Grill"],
+		[name="Halcyon"],[name="Moonshine Bar & Grill"],
 		[name="G'Raj Mahal"],[name="Fonda San Miguel"],
 		[name="Antone's"],[name="Craft Pride"],
-		[name="Via 313 Pizza"],[name="The Jackalope"],
+		[name="Via 313"],[name="The Jackalope"],
 		[name="Jo's Coffee"],[name="Salty Sow"],
-        [name="Rio Rita"],
+        [name="Rio Rita"],[name="Violet Crown"],
 		[name="Clive Bar"],[name="Cactus Cafe"],
 		[name="Icenhauer's"],[name="Donn's Depot"],
 		[name="Bennu Coffee"],[name="HandleBar"],
-		[name="Dominican Joe"],[name="Summermoon Coffee Bar"],
+		[name="Dominican Joe Coffee Shop"],[name="Summermoon Coffee Bar"],
         [name="Alamo Drafthouse"]
       {
       text-name: @name;
@@ -105,7 +106,7 @@
       //second is alamo 6th
       [osm_id=1000003181780233],[name="South Congress Cafe"],[name="Clive Bar"],
         [osm_id=1000001481633325 ],[name="Icenhauer's"],[osm_id=1000003181780244], 
-        [osm_id=1000003181780245]
+        [osm_id=1000003181780245],[name="Craft Pride"]
         {
         text-placements: "W";
         text-allow-overlap: true;
@@ -123,11 +124,26 @@
         }
       
       //north adjusting labels
-      [name="Chi'Lantro"] {
+      [name="Chi'Lantro"],[name="Violet Crown"] {
         text-placements: "N";
         text-allow-overlap: true;
         text-dx: 0; text-dy: 23; 
         [zoom>=18] { text-dx: -22; }        
+        }
+      
+      //via 313 specials
+      [osm_id=1000003190873016] { //rainey
+        text-allow-overlap: true;
+        text-placements: "SW,S";
+        text-dx: -10; text-dy: 20;
+        [zoom>=18] { text-dx: -20; text-dy: 10; }
+        }
+      
+      [osm_id= 1000003190873015 ] { //violet crown
+        text-allow-overlap: true;
+        text-dy: 10;
+        text-placements: "SE";
+        [zoom>=18] { text-placements: "W"; }        
         }
       
       [zoom>=18] {
@@ -168,7 +184,7 @@
 		[name!="The Continental Club"],[name!="Pinthouse Pizza"],
 		[name!="Qui"],[name!="Eastside Cafe"],
 		[name!="Casino El Camino"],[name!="Barley Swine"],
-		[name!="Halcyon"],[name!="Moonshine Patio Bar & Grill"],
+		[name!="Halcyon"],[name!="Moonshine Bar & Grill"],
 		[name!="G'Raj Mahal"],[name!="Fonda San Miguel"],
 		[name!="Antone's"],[name!="Craft Pride"],
 		[name!="Via 313 Pizza"],[name!="The Jackalope"],
@@ -177,7 +193,7 @@
 		[name!="Clive Bar"],[name!="Cactus Cafe"],
 		[name!="Icenhauer's"],[name!="Donn's Depot"],
 		[name!="Bennu Coffee"],[name!="HandleBar"],
-		[name!="Dominican Joe"],[name!="Summermoon Coffee Bar"]
+		[name!="Dominican Joe Coffee Shop"],[name!="Summermoon Coffee Bar"]
         [name!="Alamo Drafthouse"], 
         [name!="Uchiko"]
         [osm_id!=1000003181780246] //houndstooth
@@ -205,7 +221,7 @@
 		[name!="The Continental Club"],[name!="Pinthouse Pizza"],
 		[name!="Qui"],[name!="Eastside Cafe"],
 		[name!="Casino El Camino"],[name!="Barley Swine"],
-		[name!="Halcyon"],[name!="Moonshine Patio Bar & Grill"],
+		[name!="Halcyon"],[name!="Moonshine Bar & Grill"],
 		[name!="G'Raj Mahal"],[name!="Fonda San Miguel"],
 		[name!="Antone's"],[name!="Craft Pride"],
 		[name!="Via 313 Pizza"],[name!="The Jackalope"],
@@ -215,7 +231,7 @@
 		[name!="Icenhauer's"],[name!="Donn's Depot"],
 		[name!="Bennu Coffee"],[name!="HandleBar"],
 		[name!="Dominican Joe"],[name!="Summermoon Coffee Bar"],
-        [name!="Alamo Drafthouse"],
+        [name!="Alamo Drafthouse Coffee Shop"],
         [osm_id!=1000003181780247], //uchiko
         [osm_id!=1000003181780246], //houndstooth
         [osm_id!=1000003181780245] //tacodeli      
