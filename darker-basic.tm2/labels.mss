@@ -174,4 +174,4 @@
     text-size: 18;
     text-orientation: 5;
   }
-}
+} 

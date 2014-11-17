@@ -262,6 +262,83 @@ Map { background-color: @land; }
     }
   }
 
+#barrier_line [zoom>=17] { //mainly for stairs at auditorium shores
+      ::drkst {
+            image-filters-inflate: true;
+            line-color: @road_drkst;
+        [zoom>=16] {
+            line-width: @service - @drkst;
+            image-filters: agg-stack-blur(4 * @agg, 4 * @agg);
+        }
+
+        [zoom>=17] {        
+            line-width: @service - @drkst;
+            image-filters: agg-stack-blur(6 * @agg, 6 * @agg);
+        }
+
+        [zoom>=18] {
+            line-width: @service - @drkst;
+            image-filters: agg-stack-blur(8 * @agg, 8 * @agg);
+        }
+      }
+
+      ::drk {
+            line-color: @road_drk;
+            image-filters-inflate: true;
+        [zoom>=16] {
+            line-width: @service - @drk;
+            image-filters: agg-stack-blur(3 * @agg, 3 * @agg);        
+        }
+
+        [zoom>=17] {
+            line-width: @service - @drk;
+            image-filters: agg-stack-blur(5 * @agg, 5 * @agg);
+        }
+
+        [zoom>=18] {
+            line-width: @service - @drk;
+            image-filters: agg-stack-blur(7 * @agg, 7 * @agg);
+        }
+      }        
+        
+      ::med {
+          image-filters-inflate: true;
+          line-color: @road_med;
+        [zoom>=16] {
+            line-width: @service - @med;
+            image-filters: agg-stack-blur(2 * @agg, 6 * @agg);        
+        }
+
+        [zoom>=17] {
+            line-width: @service - @med;
+            image-filters: agg-stack-blur(4 * @agg, 6 * @agg);
+        }
+
+        [zoom>=18] {
+            line-width: @service - @med;
+            image-filters: agg-stack-blur(6 * @agg, 6 * @agg);
+        }
+      }      // end case
+  
+  ::fill {
+      ::med {
+      line-dasharray: 1,4;
+          [zoom>=16] { 
+            line-color: @road_med;
+            line-width: @path - 2.5; 
+          }
+          [zoom>=17] { 
+            line-color: @road_bright;
+            line-width: @path - 2; }
+          [zoom>=18] { 
+            line-color: @road_bright;
+            line-width: @path - 1; 
+          }
+      } 
+    } //end fill
+  } //end barrier line
+
+
 // Ian's pro tip for stylizing text halos
 /*
 text-halo-fill: fadeout(white, 98%);

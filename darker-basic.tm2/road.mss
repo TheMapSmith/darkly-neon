@@ -1,9 +1,9 @@
 #road, #bridge { 
   // exclude railroads and golf
   [type!='rail'][class!='golf'][type!='cycleway']
-    [type!='footway'][class!='driveway'] {
+    [type!='footway'][class!='driveway'] { 
 
-/*---------------------case---------------------*/
+//---------------------case---------------------
   ::case[zoom>=6] {
 
     [class='motorway'] {
@@ -351,7 +351,7 @@
     } //end service             
   } //end case
 
-/*---------------------fill---------------------*/
+//---------------------fill---------------------
     ::fill { 
       line-color: @road_bright;
       line-cap: round;
@@ -476,7 +476,8 @@
 //////// Footway
 
 #road, #bridge {
-  [zoom>=17][type='footway'] {
+  [zoom>=17][type='footway']    
+    [osm_id!=255963751][osm_id!=255963752]  {
     ::cases {
       line-color: @road_drkst;
       line-width: 2;
@@ -595,4 +596,4 @@
         }
       } // end fill
     } //end rail
-  } //end road
+  } //end road 
