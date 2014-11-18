@@ -144,6 +144,53 @@ interrupts the smooth top
 
 Map { background-color: @land; }
 
+//export extents
+
+#map {
+/* try outline  
+  ::halo {
+    line-color: white;
+    line-width: 6;
+    image-filters: agg-stack-blur(6 * @agg, 6 * @agg);
+    image-filters-inflate: true;
+    opacity: .5;
+    }
+  
+  ::case {
+    line-width: 4;
+    opacity: .7;
+    [Name="Campus"]   { line-color: orange; }
+    [Name="So Co"]    { line-color: white;  }
+    [Name="Capital"]  { line-color: pink;   }
+    [Name="East 6th"] { line-color: green;  }
+    [Name="West 6th"] { line-color: yellow; }
+    [Name="Market"]   { line-color: purple; }
+    [Name="Zilker"]   { line-color: red;    }
+    [Name="East Side"]{ line-color: blue; }
+    }
+  
+  ::slim {
+    line-color: white;
+    line-width: .5;
+    line-gamma: .6;
+    }
+  */
+  
+  //try fill
+  ::fill {
+    opacity: .2;
+    polygon-comp-op: color-burn;
+    [Name="Campus"]   { polygon-fill: orange; }
+    [Name="So Co"]    { polygon-fill: white;  }
+    [Name="Capital"]  { polygon-fill: pink;   }
+    [Name="East 6th"] { polygon-fill: green;  }
+    [Name="West 6th"] { polygon-fill: yellow; }
+    [Name="Market"]   { polygon-fill: purple; }
+    [Name="Zilker"]   { polygon-fill: red;    }
+    [Name="East Side"]{ polygon-fill: blue; }
+    }
+  }
+
 #landuse [class='parking'] {
   polygon-fill: mix(@land, grey, 80%);
   line-color: darken(mix(@land, grey, 80%), 20);

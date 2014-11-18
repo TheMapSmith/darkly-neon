@@ -1,0 +1,27 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: srsjojo.00021560
+  rev: s-f545fb54
+  saveCenter: true
+attribution: ''
+center: 
+  - -97.7539
+  - 30.2686
+  - 16
+description: ''
+Layer: 
+  - id: map
+    Datasource: 
+      file: /Users/spoon/Downloads/map.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: ''
+    fields: 
+      Name: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 16
+minzoom: 16
+name: Export Extents
