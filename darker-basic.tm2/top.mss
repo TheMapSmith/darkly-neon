@@ -25,10 +25,11 @@
 		[name="Icenhauer's"],[name="Donn's Depot"],
 		[name="Bennu Coffee"],[name="HandleBar"],
 		[name="Dominican Joe Coffee Shop"],[name="Summermoon Coffee Bar"],
-        [name="Alamo Drafthouse"]
+        [name="Alamo Drafthouse"],[name="Kung Fu Saloon"],
+      [name="Quack's 43rd Street Bakery"]
       {
-      marker-fill:@park_bright;
-      marker-line-color: @park_drk;
+      marker-fill:@poi_text;
+      marker-line-color: @poi_halo;
       marker-line-width: 6;
       marker-file:url('icon/[maki]-24.svg');
       marker-height: 32;
@@ -39,7 +40,8 @@
         [osm_id=1000002676032286], //home slice
         [osm_id=1000000919336155],// s congress cafe
         [osm_id=1000003181872973], //the continental club
-        [osm_id=1000003181804697] //craft pride
+        [osm_id=1000003181804697], //craft pride
+        [osm_id=10000031817802320], //jackalope
         [name="G'Raj Mahal"]
         { marker-allow-overlap: true; } 
       [zoom>=18] {
@@ -75,13 +77,14 @@
 		[name="Icenhauer's"],[name="Donn's Depot"],
 		[name="Bennu Coffee"],[name="HandleBar"],
 		[name="Dominican Joe Coffee Shop"],[name="Summermoon Coffee Bar"],
-        [name="Alamo Drafthouse"]
+        [name="Alamo Drafthouse"],[name="Kung Fu Saloon"],
+      [name="Quack's 43rd Street Bakery"]
       {
       text-name: @name;
       text-face-name: @sans_bold;
-      text-fill: @park_bright;      
+      text-fill: @poi_text;      
       text-size: 16;
-      text-halo-fill: fadeout(@park_drkst, 85%);
+      text-halo-fill: fadeout(@poi_halo, 85%);
       text-halo-radius: 2;
       text-halo-rasterizer: fast;
       text-wrap-width: 30;
@@ -98,8 +101,12 @@
       [name="Antone's"] { text-placements: "NW"; }
       
       [name="Banger's Sausage House & Beer Garden"] { 
-        text-name: "Bangers"; text-placements: "W"; 
+        text-name: "'Banger\'s'"; text-placements: "W"; 
         text-allow-overlap: true; text-dx: 15; }
+      
+      [name="Quack's 43rd Street Bakery"] {
+        text-name: "'Quack\'s Bakery'";
+        }
       
       //west adjusting labels
       //first is hopdoddy s. congress
@@ -166,7 +173,7 @@
 
 // Points of Interest
 
-/*#poi_label[zoom>=18] {
+#poi_label[zoom>=18] {
   ::icon [maki!=null] {
 //		why the f doesn't this work
         [name!="Torchy's Tacos"],[name!="Whole Foods"],
@@ -254,7 +261,6 @@
       }
   }
 } 
-fuck this guy*/
 
 #poi_label { //special placement for N lamar places 
     [osm_id=1000003181780247], //uchiko
@@ -263,8 +269,8 @@ fuck this guy*/
     {
     ::uchikoicon {
       [zoom>=16] {
-        marker-fill: @park_bright;
-        marker-line-color: @park_drk;
+        marker-fill: @poi_text;
+        marker-line-color: @poi_halo;
         marker-line-width: 6;
         marker-height: 32;
         marker-file:url('icon/[maki]-24.svg');
@@ -280,9 +286,9 @@ fuck this guy*/
       [zoom>=16] {
         text-name: @name;
         text-face-name: @sans_bold;
-        text-fill: @park_bright;      
+        text-fill: @poi_text;      
         text-size: 16;
-        text-halo-fill: fadeout(@park_drkst, 85%);
+        text-halo-fill: fadeout(@poi_halo, 85%);
         text-halo-radius: 2;
         text-halo-rasterizer: fast;
         text-wrap-width: 30;

@@ -41,13 +41,35 @@ interrupts the smooth top
 
 // Common Colors //
 
-@land: rgb(29, 21, 48);
+@land: rgb(48, 37, 75); // original rgb(29, 21, 48);
 @building: lighten(@land, 20);
 
 @road_bright: rgb(243,212,55);
 @road_med: rgb(223, 98, 55);
 @road_drk: rgb(216, 40, 48);
 @road_drkst: rgb(126, 10, 19);
+
+//POI Styles
+
+//lightergreen
+//@poi_text: rgb(159, 230, 138);
+//@poi_halo: rgb(18, 72, 1);
+
+//lightgrey
+//@poi_text: mix(@land, white, 20%); //mix(@park_bright, white, 50%);
+//@poi_halo: @land; //mix(@park_drkst, @park_bright, 50%);
+
+//white
+//@poi_text: white;
+//@poi_halo: @land;
+
+//yellow
+//@poi_text: yellow;
+//@poi_halo: @land;
+
+//water
+@poi_text: @water_bright;
+@poi_halo: @water_drkst;
 
 @park_bright: rgb(57, 241, 3); 
 @park_med: rgb(51, 215, 3);
