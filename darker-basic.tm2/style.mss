@@ -41,8 +41,8 @@ interrupts the smooth top
 
 // Common Colors //
 
-@land: rgb(48, 37, 75); // original rgb(29, 21, 48);
-@building: lighten(@land, 20);
+@land:  rgb(48, 37, 75); //original rgb(29, 21, 48);
+@building: lighten(@land, 40);
 
 @road_bright: rgb(243,212,55);
 @road_med: rgb(223, 98, 55);
@@ -95,12 +95,12 @@ interrupts the smooth top
 // Putting all the widths in one place like this allows easy
 // global changes
 
-@max: 12; //used for motorway
-@link: @max - 3;
-@main: @max - 4;
-@street: @max - 6;
-@service: @max - 8;
-@path: @max - 9;
+@max: 14; //used for motorway
+@link: @max - 1;
+@main: @max - 2;
+@street: @max - 7;
+@service: @max - 9;
+@path: @max - 10;
 
 // Color Width mods
 // These get subtracted from the values above to get the neon glow look
@@ -147,17 +147,17 @@ Map { background-color: @land; }
 //export extents
 
 #map {
-/* try outline  
+/*
   ::halo {
     line-color: white;
-    line-width: 6;
+    line-width: 12;
     image-filters: agg-stack-blur(6 * @agg, 6 * @agg);
     image-filters-inflate: true;
     opacity: .5;
     }
   
   ::case {
-    line-width: 4;
+    line-width: 8;
     opacity: .7;
     [Name="Campus"]   { line-color: orange; }
     [Name="So Co"]    { line-color: white;  }
@@ -174,8 +174,8 @@ Map { background-color: @land; }
     line-width: .5;
     line-gamma: .6;
     }
-  */
-  
+
+*/
   //try fill
 /*  ::fill { nah sucks
     opacity: .2;
@@ -190,9 +190,9 @@ Map { background-color: @land; }
     [Name="East Side"]{ polygon-fill: blue; }
     } */
   //very simple lines to line up print
-  ::linetwo {
-    line-color: @land;
-    }
+//  ::linetwo {
+  //  line-color: @land;
+    //}
   }
 
 #landuse [class='parking'] {
@@ -335,6 +335,7 @@ Map { background-color: @land; }
     }
   }
 
+/*
 #barrier_line [zoom>=17] { //mainly for stairs at auditorium shores
       ::drkst {
             image-filters-inflate: true;
@@ -409,7 +410,7 @@ Map { background-color: @land; }
           }
       } 
     } //end fill
-  } //end barrier line
+  } //end barrier line */
 
 
 // Ian's pro tip for stylizing text halos

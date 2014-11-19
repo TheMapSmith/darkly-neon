@@ -1,0 +1,2 @@
+git export
+http://localhost:3000/static/16/-97.7599,30.2487,-97.7315,30.2762@4x.png?id={tmstyle}

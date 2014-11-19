@@ -47,7 +47,7 @@
         { marker-allow-overlap: true; } 
       [zoom>=18] {
         marker-line-width: 8;
-        marker-height: 36;
+        marker-height: 80;
         }
       }
     }
@@ -156,7 +156,7 @@
         }
       
       [zoom>=18] {
-        text-size: 18;    
+        text-size: 48;    
         text-halo-radius: 4;        
         text-wrap-width: 35;
         text-line-spacing:  -8;
@@ -174,7 +174,7 @@
   }
 
 // Points of Interest
-
+/*
 #poi_label[zoom>=18] {
   ::icon [maki!=null] {
 //		why the f doesn't this work
@@ -263,7 +263,7 @@
       }
   }
 } 
-
+*/
 #poi_label { //special placement for N lamar places 
     [osm_id=1000003181780247], //uchiko
     [osm_id=1000003181780246], //houndstooth

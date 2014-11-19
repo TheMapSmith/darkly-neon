@@ -3,66 +3,60 @@
 #road_label[class='main'][zoom>=8][reflen>=1][reflen<=11] {
   shield-name: "[ref]";
   shield-file: url("img/motorway_[reflen]x1.svg");
-  shield-size: 9;
+  shield-size: 19;
   shield-face-name: @sans_bold;
   shield-fill: #fff;
   shield-spacing: 300;
-  shield-avoid-edges: true;
+//  shield-avoid-edges: true;
   shield-min-padding: 10;
   shield-min-distance: 40;
   [zoom>=12] { shield-min-distance: 80; }
   [zoom>=15] {
     shield-spacing: 400;
-    shield-size: 11;
+    shield-size: 21;
     shield-file: url("img/motorway_[reflen]x1.svg");
+    shield-transform: scale(1.7,1.7);
   }
   [zoom>=18] {
     shield-spacing: 400;
-    shield-size: 16;
+    shield-size: 24;
     shield-file: url("img/motorway_[reflen]x1.svg");
-    shield-transform: scale(1.3,1.3);
+    shield-transform: scale(2.1,2.1);
+    shield-allow-overlap:true;
     }
 }
 
 #road_label { 
-  ::case[zoom>=6]{
     [class='main'][name=~'^((?!Frontage).)*$'] { //this regex is for eliminating "frontage" labels 
       text-name: @name;
       text-placement: line;
       text-face-name: @sans_bold;
       text-fill: @road_bright;
       text-avoid-edges: true;
-      text-halo-radius: 2;
-      text-halo-fill: @road_drk;
-      text-min-distance: 10000;
+      text-halo-fill: fadeout(@road_drkst, @fadeout/2);
       text-min-padding: 25;
       text-transform:lowercase;
       [zoom>=16] {
-        text-size: (@max - @drk) * 1.5;
+        text-size: (@max - @drk) * 3;
+        text-halo-radius: 6;
         }
       [zoom>=18] {
-        text-size: (@max - @drkst) * 1.5;
+        text-size: (@max - @drkst) * 3;
+        text-halo-radius: 9;
         }        
       } 
-    [class='street'][zoom>=12],[class='street_limited'][zoom>=12] {
+    [class='street'][zoom>=18],
+    [class='street_limited'][zoom>=18] {
       text-name: @name;
       text-placement: line;
-      text-face-name: @sans_italic;
-      text-fill: @road_med * 1.5;
+      text-face-name: @sans_med_italic;
+      text-fill: @road_bright;
       text-avoid-edges: true;
-      text-halo-radius: 1;
-      text-halo-fill: @road_drkst * 1.5;
-      text-min-distance: 10000;      
+      text-halo-radius: 8;
+      text-halo-fill: fadeout(@road_drkst, @fadeout/2);    
       text-min-padding: 25;      
       text-transform:lowercase;
-      [zoom>=16] {
-        text-size: (@max - @drk) + 3;        
-        }
-      [zoom>=18] {
-        text-face-name: @sans_med_italic;        
-        text-size: (@max - @drkst) + 6;
-        }
-      } 
+      text-size: (@max - @drkst) * 2.5;
    }
 }
 
@@ -76,33 +70,23 @@
   text-placement: line;
   text-avoid-edges: true;
   text-halo-fill: fadeout(@water_bright, @fadeout);  
-  text-halo-rasterizer: fast;  
-  text-min-distance: 10000;
   [class!='river'] {
     [zoom>=16] {
-      text-size: 13;    
-      text-halo-radius: 3;          
-      }
-    [zoom>=17] {
-      text-size: 15;    
-      text-halo-radius: 4;                
+      text-size: 20;    
+      text-halo-radius: 9;          
       }
     [zoom>=18] {
-      text-size: 17;    
-      text-halo-radius: 5;                
+      text-size: 24;    
+      text-halo-radius: 15;                
       }
     }
   [class='river'] {
     [zoom>=16] {
-      text-size: 16;    
+      text-size: 24;    
       text-halo-radius: 4;          
       }
-    [zoom>=17] {
-      text-size: 18;    
-      text-halo-radius: 5;                
-      }
     [zoom>=18] {
-      text-size: 20;    
+      text-size: 30;    
       text-halo-radius: 6;                
       }    
     }
@@ -110,88 +94,27 @@
 
 
 // --- places ------------------------------------
-#place_label[type='city'][localrank<=2][name!='Austin']{
-  text-name: @name;
-  text-face-name: @sans_bold;
-  text-halo-fill: @road_drk;
-  text-halo-radius: 3;
-  text-halo-rasterizer: fast;
-  text-size: 20;
-  text-transform:lowercase;
-  text-fill: @road_bright;
-  [scalerank<=2] {
-    text-size: 24;
-    text-face-name: @sans_black_italic;
-    [zoom>=6] { text-orientation: 8; }
-    [zoom>=8]  { text-size: 28; }
-    [zoom>=10]  { text-size: 32; }
-    [zoom>=14]  { text-size: 36; }
-  }
-  [scalerank=3] {
-    [zoom>=8] {
-      text-size: 22;
-      text-orientation: 8;
-      text-face-name: @sans_black_italic;
-    }
-    [zoom>=10]  { text-size: 24; }
-    [zoom>=14]  { text-size: 26; }
-  }
-  [scalerank>=4][zoom>10] {
-    text-size: 20;
-    text-orientation: 6;
-    text-face-name: @sans_bold_italic;
-  }
-}
+// Who needs em?
 
-#place_label[type='town'][localrank<=1][zoom>8],
-#place_label[type='town'][localrank<=3][zoom>=11] {
-  text-name: @name;
-  text-face-name: @sans_black_italic;
-  text-halo-fill: @road_drk;
-  text-halo-radius: 3;
-  text-halo-rasterizer: fast;
-  text-size: 16;
-  text-wrap-width: 80;
-  text-transform:lowercase;
-  text-fill: @road_bright;  
-  [zoom>=12] { text-size: 20; }
-  [zoom>=13] { text-orientation: 4; }
-  [zoom>=14] { text-size: 24; }
-  }
-
-#place_label[zoom>=11][type!='city'][type!='town'] {
-  text-name: @name;
-  text-face-name: @sans_bold;
-  text-halo-fill: @road_drk;
-  text-halo-radius: 3;
-  text-halo-rasterizer: fast;
-  text-size: 14;
-  text-line-spacing:-2;
-  text-wrap-width: 50;
-  text-transform:lowercase;
-  text-fill: @road_bright;
-  [zoom>=14][type='neighbourhood'],
-  [zoom>=14][type='village'] {
-    text-size: 18;
-    text-orientation: 5;
-  }
-} 
 
 //ladybird lake
 
 #road_label [name="Lady Bird Lake Hike and Bike Trail"] {
-  text-name: "'Town Lake Running Trail'";
-  text-face-name: @serif_bold;
-  text-fill: @road_bright;
-  text-placement: line;
-  text-avoid-edges: true;
-  text-halo-fill: fadeout(@water_bright, @fadeout);  
-  text-halo-rasterizer: fast;  
+      text-name: "'Town Lake Running Trail'";
+      text-placement: line;
+      text-face-name: @sans_italic;
+      text-fill: @road_bright;
+//      text-avoid-edges: true;
+      text-halo-radius: 2;
+      text-halo-fill: @road_drkst;    
+      text-min-padding: 25;      
+      text-transform:lowercase;
   text-allow-overlap: true;
       [zoom>=16] {
-        text-size: (@max - @drk) + 3;        
+        text-size: 19;//(@max - @drk) + 3;        
         }
-      [zoom>=18] {    
-        text-size: (@max - @drkst) + 6;
-        }  
+      [zoom>=18] {
+        text-face-name: @sans_med_italic;        
+        text-size: 19;//(@max - @drkst) ;//* 2.5;
+        }
   }
