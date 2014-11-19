@@ -177,7 +177,7 @@ Map { background-color: @land; }
   */
   
   //try fill
-  ::fill {
+/*  ::fill { nah sucks
     opacity: .2;
     polygon-comp-op: color-burn;
     [Name="Campus"]   { polygon-fill: orange; }
@@ -188,6 +188,10 @@ Map { background-color: @land; }
     [Name="Market"]   { polygon-fill: purple; }
     [Name="Zilker"]   { polygon-fill: red;    }
     [Name="East Side"]{ polygon-fill: blue; }
+    } */
+  //very simple lines to line up print
+  ::linetwo {
+    line-color: @land;
     }
   }
 

@@ -77,6 +77,7 @@
   text-avoid-edges: true;
   text-halo-fill: fadeout(@water_bright, @fadeout);  
   text-halo-rasterizer: fast;  
+  text-min-distance: 10000;
   [class!='river'] {
     [zoom>=16] {
       text-size: 13;    
@@ -175,3 +176,22 @@
     text-orientation: 5;
   }
 } 
+
+//ladybird lake
+
+#road_label [name="Lady Bird Lake Hike and Bike Trail"] {
+  text-name: "'Town Lake Running Trail'";
+  text-face-name: @serif_bold;
+  text-fill: @road_bright;
+  text-placement: line;
+  text-avoid-edges: true;
+  text-halo-fill: fadeout(@water_bright, @fadeout);  
+  text-halo-rasterizer: fast;  
+  text-allow-overlap: true;
+      [zoom>=16] {
+        text-size: (@max - @drk) + 3;        
+        }
+      [zoom>=18] {    
+        text-size: (@max - @drkst) + 6;
+        }  
+  }

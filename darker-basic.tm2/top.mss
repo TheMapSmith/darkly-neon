@@ -26,7 +26,8 @@
 		[name="Bennu Coffee"],[name="HandleBar"],
 		[name="Dominican Joe Coffee Shop"],[name="Summermoon Coffee Bar"],
         [name="Alamo Drafthouse"],[name="Kung Fu Saloon"],
-      [name="Quack's 43rd Street Bakery"]
+      [name="Quack's 43rd Street Bakery"],[name="Barton Springs Pool"],
+      [name="Zilker Park"]
       {
       marker-fill:@poi_text;
       marker-line-color: @poi_halo;
@@ -78,7 +79,8 @@
 		[name="Bennu Coffee"],[name="HandleBar"],
 		[name="Dominican Joe Coffee Shop"],[name="Summermoon Coffee Bar"],
         [name="Alamo Drafthouse"],[name="Kung Fu Saloon"],
-      [name="Quack's 43rd Street Bakery"]
+      [name="Quack's 43rd Street Bakery"],[name="Barton Springs Pool"],
+      [name="Zilker Park"]
       {
       text-name: @name;
       text-face-name: @sans_bold;
@@ -334,3 +336,39 @@
       }
   }
   }
+
+#water_label {
+  [osm_id= 1000027442711] { //barton springs
+    
+    ::icon {
+      marker-fill:@poi_text;
+      marker-line-color: @poi_halo;
+      marker-line-width: 6;
+      marker-file:url('icon/swimming-24.svg');
+      marker-height: 32;      
+      [zoom>=18] {
+        marker-line-width: 8;
+        marker-height: 36; }
+      } // end icon
+    
+      ::label {
+      text-name: @name;
+      text-face-name: @sans_bold;
+      text-fill: @poi_text;      
+      text-size: 16;
+      text-halo-fill: fadeout(@poi_halo, 85%);
+      text-halo-radius: 2;
+      text-halo-rasterizer: fast;
+      text-wrap-width: 30;
+      text-line-spacing:  -5;
+      text-align: center;
+      text-placement-type: simple;
+      text-placements: "S,SW,SE,E,W,SSW,SSE,N";
+      text-transform: lowercase;
+      text-character-spacing: 0.25;        
+      text-dy: 14;     
+      text-allow-overlap: true;
+        } //end label
+      
+      }
+    }
