@@ -147,6 +147,8 @@ Map { background-color: @land; }
 //export extents
 
 #map {
+  polygon-fill: white;
+  opacity: .2;
 /*
   ::halo {
     line-color: white;
