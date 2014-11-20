@@ -80,15 +80,20 @@ interrupts the smooth top
 @water_med: rgb(149, 207, 246);
 @water_drk: rgb(106, 155, 239);
 @water_drkst: rgb(49, 82, 180);
-
+/* try red rail
 @rail_bright: rgb(218,213,246);
 @rail_med: rgb(153,138,245);
 @rail_drk: rgb(73,66,117);
 @rail_drkst: darken(@rail_drk, 20);
-
+*/
 @cycle_bright: rgb(229,47,53);
 @cycle_med: rgb(152,31,35);
 @cycle_drk: rgb(88,18,20);
+
+@rail_bright: rgb(229,47,53);
+@rail_med: rgb(152,31,35);
+@rail_drk: rgb(88,18,20);
+@rail_drkst: darken(@rail_drk, 20);
 
 // Line Widths
 // Starting with @max, road widths are systematically subtracted
@@ -149,6 +154,7 @@ Map { background-color: @land; }
 #map {
   polygon-fill: white;
   opacity: .2;
+  line-width: 3;
 /*
   ::halo {
     line-color: white;

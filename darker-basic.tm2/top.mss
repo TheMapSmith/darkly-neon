@@ -1,4 +1,146 @@
+// New Top POI - Central Austin
 #poi_label [zoom>=16] {
+    [name="Rio Rita"],
+    [osm_id=1000003190873015], //via313 east
+    [name="Franklin Barbecue"],
+    [name="Qui"],
+    [name="East Side Pies"], 
+    [name="Bennu Coffee"],
+    [name="Salty Sow"],
+    [name="Eastside Cafe"],
+    [name="'Donn's Depot'"],
+    [name="Alamo Drafthouse"][osm_id!=1000001481633325],
+    [name="Uchi"],
+    [name="Barley Swine"],
+    [name="Domincan Joe Coffee Shop"],
+    [name="'Jo's Coffee'"],
+    [name="'Torchy's Tacos'"][osm_id!=1000003181780241], //not So 1st one
+    [name="Summermoon Coffee Bar"],
+    [name="East Side King"][osm_id!=1000003190845088], //exclude campus
+    [name="Kerbey Lane"][osm_id!=1000003181892454], // exclude campus
+    [name="'Rudy's Texas Bar-B-Q'"],
+    [osm_id=1000000436633129], //magnolias lake austin
+    [name="'Donn's Depot'"],
+    [osm_id=1000000537495439], //360 whole foods
+    [name="Ramen Tatsu-Ya"],
+    [osm_id=1000001953179853], //anderson hopdoddy
+    [name="Tacodeli"][osm_id!=1000003181780245], //not lamar
+    [name="Fonda San Miguel"],
+    [name="Pinthouse Pizza"],
+    [name="Draught House"],
+    [osm_id=1000001236793007], //quacks
+    [name="Epoch Coffee"] {
+    
+    ::icon { 
+        marker-fill:@poi_text;
+        marker-line-color: @poi_halo;
+        marker-line-width: 6;
+        marker-file:url('icon/[maki]-24.svg');
+        marker-height: 84;   
+        marker-allow-overlap: true;
+        marker-allow-overlap: false; 
+      }//end icon
+    
+    ::text {
+        text-name: @name;
+        [osm_id=1000001236793007] { text-name: "'Quack\'s Bakery'"; }
+        text-face-name: @sans_bold;
+        text-fill: @poi_text;      
+        text-size: 55;
+        text-halo-fill: fadeout(@poi_halo, 85%);
+        text-halo-radius: 6;
+        text-halo-rasterizer: fast;
+        text-wrap-width: 30;
+        text-line-spacing:  -15;
+        text-align: center;
+        text-placement-type: simple;
+        text-placements: "S,SW,SE,E,W,SSW,SSE,N";
+        text-transform: lowercase;
+        text-character-spacing: 0.25;
+        text-dy: 40;       
+        text-avoid-edges: false;
+        text-allow-overlap: true; 
+      
+      //adjust east
+        [name="Eastside Cafe"]
+        { 
+        text-placements: "E";
+        text-dx: 35; text-dy: 0;
+        text-align: left;
+        }
+
+      //adjust SE
+      [osm_id=1000003190845085] {
+        text-placements: "SE";
+        text-dx: 10;
+        }
+      
+      //adjust west
+        [name="Draught House"] 
+        { 
+        text-placements: "W";
+        text-dx: 35; text-dy: 0;
+        text-align: right;
+        }
+      
+      //adjust north
+      [name="Violet Crown"] {
+          text-placements: "N";
+          text-dy: 35;
+        }
+      
+      
+      } // end label
+        
+    } // end filter
+
+  } //end top central austin
+
+
+// N lamar case
+#poi_label [zoom>=16] {
+  [name="Uchiko"],[osm_id=1000003181780246],[osm_id=1000003181780245]
+    {
+    ::icon [osm_id=1000003181780245] {
+        marker-fill:@poi_text;
+        marker-line-color: @poi_halo;
+        marker-line-width: 6;
+        marker-file:url('icon/[maki]-24.svg');
+        marker-height: 84;    
+      }//end icon
+    
+    ::text {
+        text-name: @name;
+        text-face-name: @sans_bold;
+        text-fill: @poi_text;      
+        text-size: 55;
+        text-halo-fill: fadeout(@poi_halo, 85%);
+        text-halo-radius: 6;
+        text-halo-rasterizer: fast;
+        text-wrap-width: 30;
+        text-line-spacing:  -25;
+        text-align: center;
+        text-placement-type: simple;
+        text-transform: lowercase;
+        text-character-spacing: 0.25;
+        text-avoid-edges: false;
+        text-allow-overlap: true;   
+      [name="Uchiko"] { 
+        text-placements: "N"; 
+        text-dy: 55; }
+      [osm_id=1000003181780246] { //houndstooth
+        text-placements: "E"; 
+        text-wrap-character: "s";
+        text-dx: 35; 
+        text-align: left;}
+      [osm_id=1000003181780245] { //tacodeli
+        text-placements: "S"; 
+        text-dy: 55;}
+      }
+    } //end filter
+  } //end special N Lamar case
+
+/* #poi_label [zoom>=16] {
   ::Topicon {
 		[name="Torchy's Tacos"],[name="Whole Foods"],
 		[name="Home Slice Pizza"],[name="Hopdoddy"],
@@ -263,7 +405,7 @@
       }
   }
 } 
-*/
+*/ /*
 #poi_label { //special placement for N lamar places 
     [osm_id=1000003181780247], //uchiko
     [osm_id=1000003181780246], //houndstooth
@@ -372,3 +514,5 @@
       
       }
     }
+
+*/

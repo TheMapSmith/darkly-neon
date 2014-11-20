@@ -262,9 +262,9 @@
 
       } //end street        
 
-    [class='service'][zoom>=15],
-    [class='path'][zoom>=15], 
-    [class='street_limited'][zoom>=12] {
+    [class='service'],
+    [class='path'], 
+    [class='street_limited'] {
       line-color: @road_drkst;
       line-width: 2;
       image-filters: agg-stack-blur(5,5);
@@ -373,7 +373,7 @@
     } //end main
 
     [class='street'],
-    [class='street_limited'] {  
+    [class='street_limited'][type!="pedestrian"] {  
           [zoom>=16] { 
             line-color: @road_bright; //mix(@road_med, @road_bright, 50%);
             line-width: @service - 3; 
@@ -383,8 +383,8 @@
           }
     } //end street
       
-    [class='service'][zoom>=15], 
-    [class='path'][zoom>=15] {  
+    [class='service'],[type="pedestrian"], 
+    [class='path'] {  
 /*      ::med {
           [zoom>=16] { 
             line-color: @road_med;

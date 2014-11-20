@@ -5,7 +5,7 @@ Center
 [osm_id=1000003190873015], //via313 east
 [name=“Franklin Barbecue”],
 [name=“Qui”],
-[name=“East Side Pies”], //double check boxes
+[name=“East Side Pies”], 
 [name=“Bennu Coffee”],
 [name=“Salty Sow”],
 [name=“Eastside Cafe”],
@@ -14,21 +14,21 @@ Center
 [name=“Barley Swine”],
 [name=“Domincan Joe Coffee Shop”],
 [name=“‘Jo’s Coffee’”],
-[name=“‘Torchy’s Tacos’”], //lookup osm_id
+[name=“‘Torchy’s Tacos’”][osm_id!=1000003181780241], //not So 1st one
 [name=“Summermoon Coffee Bar”],
 [name=“East Side King”],
 [name=“Kerbey Lane”],
 [name=“‘Rudy’s Texas Bar-B-Q’”],
-[name=“Magnolia Cafe”], //lookup LA Blvd osm_id
+[osm_id=1000000436633129], //magnolias lake austin
 [name=“‘Donn’s Depot’”],
-[name=“Whole Foods”], //lookup w6th osm_id
+[osm_id=1000000537495439], //360 whole foods
 [name=“Ramen Tatsu-Ya”],
-[name=“Hopdoddy”], //lookup soco osm_id
+[osm_id=1000001953179853], //anderson hopdoddy
 [name=“Tacodeli”], //lookup
 [name=“Fonda San Miguel”],
 [name=“Pinthouse Pizza”],
 [name=“Draught House”],
-[name=“Quack’s Bakery”], //lookup proper name
+[osm_id=1000001236793007], //quacks
 [name=“Epoch Coffee”]
 
 

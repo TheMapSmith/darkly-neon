@@ -70,7 +70,7 @@
   text-placement: line;
   text-avoid-edges: true;
   text-halo-fill: fadeout(@water_bright, @fadeout);  
-  [class!='river'] {
+/*  [class!='river'] {
     [zoom>=16] {
       text-size: 20;    
       text-halo-radius: 9;          
@@ -79,7 +79,7 @@
       text-size: 24;    
       text-halo-radius: 15;                
       }
-    }
+    } */
   [class='river'] {
     [zoom>=16] {
       text-size: 24;    
