@@ -1,9 +1,6 @@
 // New Top POI - Central Austin
 #poi_label [zoom>=16] {
-    [name="Rio Rita"],
-    [osm_id=1000003190873015], //via313 east
     [name="Franklin Barbecue"],
-    [name="Qui"],
     [name="East Side Pies"], 
     [name="Bennu Coffee"],
     [name="Salty Sow"],
@@ -16,7 +13,7 @@
     [name="'Jo's Coffee'"],
     [name="'Torchy's Tacos'"][osm_id!=1000003181780241], //not So 1st one
     [name="Summermoon Coffee Bar"],
-    [name="East Side King"][osm_id!=1000003190845088], //exclude campus
+    [osm_id=1000003190845084], //ESK S Lamar
     [name="Kerbey Lane"][osm_id!=1000003181892454], // exclude campus
     [name="'Rudy's Texas Bar-B-Q'"],
     [osm_id=1000000436633129], //magnolias lake austin

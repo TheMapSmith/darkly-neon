@@ -151,7 +151,7 @@ Map { background-color: @land; }
 
 //export extents
 
-#map {
+#map2 {
   polygon-fill: white;
   opacity: .2;
   line-width: 3;

@@ -1,0 +1,27 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: srsjojo.70f21f98
+  rev: s-25598622
+  saveCenter: true
+attribution: ''
+center: 
+  - -97.7502
+  - 30.2688
+  - 16
+description: ''
+Layer: 
+  - id: map2
+    Datasource: 
+      file: /Users/spoon/Downloads/updated_map_extents.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: ''
+    fields: 
+      Name: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 20
+minzoom: 16
+name: map extents 2
