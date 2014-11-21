@@ -1,0 +1,26 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: srsjojo.6d328109
+  rev: s-76f64155
+  saveCenter: true
+attribution: ''
+center: 
+  - -97.7423
+  - 30.2666
+  - 18
+description: jumpshot avast
+Layer: 
+  - id: rocket
+    Datasource: 
+      file: /Users/spoon/Downloads/rocket.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: ''
+    fields: {}
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 18
+minzoom: 16
+name: rocket

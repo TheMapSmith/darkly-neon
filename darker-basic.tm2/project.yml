@@ -11,9 +11,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -97.7483
-  - 30.2609
-  - 18
+  - -97.7426
+  - 30.2663
+  - 16
 description: ''
 format: png24
 interactivity_layer: ''
@@ -21,7 +21,7 @@ layers: null
 maxzoom: 20
 minzoom: 16
 name: Neon Avast
-source: "mapbox:///mapbox.mapbox-streets-v5,srsjojo.70f21f98"
+source: "mapbox:///mapbox.mapbox-streets-v5,srsjojo.70f21f98,srsjojo.6d328109"
 styles: 
   - style.mss
   - labels.mss

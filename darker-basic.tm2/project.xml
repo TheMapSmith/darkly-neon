@@ -5,12 +5,12 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.7483,30.2609,18</Parameter>
+  <Parameter name="center">-97.7426,30.2663,16</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">20</Parameter>
   <Parameter name="minzoom">16</Parameter>
   <Parameter name="name"><![CDATA[Neon Avast]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v5,srsjojo.70f21f98]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v5,srsjojo.70f21f98,srsjojo.6d328109]]></Parameter>
 </Parameters>
 
 <FontSet name="fontset-0">
@@ -2557,6 +2557,20 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
+<Style name="poi_label-rainey/other/label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Bar 96')</Filter>
+    <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="poi_label-rainey/other/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Bar 96')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+</Style>
 <Style name="poi_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
   <Rule>
     <Filter>([class] = 'grass')</Filter>
@@ -2580,915 +2594,1224 @@
     <LineSymbolizer stroke="#33d703" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
+<Style name="poi_label-rainey/label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Bungalow')</Filter>
+    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Art of Tacos')</Filter>
+    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'THE BLACKHEART')</Filter>
+    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016) and ([name] = 'Banger\'s Sausage House &amp; Beer Garden')</Filter>
+    <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA['Banger\'s']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Banger\'s Sausage House &amp; Beer Garden')</Filter>
+    <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA['Banger\'s']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016) and ([name] = 'Craft Pride')</Filter>
+    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'G\'Raj Mahal')</Filter>
+    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Craft Pride')</Filter>
+    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016) and ([name] = 'G\'Raj Mahal')</Filter>
+    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016) and ([name] = 'Clive Bar')</Filter>
+    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Icenhauer\'s')</Filter>
+    <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016) and ([name] = 'THE BLACKHEART')</Filter>
+    <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016) and ([name] = 'Art of Tacos')</Filter>
+    <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016) and ([name] = 'Bungalow')</Filter>
+    <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016) and ([name] = 'Icenhauer\'s')</Filter>
+    <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016)</Filter>
+    <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="poi_label-rainey/top/label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Clive Bar')</Filter>
+    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Clive Bar') and ([osm_id] = 1000003190873016)</Filter>
+    <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="poi_label-rainey/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Bungalow')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'THE BLACKHEART')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Art of Tacos')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Icenhauer\'s')</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016)</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Craft Pride')</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'G\'Raj Mahal')</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Banger\'s Sausage House &amp; Beer Garden')</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+</Style>
+<Style name="poi_label-rainey/top/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Clive Bar')</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+</Style>
+<Style name="poi_label-capital/label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Marakesh Bar &amp; Grill')</Filter>
+    <TextSymbolizer wrap-width="0" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'The Old Bakery and Emporium')</Filter>
+    <TextSymbolizer placements="N" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" wrap-width="120" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Schultz\'s Beer Garden')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" wrap-width="120" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="poi_label-capital/other/label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Texas State Capitol')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" wrap-width="120" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="poi_label-capital/other/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Texas State Capitol')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+</Style>
+<Style name="poi_label-capital/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Marakesh Bar &amp; Grill')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Schultz\'s Beer Garden')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'The Old Bakery and Emporium')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+</Style>
+<Style name="poi_label-e6th/other/label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Shangri La')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="poi_label-e6th/other/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Shangri La')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+</Style>
 <Style name="poi_label-text" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Alamo Drafthouse') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Torchy\'s Tacos\'') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Kerbey Lane') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Tacodeli') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Alamo Drafthouse') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Torchy\'s Tacos\'') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Kerbey Lane') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Tacodeli') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Draught House')</Filter>
-    <TextSymbolizer placements="S" dy="55" dx="35" justify-alignment="right" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="S" dy="55" dx="35" justify-alignment="right" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Eastside Cafe')</Filter>
-    <TextSymbolizer placements="S" dy="55" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="S" dy="55" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Alamo Drafthouse')</Filter>
-    <TextSymbolizer placements="S" dy="55" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="S" dy="55" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = '\'Torchy\'s Tacos\'')</Filter>
-    <TextSymbolizer placements="S" dy="55" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="S" dy="55" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Kerbey Lane')</Filter>
-    <TextSymbolizer placements="S" dy="55" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="S" dy="55" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245)</Filter>
-    <TextSymbolizer placements="S" dy="55" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="S" dy="55" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchiko') and ([osm_id] = 1000003181780245)</Filter>
-    <TextSymbolizer placements="S" dy="55" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="S" dy="55" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Uchiko')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" dy="55" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" dy="55" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Draught House')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" dy="0" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" dy="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Eastside Cafe')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" dy="0" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" dy="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Alamo Drafthouse')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Tacodeli')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = '\'Torchy\'s Tacos\'')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Kerbey Lane')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Pinthouse Pizza')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Epoch Coffee')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = '\'Donn\'s Depot\'')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = '\'Rudy\'s Texas Bar-B-Q\'')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Ramen Tatsu-Ya')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = '\'Jo\'s Coffee\'')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Domincan Joe Coffee Shop')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Barley Swine')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Uchi')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Summermoon Coffee Bar')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Salty Sow')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Fonda San Miguel')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Bennu Coffee')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'East Side Pies')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246) and ([name] = 'Franklin Barbecue')</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780246)</Filter>
-    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" wrap-character="s" dx="35" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchiko') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer placements="N" dy="55" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer placements="N" dy="55" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchiko')</Filter>
-    <TextSymbolizer placements="N" dy="55" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="N" dy="55" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000001953179853) and ([name] = 'Violet Crown')</Filter>
-    <TextSymbolizer placements="N" dy="35" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="N" dy="35" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000000537495439) and ([name] = 'Violet Crown')</Filter>
-    <TextSymbolizer placements="N" dy="35" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="N" dy="35" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000000436633129) and ([name] = 'Violet Crown')</Filter>
-    <TextSymbolizer placements="N" dy="35" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="N" dy="35" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000001236793007) and ([name] = 'Violet Crown')</Filter>
-    <TextSymbolizer placements="N" dy="35" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer placements="N" dy="35" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003190845084) and ([name] = 'Violet Crown')</Filter>
-    <TextSymbolizer placements="N" dy="35" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="N" dy="35" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003190845084) and ([name] = 'Draught House')</Filter>
-    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000000436633129) and ([name] = 'Draught House')</Filter>
-    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000001236793007) and ([name] = 'Draught House')</Filter>
-    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Draught House')</Filter>
-    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000001953179853) and ([name] = 'Draught House')</Filter>
-    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000000537495439) and ([name] = 'Draught House')</Filter>
-    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="W" dx="35" dy="0" justify-alignment="right" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Domincan Joe Coffee Shop') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Draught House') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'East Side Pies') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Bennu Coffee') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Salty Sow') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Eastside Cafe') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Donn\'s Depot\'') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchi') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Barley Swine') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Franklin Barbecue') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Jo\'s Coffee\'') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Epoch Coffee') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Summermoon Coffee Bar') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Rudy\'s Texas Bar-B-Q\'') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Ramen Tatsu-Ya') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Pinthouse Pizza') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Fonda San Miguel') and ([osm_id] = 1000003190845085)</Filter>
-    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="SE" dx="10" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000000436633129) and ([name] = 'Eastside Cafe')</Filter>
-    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000001236793007) and ([name] = 'Eastside Cafe')</Filter>
-    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Eastside Cafe') and ([osm_id] = 1000003190845084)</Filter>
-    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Eastside Cafe') and ([osm_id] = 1000000537495439)</Filter>
-    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Eastside Cafe') and ([osm_id] = 1000001953179853)</Filter>
-    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Eastside Cafe')</Filter>
-    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placements="E" dx="35" dy="0" justify-alignment="left" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Barley Swine') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Pinthouse Pizza') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Fonda San Miguel') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Ramen Tatsu-Ya') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Donn\'s Depot\'') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Rudy\'s Texas Bar-B-Q\'') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Summermoon Coffee Bar') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Jo\'s Coffee\'') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Domincan Joe Coffee Shop') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchi') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Franklin Barbecue') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Epoch Coffee') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'East Side Pies') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Bennu Coffee') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Salty Sow') and ([osm_id] = 1000001236793007)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Quack\'s Bakery']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Alamo Drafthouse') and ([osm_id] != 1000001481633325)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Tacodeli') and ([osm_id] != 1000003181780245)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Torchy\'s Tacos\'') and ([osm_id] != 1000003181780241)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Kerbey Lane') and ([osm_id] != 1000003181892454)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Pinthouse Pizza')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Epoch Coffee')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = '\'Donn\'s Depot\'')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = '\'Rudy\'s Texas Bar-B-Q\'')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Ramen Tatsu-Ya')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = '\'Jo\'s Coffee\'')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Domincan Joe Coffee Shop')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Barley Swine')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Uchi')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Summermoon Coffee Bar')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Salty Sow')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Fonda San Miguel')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Bennu Coffee')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'East Side Pies')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Franklin Barbecue')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchiko') and ([osm_id] = 1000003190845084)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchiko') and ([osm_id] = 1000000436633129)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchiko') and ([osm_id] = 1000000537495439)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchiko') and ([osm_id] = 1000001953179853)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-25" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" placements="S,SW,SE,E,W,SSW,SSE,N" dy="40" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Pinthouse Pizza')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Epoch Coffee')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003190845084)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000000436633129)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Donn\'s Depot\'')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Rudy\'s Texas Bar-B-Q\'')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000000537495439)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Ramen Tatsu-Ya')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000001953179853)</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Jo\'s Coffee\'')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Domincan Joe Coffee Shop')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Barley Swine')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchi')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Summermoon Coffee Bar')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Salty Sow')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Fonda San Miguel')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Bennu Coffee')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'East Side Pies')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Franklin Barbecue')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#baedf3" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="poi_label-icon" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Kerbey Lane')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Alamo Drafthouse')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = '\'Torchy\'s Tacos\'')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Fonda San Miguel')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Pinthouse Pizza')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Draught House')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Epoch Coffee')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = '\'Donn\'s Depot\'')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Franklin Barbecue')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Uchi')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Barley Swine')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Domincan Joe Coffee Shop')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = '\'Jo\'s Coffee\'')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Bennu Coffee')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Summermoon Coffee Bar')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'East Side Pies')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Salty Sow')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = '\'Rudy\'s Texas Bar-B-Q\'')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Ramen Tatsu-Ya')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245) and ([name] = 'Eastside Cafe')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780245)</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchiko') and ([osm_id] = 1000003181780245)</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Tacodeli') and ([osm_id] != 1000003181780245)</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Kerbey Lane') and ([osm_id] != 1000003181892454)</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Alamo Drafthouse') and ([osm_id] != 1000001481633325)</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Torchy\'s Tacos\'') and ([osm_id] != 1000003181780241)</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Fonda San Miguel')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Pinthouse Pizza')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Draught House')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000001236793007)</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Epoch Coffee')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Donn\'s Depot\'')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Franklin Barbecue')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Uchi')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Barley Swine')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Domincan Joe Coffee Shop')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Jo\'s Coffee\'')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Bennu Coffee')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Summermoon Coffee Bar')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003190845084)</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'East Side Pies')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Salty Sow')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = '\'Rudy\'s Texas Bar-B-Q\'')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000000436633129)</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000000537495439)</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Ramen Tatsu-Ya')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000001953179853)</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([name] = 'Eastside Cafe')</Filter>
-    <MarkersSymbolizer fill="#baedf3" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+</Style>
+<Style name="poi_label-e6th/label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Rio Rita')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Vintage Heart Coffee')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'The White Horse')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'The Liberty')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Yellow Jacket Social Club')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'East Side King')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873015)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="poi_label-e6th/top/label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Qui')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="poi_label-e6th/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Yellow Jacket Social Club')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Rio Rita')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Vintage Heart Coffee')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'The White Horse')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'The Liberty')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'East Side King')</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873015)</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+</Style>
+<Style name="poi_label-e6th/top/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Qui')</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
 </Style>
 <Layer name="poi_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>poi_label-e6th/top/icon</StyleName>
+    <StyleName>poi_label-e6th/icon</StyleName>
+    <StyleName>poi_label-e6th/top/label</StyleName>
+    <StyleName>poi_label-e6th/label</StyleName>
     <StyleName>poi_label-icon</StyleName>
     <StyleName>poi_label-text</StyleName>
+    <StyleName>poi_label-e6th/other/icon</StyleName>
+    <StyleName>poi_label-e6th/other/label</StyleName>
+    <StyleName>poi_label-capital/icon</StyleName>
+    <StyleName>poi_label-capital/other/icon</StyleName>
+    <StyleName>poi_label-capital/other/label</StyleName>
+    <StyleName>poi_label-capital/label</StyleName>
+    <StyleName>poi_label-rainey/top/icon</StyleName>
+    <StyleName>poi_label-rainey/icon</StyleName>
+    <StyleName>poi_label-rainey/top/label</StyleName>
+    <StyleName>poi_label-rainey/label</StyleName>
     <StyleName>poi_label-outlinefuzz</StyleName>
+    <StyleName>poi_label-rainey/other/icon</StyleName>
+    <StyleName>poi_label-rainey/other/label</StyleName>
     <StyleName>poi_label-outlinecrisp</StyleName>  </Layer>
 
 <Style name="road_label-outlinecrisp" filter-mode="first">
@@ -4061,8 +4384,7 @@
 </Style>
 <Style name="map2" filter-mode="first" opacity="0.2">
   <Rule>
-    <PolygonSymbolizer fill="#ffffff" />
-    <LineSymbolizer stroke-width="3" />
+    <LineSymbolizer stroke-width="1" stroke="#ffffff" />
   </Rule>
 </Style>
 <Layer name="map2"
@@ -4070,5 +4392,114 @@
     <StyleName>map2</StyleName>
     <StyleName>map2-outlinefuzz</StyleName>
     <StyleName>map2-outlinecrisp</StyleName>  </Layer>
+
+<Style name="rocket-outlinecrisp" filter-mode="first">
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+</Style>
+<Style name="rocket-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(5,5),agg-stack-blur(4,4),agg-stack-blur(3,3)" image-filters-inflate="true">
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+</Style>
+<Style name="rocket" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] = 'grass')</Filter>
+    <MarkersSymbolizer height="108" stroke-width="5" file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([class] = 'grass')</Filter>
+    <MarkersSymbolizer height="72" stroke-width="3" file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'grass')</Filter>
+    <MarkersSymbolizer file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] = 'pitch')</Filter>
+    <MarkersSymbolizer height="108" stroke-width="5" file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([class] = 'pitch')</Filter>
+    <MarkersSymbolizer height="72" stroke-width="3" file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'pitch')</Filter>
+    <MarkersSymbolizer file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] = 'park')</Filter>
+    <MarkersSymbolizer height="108" stroke-width="5" file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([class] = 'park')</Filter>
+    <MarkersSymbolizer height="72" stroke-width="3" file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'park')</Filter>
+    <MarkersSymbolizer file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MarkersSymbolizer height="108" stroke-width="5" file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <MarkersSymbolizer height="72" stroke-width="3" file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <MarkersSymbolizer file="icon/rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" />
+  </Rule>
+</Style>
+<Layer name="rocket"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>rocket</StyleName>
+    <StyleName>rocket-outlinefuzz</StyleName>
+    <StyleName>rocket-outlinecrisp</StyleName>  </Layer>
 
 </Map>

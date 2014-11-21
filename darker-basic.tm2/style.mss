@@ -67,9 +67,13 @@ interrupts the smooth top
 //@poi_text: yellow;
 //@poi_halo: @land;
 
-//water
-@poi_text: @water_bright;
+//TOP POI
+@poi_text: white;
 @poi_halo: @water_drkst;
+
+//OTHER POI
+@other_text: @road_bright;
+@other_halo: @road_drkst;
 
 @park_bright: rgb(57, 241, 3); 
 @park_med: rgb(51, 215, 3);
@@ -151,10 +155,11 @@ Map { background-color: @land; }
 
 //export extents
 
-#map2 {
-  polygon-fill: white;
+#map2  {
+//  [zoom<=16] {polygon-fill: white; }
   opacity: .2;
-  line-width: 3;
+  line-width: 1;
+  line-color: white;
 /*
   ::halo {
     line-color: white;
