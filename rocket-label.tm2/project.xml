@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#30254b">
+
+<Parameters>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">-97.7423,30.2666,16</Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">18</Parameter>
+  <Parameter name="minzoom">16</Parameter>
+  <Parameter name="source"><![CDATA[tmsource:///Users/spoon/Documents/GitHub/darkly-neon/rocket.tm2source]]></Parameter>
+</Parameters>
+
+<FontSet name="fontset-0">
+  <Font face-name="Avenir Black"/>
+  <Font face-name="Open Sans Regular"/>
+</FontSet>
+<Style name="rocket-label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <TextSymbolizer size="80" halo-radius="8" dx="35" dy="30" fontset-name="fontset-0" fill="#e52f35" halo-fill="#baedf3" allow-overlap="true" ><![CDATA['AVAST']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <TextSymbolizer size="50" halo-radius="5" dx="15" dy="15" fontset-name="fontset-0" fill="#e52f35" halo-fill="#baedf3" allow-overlap="true" ><![CDATA['AVAST']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <TextSymbolizer fontset-name="fontset-0" fill="#e52f35" halo-fill="#baedf3" allow-overlap="true" ><![CDATA['AVAST']]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="rocket-marker" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MarkersSymbolizer height="94" stroke-width="5" file="rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <MarkersSymbolizer height="72" stroke-width="3" file="rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <MarkersSymbolizer file="rocket-24-solid.svg" fill="#e52f35" stroke="#baedf3" allow-overlap="true" />
+  </Rule>
+</Style>
+<Layer name="rocket"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>rocket-marker</StyleName>
+    <StyleName>rocket-label</StyleName>  </Layer>
+
+</Map>

@@ -14,16 +14,8 @@
   [zoom>=15] {
     shield-spacing: 400;
     shield-size: 21;
-    shield-file: url("img/motorway_[reflen]x1.svg");
     shield-transform: scale(1.7,1.7);
   }
-  [zoom>=18] {
-    shield-spacing: 400;
-    shield-size: 24;
-    shield-file: url("img/motorway_[reflen]x1.svg");
-    shield-transform: scale(2.1,2.1);
-    shield-allow-overlap:true;
-    }
 }
 
 #road_label { 
@@ -62,7 +54,7 @@
 
 // waterway labels
 
-#waterway_label {
+#waterway_label [class='river']{
   text-name: @name;
   text-face-name: @serif_italic;
   text-fill: @water_drkst;
@@ -70,17 +62,6 @@
   text-placement: line;
   text-avoid-edges: true;
   text-halo-fill: fadeout(@water_bright, @fadeout);  
-/*  [class!='river'] {
-    [zoom>=16] {
-      text-size: 20;    
-      text-halo-radius: 9;          
-      }
-    [zoom>=18] {
-      text-size: 24;    
-      text-halo-radius: 15;                
-      }
-    } */
-  [class='river'] {
     [zoom>=16] {
       text-size: 24;    
       text-halo-radius: 4;          
@@ -89,7 +70,6 @@
       text-size: 30;    
       text-halo-radius: 6;                
       }    
-    }
   }
 
 

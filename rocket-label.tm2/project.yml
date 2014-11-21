@@ -1,0 +1,25 @@
+_prefs: 
+  mapid: ''
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -97.7423
+  - 30.2666
+  - 16
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 18
+minzoom: 16
+name: ''
+source: "tmsource:///Users/spoon/Documents/GitHub/darkly-neon/rocket.tm2source"
+styles: 
+  - style.mss
+template: ''

@@ -34,6 +34,7 @@ interrupts the smooth top
 @sans_med_italic: 'Avenir Medium Oblique', @fallback;
 @sans_black_italic: 'Avenir Black Oblique', @fallback;
 @sans_bold_italic: 'Avenir Heavy Oblique',@fallback;
+@sans_black: 'Avenir Black', @fallback;
 
 @serif_bold: 'Meta Serif Offc Pro Bold',@fallback;
 @serif_italic: 'Meta Serif Offc Pro Italic',@fallback;
@@ -151,7 +152,9 @@ interrupts the smooth top
 
 // Map
 
-Map { background-color: @land; }
+Map { 
+  background-color: @land;
+  buffer-size: 512; }
 
 //export extents
 

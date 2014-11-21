@@ -1,15 +1,15 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: srsjojo.6d328109
-  rev: s-76f64155
+  mapid: srsjojo.4a4aca5e
+  rev: s-7594b48b
   saveCenter: true
 attribution: ''
 center: 
   - -97.7423
   - 30.2666
-  - 18
-description: jumpshot avast
+  - 16
+description: point
 Layer: 
   - id: rocket
     Datasource: 
@@ -19,8 +19,8 @@ Layer:
     description: ''
     fields: {}
     properties: 
-      "buffer-size": 8
+      "buffer-size": 128
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
-maxzoom: 18
+maxzoom: 16
 minzoom: 16
 name: rocket
