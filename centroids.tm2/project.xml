@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#3c0b53">
+
+<Parameters>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">-97.7397,30.2633,16</Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">16</Parameter>
+  <Parameter name="minzoom">16</Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///srsjojo.2dc77ea6]]></Parameter>
+</Parameters>
+
+
+<Style name="centroids" filter-mode="first">
+  <Rule>
+    <Filter>([Name] = 'So Co')</Filter>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(125, 23, 173, 0.09999999999999998)" halo-radius="7" ><![CDATA['South Congress']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([Name] = 'Zilker')</Filter>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(125, 23, 173, 0.09999999999999998)" halo-radius="7" ><![CDATA['Zilker Park']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([Name] = 'East 6th')</Filter>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(125, 23, 173, 0.09999999999999998)" halo-radius="7" ><![CDATA['East 6th St']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([Name] = 'West 6th')</Filter>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(125, 23, 173, 0.09999999999999998)" halo-radius="7" ><![CDATA['West 6th St']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([Name] = 'Rainey')</Filter>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(125, 23, 173, 0.09999999999999998)" halo-radius="7" ><![CDATA['Rainey Street']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([Name] = 'Campus')</Filter>
+    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(125, 23, 173, 0.09999999999999998)" halo-radius="7" ><![CDATA['UT Campus']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([Name] = 'Capital')</Filter>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(125, 23, 173, 0.09999999999999998)" halo-radius="7" ><![CDATA['State Capital']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(125, 23, 173, 0.09999999999999998)" halo-radius="7" ><![CDATA[[Name]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="centroids"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>centroids</StyleName>  </Layer>
+
+</Map>

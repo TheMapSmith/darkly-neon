@@ -1,0 +1,27 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: srsjojo.2dc77ea6
+  rev: s-b9fa0fc9
+  saveCenter: true
+attribution: ''
+center: 
+  - -97.7382
+  - 30.2685
+  - 16
+description: extents
+Layer: 
+  - id: centroids
+    Datasource: 
+      file: /Users/spoon/Downloads/centroids.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: ''
+    fields: 
+      Name: String
+    properties: 
+      "buffer-size": 128
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 16
+minzoom: 16
+name: centroids
