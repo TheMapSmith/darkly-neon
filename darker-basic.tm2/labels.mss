@@ -28,13 +28,14 @@
       text-halo-fill: fadeout(@road_drkst, @fadeout/2);
       text-min-padding: 25;
       text-transform:lowercase;
+      text-halo-rasterizer: fast;
       [zoom>=16] {
         text-size: (@max - @drk) * 3;
         text-halo-radius: 6;
         }
       [zoom>=18] {
         text-size: (@max - @drkst) * 3;
-        text-halo-radius: 9;
+        text-halo-radius: 5;
         }        
       } 
     [class='street'][zoom>=18],
@@ -44,10 +45,11 @@
       text-face-name: @sans_med_italic;
       text-fill: @road_bright;
       text-avoid-edges: true;
-      text-halo-radius: 8;
+      text-halo-radius: 3;
       text-halo-fill: fadeout(@road_drkst, @fadeout/2);    
       text-min-padding: 25;      
       text-transform:lowercase;
+      text-halo-rasterizer: fast;
       text-size: (@max - @drkst) * 2.5;
    }
 }
@@ -84,6 +86,7 @@
       text-placement: line;
       text-face-name: @sans_italic;
       text-fill: @road_bright;
+      text-halo-rasterizer: fast;
 //      text-avoid-edges: true;
       text-halo-radius: 2;
       text-halo-fill: @road_drkst;    
@@ -95,6 +98,6 @@
         }
       [zoom>=18] {
         text-face-name: @sans_med_italic;        
-        text-size: 19;//(@max - @drkst) ;//* 2.5;
+        text-size: 20;//(@max - @drkst) ;//* 2.5;
         }
   }

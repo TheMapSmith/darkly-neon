@@ -317,7 +317,7 @@
       
       ::label {
         text-name: @name;
-        text-face-name: @sans_bold;
+        text-face-name: @sans_med;
         text-fill: @other_text;      
         text-size: 45;
         text-halo-fill: fadeout(@other_halo, 85%);
@@ -410,7 +410,12 @@
         text-character-spacing: 0.25;
         text-dy: 40;       
         text-avoid-edges: false;
-        text-allow-overlap: true;         
+        text-allow-overlap: true;    
+        
+        [name="Manuel's"] { 
+          //text-placements: "N"; text-dy: 80;
+          text-placements: "W"; text-dx: 30;
+        }
         }//end label      
       } //end other      
     }//end w6th

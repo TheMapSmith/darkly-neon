@@ -144,25 +144,25 @@ interrupts the smooth top
 // When exporting @2x or @4x the agg stack will have 
 // to be larger. Change these before exporting
 
-@agg: 1; //@1x - for normal viewing
+//@agg: 1; //@1x - for normal viewing
 //@agg: 2; //@2x
 //@agg: 4; //@4x
+//@agg: 8; //insane
+@agg: 16; //plaid
 
 @fadeout: @agg + 90;
 
 // Map
 
-Map { 
-  background-color: @land;
-  buffer-size: 512; }
+Map { background-color: @land; }
 
 //export extents
 
 #map2  {
 //  [zoom<=16] {polygon-fill: white; }
   opacity: .2;
-  line-width: 1;
-  line-color: white;
+  line-width: .5;
+  line-color: mix(@land, white, 50%);
 /*
   ::halo {
     line-color: white;
