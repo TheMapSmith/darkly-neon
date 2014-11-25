@@ -146,9 +146,9 @@ interrupts the smooth top
 
 //@agg: 1; //@1x - for normal viewing
 //@agg: 2; //@2x
-//@agg: 4; //@4x
+@agg: 4; //@4x
 //@agg: 8; //insane
-@agg: 16; //plaid
+//@agg: 16; //plaid
 
 @fadeout: @agg + 90;
 

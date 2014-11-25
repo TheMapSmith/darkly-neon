@@ -1,3 +1,13 @@
+//experimental mega agg stack blur
+
+#road {
+  line-color: @road_drkst;
+  line-width: 50;
+  image-filters: agg-stack-blur(5*@agg,5*@agg);
+  image-filters-inflate: true;
+  opacity: .5;
+  }
+
 #road, #bridge { 
   // exclude railroads and golf
   [type!='rail'][class!='golf'][type!='cycleway']

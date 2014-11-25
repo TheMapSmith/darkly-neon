@@ -8,6 +8,7 @@
   text-line-spacing: -35;  
   text-halo-fill: fadeout(lighten(@land, 20), 50);
   text-halo-radius: 10;
+  text-allow-overlap: true;
   [Name="Capital"] {
     text-name: "'State Capital'";
     }
@@ -36,6 +37,10 @@
   
   [Name="So Co"] {
     text-name: "'South Congress'";
+    }
+  [Name="Dirty 6th"] {
+    text-name: "'6th St'";
+    text-wrap-width: 5;
     }
 }
 
