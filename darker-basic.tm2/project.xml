@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map[]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#30254b">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#333333">
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.7441,30.2668,16</Parameter>
+  <Parameter name="center">-97.743,30.2653,16</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">20</Parameter>
   <Parameter name="minzoom">16</Parameter>
@@ -46,17 +46,17 @@
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -94,8 +94,8 @@
 <Style name="landuse" filter-mode="first">
   <Rule>
     <Filter>([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#403756" />
-    <LineSymbolizer stroke="#120f18" stroke-width="1.5" />
+    <PolygonSymbolizer fill="#424242" />
+    <LineSymbolizer stroke="#0f0f0f" stroke-width="1.5" />
   </Rule>
 </Style>
 <Layer name="landuse"
@@ -120,17 +120,17 @@
 </Style>
 <Style name="waterway-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -181,17 +181,17 @@
 </Style>
 <Style name="water-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -229,19 +229,14 @@
 <Style name="aeroway" filter-mode="first">
   <Rule>
     <Filter>([type] = 'runway')</Filter>
-    <LineSymbolizer stroke="#403756" stroke-width="25" stroke-linecap="square" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#424242" stroke-width="25" stroke-linecap="square" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([type] = 'taxiway')</Filter>
-    <LineSymbolizer stroke="#403756" stroke-width="10" stroke-linecap="square" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#424242" stroke-width="10" stroke-linecap="square" stroke-linejoin="round" />
   </Rule>
 </Style>
 <Style name="aeroway-outlinecrisp" filter-mode="first">
-  <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -249,6 +244,11 @@
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -284,17 +284,17 @@
 
 <Style name="barrier_line-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -330,28 +330,23 @@
 <Style name="building-roof" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <PolygonSymbolizer fill="#907dbf" geometry-transform="translate(-2,-2.5)" clip="false" />
-    <LineSymbolizer stroke-width="0.5" stroke="#7b6aa2" geometry-transform="translate(-2,-2.5)" clip="false" />
+    <PolygonSymbolizer fill="#666666" geometry-transform="translate(-2,-2.5)" clip="false" />
+    <LineSymbolizer stroke-width="0.5" stroke="#575757" geometry-transform="translate(-2,-2.5)" clip="false" />
   </Rule>
 </Style>
 <Style name="building-wall" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <PolygonSymbolizer fill="#8270ae" />
+    <PolygonSymbolizer fill="#5e5e5e" />
   </Rule>
 </Style>
 <Style name="building" filter-mode="first">
   <Rule>
-    <PolygonSymbolizer fill="#907dbf" />
-    <LineSymbolizer stroke="#ad9fd0" stroke-gamma="0.5" stroke-width="0.5" />
+    <PolygonSymbolizer fill="#666666" />
+    <LineSymbolizer stroke="#808080" stroke-gamma="0.5" stroke-width="0.5" />
   </Rule>
 </Style>
 <Style name="building-outlinecrisp" filter-mode="first">
-  <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -359,6 +354,11 @@
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -396,17 +396,17 @@
 
 <Style name="landuse_overlay-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -585,17 +585,17 @@
 </Style>
 <Style name="tunnel-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -777,50 +777,50 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'service') and ([type] = 'pedestrian')</Filter>
+    <Filter>([class] = 'path') and ([type] = 'pedestrian')</Filter>
     <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'service') and ([type] = 'pedestrian')</Filter>
+    <Filter>([class] = 'path') and ([type] = 'pedestrian')</Filter>
     <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([class] = 'service') and ([type] = 'pedestrian')</Filter>
+    <Filter>([class] = 'path') and ([type] = 'pedestrian')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'pedestrian') and ([class] = 'path')</Filter>
+    <Filter>([type] = 'pedestrian') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] = 'pedestrian') and ([class] = 'path')</Filter>
+    <Filter>([type] = 'pedestrian') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'pedestrian') and ([class] = 'path')</Filter>
+    <Filter>([type] = 'pedestrian') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
@@ -929,18 +929,18 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
@@ -1033,24 +1033,24 @@
 <Style name="road-case" filter-mode="first" image-filters="agg-stack-blur(5,5)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="#7e0a13" stroke-width="2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#7e0a13" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke="#7e0a13" stroke-width="2" />
   </Rule>
   <Rule>
@@ -1067,17 +1067,17 @@
 </Style>
 <Style name="road-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -1417,42 +1417,8 @@
     <LineSymbolizer stroke="#030101" />
   </Rule>
 </Style>
-<Style name="road" filter-mode="first" image-filters="agg-stack-blur(20,20)" image-filters-inflate="true" opacity="0.5">
-  <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#7e0a13" stroke-width="50" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#7e0a13" stroke-width="50" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#7e0a13" stroke-width="50" />
-  </Rule>
-  <Rule>
-    <Filter>([type] != 'rail') and ([class] != 'golf') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] != 'driveway')</Filter>
-    <LineSymbolizer stroke="#7e0a13" stroke-width="50" />
-  </Rule>
-  <Rule>
-    <Filter>([type] = 'footway') and ([osm_id] != 255963751) and ([osm_id] != 255963752)</Filter>
-    <LineSymbolizer stroke="#7e0a13" stroke-width="50" />
-  </Rule>
-  <Rule>
-    <Filter>([type] = 'rail')</Filter>
-    <LineSymbolizer stroke="#7e0a13" stroke-width="50" />
-  </Rule>
-  <Rule>
-    <Filter>([type] = 'cycleway')</Filter>
-    <LineSymbolizer stroke="#7e0a13" stroke-width="50" />
-  </Rule>
-  <Rule>
-    <LineSymbolizer stroke="#7e0a13" stroke-width="50" />
-  </Rule>
-</Style>
 <Layer name="road"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>road</StyleName>
     <StyleName>road-case/drkst</StyleName>
     <StyleName>road-case/drk</StyleName>
     <StyleName>road-case/med</StyleName>
@@ -1610,18 +1576,66 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'pedestrian') and ([class] = 'service')</Filter>
+    <Filter>([class] = 'service') and ([type] = 'pedestrian')</Filter>
     <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] = 'pedestrian') and ([class] = 'service')</Filter>
+    <Filter>([class] = 'service') and ([type] = 'pedestrian')</Filter>
     <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'pedestrian') and ([class] = 'service')</Filter>
+    <Filter>([class] = 'service') and ([type] = 'pedestrian')</Filter>
+    <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] = 'path') and ([type] = 'pedestrian')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([class] = 'path') and ([type] = 'pedestrian')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([class] = 'path') and ([type] = 'pedestrian')</Filter>
+    <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
@@ -1714,22 +1728,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'pedestrian') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] = 'pedestrian') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'pedestrian') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([class] != 'golf') and ([class] != 'driveway') and ([type] = 'pedestrian')</Filter>
     <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
   </Rule>
@@ -1742,38 +1740,6 @@
   <Rule>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] != 'golf') and ([class] != 'driveway') and ([type] = 'pedestrian')</Filter>
-    <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-width="2" stroke-dasharray="6, 8" stroke="#df6237" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 5" stroke="#df6237" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
     <LineSymbolizer stroke="#df6237" stroke-linecap="round" />
   </Rule>
   <Rule>
@@ -1866,6 +1832,17 @@
 <Style name="bridge-case" filter-mode="first" image-filters="agg-stack-blur(5,5)" image-filters-inflate="true">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke-width="6" stroke="#baedf3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
+    <LineSymbolizer stroke="#baedf3" stroke-width="4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'street_limited')</Filter>
     <LineSymbolizer stroke-width="6" stroke="#baedf3" />
   </Rule>
@@ -1884,26 +1861,10 @@
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'path')</Filter>
-    <LineSymbolizer stroke="#baedf3" stroke-width="4" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#baedf3" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] != 'rail') and ([type] != 'cycleway') and ([type] != 'footway') and ([class] = 'service')</Filter>
     <LineSymbolizer stroke="#baedf3" stroke-width="4" />
   </Rule>
 </Style>
 <Style name="bridge-outlinecrisp" filter-mode="first">
-  <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -1911,6 +1872,11 @@
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -2269,17 +2235,17 @@
 
 <Style name="admin-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -2314,17 +2280,17 @@
 
 <Style name="country_label_line-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -2359,17 +2325,17 @@
 
 <Style name="country_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -2404,17 +2370,17 @@
 
 <Style name="marine_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -2449,17 +2415,17 @@
 
 <Style name="state_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -2494,17 +2460,17 @@
 
 <Style name="place_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -2623,17 +2589,17 @@
 </Style>
 <Style name="water_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -2731,13 +2697,6 @@
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Main Building') and ([osm_id] = 3000001639372)</Filter>
     <MarkersSymbolizer file="icon/america-football-24.svg" fill="#f3d437" stroke="#7e0a13" stroke-width="6" height="72" allow-overlap="true" />
-  </Rule>
-</Style>
-<Style name="poi_label-campus/top/label" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Cactus Cafe')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="poi_label-campus/label" filter-mode="first">
@@ -3432,11 +3391,11 @@
     <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
-<Style name="poi_label-campus/top/icon" filter-mode="first">
+<Style name="poi_label-campus/top/label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Cactus Cafe')</Filter>
-    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="poi_label-campus/icon" filter-mode="first">
@@ -3591,6 +3550,13 @@
     <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
 </Style>
+<Style name="poi_label-campus/top/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Cactus Cafe')</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+</Style>
 <Style name="poi_label-zilker/other/label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -3664,6 +3630,13 @@
     <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
+<Style name="poi_label-zilker/top/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Barton Springs Pool')</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+</Style>
 <Style name="poi_label-zilker/icon" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -3693,13 +3666,6 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Zilker Disc Golf')</Filter>
-    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
-  </Rule>
-</Style>
-<Style name="poi_label-zilker/top/icon" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Barton Springs Pool')</Filter>
     <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
 </Style>
@@ -3959,6 +3925,13 @@
     <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
+<Style name="poi_label-w6th/other/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = '\'Antone\'s\'')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+</Style>
 <Style name="poi_label-w6th/icon" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -3998,13 +3971,6 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Little Woodrow\'s')</Filter>
-    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
-  </Rule>
-</Style>
-<Style name="poi_label-w6th/other/icon" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = '\'Antone\'s\'')</Filter>
     <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
   </Rule>
 </Style>
@@ -4286,23 +4252,6 @@
     <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
-<Style name="poi_label-outlinecrisp" filter-mode="first">
-  <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-</Style>
 <Style name="poi_label-rainey/other/icon" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -4310,27 +4259,21 @@
     <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
   </Rule>
 </Style>
-<Style name="poi_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
-  <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-  </Rule>
+<Style name="poi_label-outlinecrisp" filter-mode="first">
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#030c00" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#1b7101" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#2ab102" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#33d703" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
 </Style>
 <Style name="poi_label-rainey/top/label" filter-mode="first">
@@ -4425,6 +4368,29 @@
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003190873016)</Filter>
     <TextSymbolizer placements="E" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="poi_label-outlinefuzz" filter-mode="first" image-filters="agg-stack-blur(20,20),agg-stack-blur(16,16),agg-stack-blur(12,12)" image-filters-inflate="true">
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#030c00" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#1b7101" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#2ab102" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#33d703" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
   </Rule>
 </Style>
 <Style name="poi_label-rainey/icon" filter-mode="first">
@@ -5546,11 +5512,11 @@
     <StyleName>poi_label-capital/other/label</StyleName>
     <StyleName>poi_label-rainey/top/icon</StyleName>
     <StyleName>poi_label-rainey/icon</StyleName>
+    <StyleName>poi_label-outlinefuzz</StyleName>
     <StyleName>poi_label-rainey/label</StyleName>
     <StyleName>poi_label-rainey/top/label</StyleName>
-    <StyleName>poi_label-outlinefuzz</StyleName>
-    <StyleName>poi_label-rainey/other/icon</StyleName>
     <StyleName>poi_label-outlinecrisp</StyleName>
+    <StyleName>poi_label-rainey/other/icon</StyleName>
     <StyleName>poi_label-rainey/other/label</StyleName>
     <StyleName>poi_label-dirty/icon</StyleName>
     <StyleName>poi_label-dirty/top/icon</StyleName>
@@ -5560,8 +5526,8 @@
     <StyleName>poi_label-dirty/other/label</StyleName>
     <StyleName>poi_label-w6th/top/icon</StyleName>
     <StyleName>poi_label-w6th/top/label</StyleName>
-    <StyleName>poi_label-w6th/other/icon</StyleName>
     <StyleName>poi_label-w6th/icon</StyleName>
+    <StyleName>poi_label-w6th/other/icon</StyleName>
     <StyleName>poi_label-w6th/label</StyleName>
     <StyleName>poi_label-w6th/other/label</StyleName>
     <StyleName>poi_label-soco/icon</StyleName>
@@ -5570,25 +5536,20 @@
     <StyleName>poi_label-soco/top/label</StyleName>
     <StyleName>poi_label-soco/other/icon</StyleName>
     <StyleName>poi_label-soco/other/label</StyleName>
-    <StyleName>poi_label-zilker/top/icon</StyleName>
     <StyleName>poi_label-zilker/icon</StyleName>
+    <StyleName>poi_label-zilker/top/icon</StyleName>
     <StyleName>poi_label-zilker/label</StyleName>
     <StyleName>poi_label-zilker/top/label</StyleName>
     <StyleName>poi_label-zilker/other/icon</StyleName>
     <StyleName>poi_label-zilker/other/label</StyleName>
-    <StyleName>poi_label-campus/icon</StyleName>
     <StyleName>poi_label-campus/top/icon</StyleName>
-    <StyleName>poi_label-campus/label</StyleName>
+    <StyleName>poi_label-campus/icon</StyleName>
     <StyleName>poi_label-campus/top/label</StyleName>
+    <StyleName>poi_label-campus/label</StyleName>
     <StyleName>poi_label-campus/other/icon</StyleName>
     <StyleName>poi_label-campus/other/label</StyleName>  </Layer>
 
 <Style name="road_label-outlinecrisp" filter-mode="first">
-  <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
@@ -5596,6 +5557,11 @@
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -5674,196 +5640,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail') and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="42" halo-radius="5" fontset-name="fontset-2" placement="line" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail') and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="36" halo-radius="6" placement="line" fontset-name="fontset-0" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail') and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-0" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" halo-radius="2" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail') and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <ShieldSymbolizer minimum-distance="80" file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-0" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" halo-radius="2" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail') and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <ShieldSymbolizer file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" minimum-distance="40" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-0" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" halo-radius="2" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail') and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <TextSymbolizer placement="line" fontset-name="fontset-0" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" halo-radius="2" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="42" halo-radius="5" fontset-name="fontset-2" placement="line" fill="#f3d437" halo-rasterizer="fast" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="36" halo-radius="6" placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <ShieldSymbolizer minimum-distance="80" file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <ShieldSymbolizer file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" minimum-distance="40" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="42" halo-radius="5" placement="line" fontset-name="fontset-0" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="36" halo-radius="6" placement="line" fontset-name="fontset-0" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-0" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <ShieldSymbolizer minimum-distance="80" file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-0" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <ShieldSymbolizer file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" minimum-distance="40" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-0" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name].match('^((?!Frontage).)*$'))</Filter>
-    <TextSymbolizer placement="line" fontset-name="fontset-0" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
-    <ShieldSymbolizer minimum-distance="80" file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'main') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
-    <ShieldSymbolizer file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" minimum-distance="40" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer fontset-name="fontset-2" size="20" placement="line" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer size="19" placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <ShieldSymbolizer minimum-distance="80" file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <ShieldSymbolizer file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" minimum-distance="40" ><![CDATA[[ref]]]></ShieldSymbolizer>
-    <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11) and ([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
-    <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
-    <ShieldSymbolizer spacing="400" size="21" transform="scale(1.7,1.7)" minimum-distance="80" file="img/motorway_[reflen]x1.svg" fontset-name="fontset-0" fill="#ffffff" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
-    <ShieldSymbolizer minimum-distance="80" file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([class] = 'motorway') and ([reflen] &gt;= 1) and ([reflen] &lt;= 11)</Filter>
-    <ShieldSymbolizer file="img/motorway_[reflen]x1.svg" size="19" fontset-name="fontset-0" fill="#ffffff" spacing="300" minimum-padding="10" minimum-distance="40" ><![CDATA[[ref]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([class] = 'main') and ([name] = 'Lady Bird Lake Hike and Bike Trail') and ([name].match('^((?!Frontage).)*$'))</Filter>
     <TextSymbolizer size="42" halo-radius="5" fontset-name="fontset-2" placement="line" fill="#f3d437" avoid-edges="true" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
@@ -5912,34 +5688,34 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street_limited')</Filter>
+    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street')</Filter>
     <TextSymbolizer fontset-name="fontset-2" size="20" placement="line" fill="#f3d437" avoid-edges="true" halo-radius="3" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street_limited')</Filter>
+    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street')</Filter>
     <TextSymbolizer size="19" placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street_limited')</Filter>
+    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street')</Filter>
     <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street')</Filter>
+    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street_limited')</Filter>
     <TextSymbolizer fontset-name="fontset-2" size="20" placement="line" fill="#f3d437" avoid-edges="true" halo-radius="3" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street')</Filter>
+    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street_limited')</Filter>
     <TextSymbolizer size="19" placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street')</Filter>
+    <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail') and ([class] = 'street_limited')</Filter>
     <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -5957,15 +5733,15 @@
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([name] = 'Lady Bird Lake Hike and Bike Trail')</Filter>
     <TextSymbolizer placement="line" fontset-name="fontset-3" fill="#f3d437" halo-rasterizer="fast" halo-radius="2" halo-fill="#7e0a13" minimum-padding="25" text-transform="lowercase" allow-overlap="true" ><![CDATA['Town Lake Running Trail']]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'street_limited')</Filter>
-    <TextSymbolizer placement="line" fontset-name="fontset-2" fill="#f3d437" avoid-edges="true" halo-radius="3" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" size="35" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([class] = 'street')</Filter>
+    <TextSymbolizer placement="line" fontset-name="fontset-2" fill="#f3d437" avoid-edges="true" halo-radius="3" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" size="35" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] = 'street_limited')</Filter>
     <TextSymbolizer placement="line" fontset-name="fontset-2" fill="#f3d437" avoid-edges="true" halo-radius="3" halo-fill="rgba(126, 10, 19, 0.53)" minimum-padding="25" text-transform="lowercase" halo-rasterizer="fast" size="35" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
@@ -5977,17 +5753,17 @@
 
 <Style name="waterway_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -6041,17 +5817,17 @@
 
 <Style name="housenum_label-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -6086,17 +5862,17 @@
 
 <Style name="map2-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -6126,7 +5902,9 @@
 </Style>
 <Style name="map2" filter-mode="first" opacity="0.2">
   <Rule>
-    <LineSymbolizer stroke-width="0.5" stroke="#9892a5" />
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.5" stroke="#999999" />
   </Rule>
 </Style>
 <Layer name="map2"
@@ -6137,17 +5915,17 @@
 
 <Style name="rocket-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -6214,17 +5992,17 @@
 
 <Style name="centroids-outlinecrisp" filter-mode="first">
   <Rule>
-    <Filter>([class] = 'grass')</Filter>
-    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
   <Rule>
     <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
+    <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'grass')</Filter>
     <LineSymbolizer stroke="#39f103" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="0.5" />
     <LineSymbolizer stroke="#ffffff" stroke-width="1.25" />
   </Rule>
@@ -6257,216 +6035,216 @@
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'Dirty 6th')</Filter>
-    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'So Co')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'Zilker')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'East 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['East 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['East 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'West 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'Rainey')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'Campus')</Filter>
-    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'Dirty 6th')</Filter>
-    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'So Co')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'Zilker')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'East 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['East 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['East 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'West 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'Rainey')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'Campus')</Filter>
-    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'Dirty 6th')</Filter>
-    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'So Co')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'Zilker')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'East 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['East 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['East 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'West 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'Rainey')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'Campus')</Filter>
-    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'Dirty 6th')</Filter>
-    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'So Co')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'Zilker')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'East 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['East 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['East 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'West 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'Rainey')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'Campus')</Filter>
-    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(92, 71, 143, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="centroids"

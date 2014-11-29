@@ -47,6 +47,7 @@
 
 
 // Highway shield
+/* disable until i change the svg colors
 #road_label[class='motorway'][zoom>=8][reflen>=1][reflen<=11],
 #road_label[class='main'][zoom>=8][reflen>=1][reflen<=11] {
   shield-name: "[ref]";
@@ -65,6 +66,7 @@
     shield-transform: scale(1.7,1.7);
   }
 }
+*/
 
 #road_label { 
     [class='main'][name=~'^((?!Frontage).)*$'] { //this regex is for eliminating "frontage" labels 

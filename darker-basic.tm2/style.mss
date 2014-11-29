@@ -42,8 +42,8 @@ interrupts the smooth top
 
 // Common Colors //
 
-@land:  rgb(48, 37, 75); //original rgb(29, 21, 48);
-@building: lighten(@land, 40);
+@land:  #333;
+@building: lighten(@land, 20);
 
 @road_bright: rgb(243,212,55);
 @road_med: rgb(223, 98, 55);
@@ -51,22 +51,6 @@ interrupts the smooth top
 @road_drkst: rgb(126, 10, 19);
 
 //POI Styles
-
-//lightergreen
-//@poi_text: rgb(159, 230, 138);
-//@poi_halo: rgb(18, 72, 1);
-
-//lightgrey
-//@poi_text: mix(@land, white, 20%); //mix(@park_bright, white, 50%);
-//@poi_halo: @land; //mix(@park_drkst, @park_bright, 50%);
-
-//white
-//@poi_text: white;
-//@poi_halo: @land;
-
-//yellow
-//@poi_text: yellow;
-//@poi_halo: @land;
 
 //TOP POI
 @poi_text: white;
@@ -81,7 +65,7 @@ interrupts the smooth top
 @park_drk: rgb(42,177,2);
 @park_drkst: rgb(27,113,1);
 
-@water_bright: rgb(186, 237, 243 );
+@water_bright: rgb(186, 237, 243);
 @water_med: rgb(149, 207, 246);
 @water_drk: rgb(106, 155, 239);
 @water_drkst: rgb(49, 82, 180);
@@ -158,7 +142,7 @@ Map { background-color: @land; }
 
 //export extents
 
-#map2  {
+#map2 [zoom=18]  {
 //  [zoom<=16] {polygon-fill: white; }
   opacity: .2;
   line-width: .5;
