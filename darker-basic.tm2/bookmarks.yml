@@ -1,24 +1,64 @@
-- place_name: Austin, 78704, Texas, United States
-  zoom: 16
+- place_name: Austin, 78701, Texas, United States
+  zoom: 18
   center: 
-    - 30.250281605136983
-    - -97.75044679641724
+    - 30.259183041820478
+    - -97.7389857172966
   tags: 
     - userbookmark
   index: 0
 - place_name: Austin, 78701, Texas, United States
-  zoom: 16
+  zoom: 18
   center: 
-    - 30.259234010764473
-    - -97.7395248413086
+    - 30.26594777950205
+    - -97.74184495210648
   tags: 
     - userbookmark
   index: 1
 - place_name: Austin, 78701, Texas, United States
-  zoom: 16
+  zoom: 18
   center: 
-    - 30.266980982655262
-    - -97.7433443069458
+    - 30.266971716307587
+    - -97.74733811616896
   tags: 
     - userbookmark
   index: 2
+- place_name: Austin, 78702, Texas, United States
+  zoom: 18
+  center: 
+    - 30.26260716934243
+    - -97.7281978726387
+  tags: 
+    - userbookmark
+  index: 3
+- place_name: Austin, 78746, Texas, United States
+  zoom: 18
+  center: 
+    - 30.26495626490746
+    - -97.7677121758461
+  tags: 
+    - userbookmark
+  index: 4
+- place_name: Austin, 78704, Texas, United States
+  zoom: 18
+  center: 
+    - 30.25070329472636
+    - -97.75082498788834
+  tags: 
+    - userbookmark
+  index: 5
+- place_name: Austin, 78701, Texas, United States
+  zoom: 18
+  center: 
+    - 30.273467211441616
+    - -97.74039655923843
+  tags: 
+    - userbookmark
+  index: 6
+- place_name: Austin, 78712, Texas, United States
+  zoom: 18
+  center: 
+    - 30.28594736290226
+    - -97.73942559957504
+  tags: 
+    - userbookmark
+  index: 7

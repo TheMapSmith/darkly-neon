@@ -199,7 +199,7 @@
         }//end label
       } //end top
     
-    ::other [name="Bar 96"],[name="THE BLACKHEART"],[name="Art of Tacos"],
+    ::other [name="Bar 96"],[name="Container Bar"],[name="Art of Tacos"],
       [name="Bungalow"]
       {
       ::icon {
@@ -232,16 +232,16 @@
         text-allow-overlap: true;   
         
         //east
-        [name="Bar 96"] {
+        [name="Bungalow"],[name="Bar 96"],[name="Container Bar"] {
           text-placements: "E";
           text-dy: 0; text-dx: 50;      
           text-wrap-width: 0; }
         
         //west
-        [name="Bungalow"],[name="Art of Tacos"],[name="THE BLACKHEART"], {
+        [name="Art of Tacos"] {
           text-placements: "W";
           text-dy: 0; text-dx: 50;      
-          text-wrap-width: 0; }
+          text-wrap-width: 0; }        
         }//end label      
       } //end other       
     }//end rainey
@@ -381,7 +381,7 @@
     
     ::other [name="'Antone's'"],[name="The Gingerman"],[name="Cantina Laredo"],[name="III Forks"],[name="La Zona Rosa"],
     [name="Kung Fu Saloon"],[name="Hut's Hamburgers"],[name="Little Woodrow's"],
-    [name="Manuel's"]
+    [name="Manuel's"],[name='Malaga Tapas'],[name="Maiko Sushi"]
       {
       ::icon {
         marker-fill:@other_text;
@@ -656,7 +656,6 @@
       } //end top
     
     ::other [name="Main Building"],
-    [name="Peter T. Flawn Academic Center"],
     [name="Harry Ransom Center"],[name="Perry-Castañeda Library"],
     [name="Bob Bullock Texas State History Museum"],
     [name="Blanton Museum of Art"],[name="Thai How Are You"],
@@ -719,10 +718,6 @@
           text-dx: 50; 
           text-wrap-width: 190;
         }
-        //FAC
-        [osm_id= 1000038607784] {
-          text-name: "'FAC'";
-          }
         
         //tower
         [name="Main Building"] {
