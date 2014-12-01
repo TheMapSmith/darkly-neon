@@ -1,8 +1,8 @@
 #rocket { //fuck the label - we'll do it live
   ::marker {
   marker-file: url('icon/rocket-24-solid.svg');
-  marker-fill: @rail_bright;
-  marker-line-color: @water_bright;
+  marker-fill: @rail_drk;
+  marker-line-color: @water_drk;
   marker-allow-overlap: true;
   [zoom>=16] {
     marker-height: 72;  
@@ -15,8 +15,8 @@
   ::label {
     text-name: "'AVAST'";
     text-face-name: @sans_black;
-    text-fill: @rail_bright;
-    text-halo-fill: @water_bright;
+    text-fill: @rail_drk;
+    text-halo-fill: @water_drk;
     text-halo-opacity: .9;
     text-allow-overlap: true;
     [zoom>=16] {

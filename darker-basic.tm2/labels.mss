@@ -1,5 +1,5 @@
 #centroids [zoom=16][Name!='East 6th']{
-  text-fill: white;
+  text-fill: @road_drk;
   text-name: [Name];
   text-face-name: 'Avenir Black';
   text-size: 90;

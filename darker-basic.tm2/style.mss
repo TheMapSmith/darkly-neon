@@ -42,13 +42,13 @@ interrupts the smooth top
 
 // Common Colors //
 
-@land:  #333;
-@building: lighten(@land, 20);
+@land:  #ddd;
+@building: darken(@land, 20);
 
-@road_bright: rgb(243,212,55);
-@road_med: rgb(223, 98, 55);
-@road_drk: rgb(216, 40, 48);
-@road_drkst: rgb(126, 10, 19);
+@road_drkst: rgb(243,212,55);
+@road_drk: rgb(223, 98, 55);
+@road_med: rgb(216, 40, 48);
+@road_bright: rgb(126, 10, 19);
 
 //POI Styles
 
@@ -60,29 +60,26 @@ interrupts the smooth top
 @other_text: @road_bright;
 @other_halo: @road_drkst;
 
-@park_bright: rgb(57, 241, 3); 
-@park_med: rgb(51, 215, 3);
-@park_drk: rgb(42,177,2);
-@park_drkst: rgb(27,113,1);
+@park_drkst: rgb(57, 241, 3); 
+@park_drk: rgb(51, 215, 3);
+@park_med: rgb(42,177,2);
+@park_bright: rgb(27,113,1);
+@park_white: darken(@park_bright, 20);
 
-@water_bright: rgb(186, 237, 243);
-@water_med: rgb(149, 207, 246);
-@water_drk: rgb(106, 155, 239);
-@water_drkst: rgb(49, 82, 180);
-/* try red rail
-@rail_bright: rgb(218,213,246);
-@rail_med: rgb(153,138,245);
-@rail_drk: rgb(73,66,117);
-@rail_drkst: darken(@rail_drk, 20);
-*/
-@cycle_bright: rgb(229,47,53);
+@water_drkst: rgb(186, 237, 243);
+@water_drk: rgb(149, 207, 246);
+@water_med: rgb(106, 155, 239);
+@water_bright: rgb(49, 82, 180);
+@water_white: darken(@water_bright, 20);
+
+@cycle_drk: rgb(229,47,53);
 @cycle_med: rgb(152,31,35);
-@cycle_drk: rgb(88,18,20);
+@cycle_nrogjt: rgb(88,18,20);
 
-@rail_bright: rgb(229,47,53);
-@rail_med: rgb(152,31,35);
-@rail_drk: rgb(88,18,20);
-@rail_drkst: darken(@rail_drk, 20);
+@rail_drkst: rgb(229,47,53);
+@rail_drk: rgb(152,31,35);
+@rail_med: rgb(88,18,20);
+@rail_bright: darken(@rail_drk, 20);
 
 // Line Widths
 // Starting with @max, road widths are systematically subtracted
@@ -197,8 +194,8 @@ Map { background-color: @land; }
   }
 
 #landuse [class='parking'] {
-  polygon-fill: mix(@land, grey, 80%);
-  line-color: darken(mix(@land, grey, 80%), 20);
+  polygon-fill: mix(@land, white, 90%);
+  line-color: darken(mix(@land, white, 80%), 20);
   line-width: 1.5;
   }
 
@@ -240,7 +237,7 @@ Map { background-color: @land; }
     bright/line-cap: round;
     bright/line-join: round;
     bright/line-gamma: .5;
-    white/line-color: white;
+    white/line-color: @park_white;
     white/line-width: 1.25;    
     }
   }
@@ -268,7 +265,7 @@ Map { background-color: @land; }
     bright/line-color: @water_bright;
     bright/line-width: @link - @bright;
     bright/line-cap: round;
-    white/line-color: white;
+    white/line-color: @water_white;
     white/line-width: 1.5;
     white/line-cap: round;
     }
@@ -291,7 +288,7 @@ Map { background-color: @land; }
     bright/polygon-fill: @water_med; 
     bright/line-color: @water_bright;
     bright/line-width: @max - @bright;
-    white/line-color: white;
+    white/line-color: @water_white;
     white/line-width: 1.5;    
     }
   }
