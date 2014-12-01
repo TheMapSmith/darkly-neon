@@ -142,10 +142,11 @@ Map { background-color: @land; }
 
 //export extents
 
-#map2 [zoom=18]  {
+#map2 [zoom>=16][Name!="East 6th"] {
 //  [zoom<=16] {polygon-fill: white; }
-  opacity: .2;
+  opacity: .125;
   line-width: .5;
+  line-gamma: .5;
   line-color: mix(@land, white, 50%);
 /*
   ::halo {

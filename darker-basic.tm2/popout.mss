@@ -35,76 +35,7 @@
   }
 
 #poi_label [zoom>=18] {
-  ::e6th {
-    ::top [name="Qui"],[osm_id=1000003190873015],[name="East Side King"] //via313
-      {
-      ::icon {
-        marker-fill:@poi_text;
-        marker-line-color: @poi_halo;
-        marker-line-width: 6;
-        marker-file:url('icon/[maki]-24.svg');
-        marker-height: 84;   
-        marker-allow-overlap: true;
-        marker-allow-overlap: false;        
-        }//end icon
-      
-      ::label {
-        text-name: @name;
-        text-face-name: @sans_bold;
-        text-fill: @poi_text;      
-        text-size: 55;
-        text-halo-fill: fadeout(@poi_halo, 85%);
-        text-halo-radius: 6;
-        text-halo-rasterizer: fast;
-        text-wrap-width: 30;
-        text-line-spacing:  -15;
-        text-align: center;
-        text-placement-type: simple;
-        text-placements: "S,SW,SE,E,W,SSW,SSE,N";
-        text-transform: lowercase;
-        text-character-spacing: 0.25;
-        text-dy: 40;       
-        text-avoid-edges: false;
-        text-allow-overlap: true;         
-        }//end label
-      } //end top
-    
-    ::other [name="Shangri La"],[name="Rio Rita"],
-    [name="Vintage Heart Coffee"],[name="The White Horse"],
-    [name="The Liberty"],[name="Yellow Jacket Social Club"]
-      {
-      ::icon {
-        marker-fill:@other_text;
-        marker-line-color: @other_halo;
-        marker-line-width: 6;
-        marker-file:url('icon/[maki]-24.svg');
-        marker-height: 72;   
-        marker-allow-overlap: true;
-        marker-allow-overlap: false;        
-        }//end icon
-      
-      ::label {
-        text-name: @name;
-        text-face-name: @sans_bold;
-        text-fill: @other_text;      
-        text-size: 45;
-        text-halo-fill: fadeout(@other_halo, 85%);
-        text-halo-radius: 6;
-        text-halo-rasterizer: fast;
-        text-wrap-width: 30;
-        text-line-spacing:  -15;
-        text-align: center;
-        text-placement-type: simple;
-        text-placements: "S,SW,SE,E,W,SSW,SSE,N";
-        text-transform: lowercase;
-        text-character-spacing: 0.25;
-        text-dy: 40;       
-        text-avoid-edges: false;
-        text-allow-overlap: true;         
-        }//end label      
-      } //end other    
-    }//end e6th
-  
+  //removed e6th - replaced frame with title and index
   ::capital {
     
     //no TOP POI @ the capital
@@ -433,7 +364,9 @@
         marker-file:url('icon/[maki]-24.svg');
         marker-height: 84;   
         marker-allow-overlap: true;
-        marker-allow-overlap: false;        
+        marker-allow-overlap: false;    
+        [name="Hopdoddy"] { marker-file:url('icon/fast-food-24.svg'); }
+
         }//end icon
       
       ::label {
@@ -493,7 +426,11 @@
         marker-file:url('icon/[maki]-24.svg');
         marker-height: 72;   
         marker-allow-overlap: true;
-        marker-allow-overlap: false;        
+        marker-allow-overlap: false;  
+        [name="Amy's Ice Cream"] { 
+          marker-file: url('icon/ice-cream-24.svg'); 
+          marker-height: 65; }        
+        
         }//end icon
       
       ::label {
@@ -656,13 +593,13 @@
       } //end top
     
     ::other [name="Main Building"],
-    [name="Harry Ransom Center"],[name="Perry-Castañeda Library"],
+    [name="Harry Ransom Center"],
     [name="Bob Bullock Texas State History Museum"],
     [name="Blanton Museum of Art"],[name="Thai How Are You"],
     [name="Player's Restaurant"],[name="Darrell K Royal-Texas Memorial Stadium"],
-    [name="Texas Memorial Museum"],[name="Lyndon B. Johnson Library"],
+    [name="Lyndon B. Johnson Library"],
     [name="JP's Java"],[name="Crown and Anchor"],
-    [name="Bite Mi"],[name="The Dog & Duck"]
+    [name="Bite Mi"]
       {
       ::icon {
         marker-fill:@other_text;

@@ -26,7 +26,11 @@
     [name="Pinthouse Pizza"],
     [name="Draught House"],
     [osm_id=1000001236793007], //quacks
-    [name="Epoch Coffee"] {
+    [name="Epoch Coffee"], 
+    [name="Qui"],
+    [osm_id=1000003190873015],//via313
+    [name="East Side King"] 
+    {
     
     ::icon { 
         marker-fill:@poi_text;
