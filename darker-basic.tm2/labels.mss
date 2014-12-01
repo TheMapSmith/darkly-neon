@@ -10,7 +10,7 @@
   text-halo-radius: 10;
   text-allow-overlap: true;
   [Name="Capital"] {
-    text-name: "'State Capital'";
+    text-name: "'State Capitol'";
     }
   
   [Name="Campus"] {

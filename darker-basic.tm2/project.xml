@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.7355,30.26,16</Parameter>
+  <Parameter name="center">-97.7311,30.2629,16</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">20</Parameter>
   <Parameter name="minzoom">16</Parameter>
@@ -5938,7 +5938,7 @@
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -5986,7 +5986,7 @@
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -6034,7 +6034,7 @@
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -6082,7 +6082,7 @@
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capital']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
