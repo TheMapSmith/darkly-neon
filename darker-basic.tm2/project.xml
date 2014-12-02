@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.735,30.36,16</Parameter>
+  <Parameter name="center">-97.7751,30.2666,18</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">20</Parameter>
   <Parameter name="minzoom">16</Parameter>
@@ -2699,12 +2699,12 @@
 <Style name="poi_label-campus/label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Bob Bullock Texas State History Museum') and ([osm_id] = 3000001639372) and ([maki] != '')</Filter>
+    <Filter>([name] = 'Harry Ransom Center') and ([osm_id] = 3000001639372) and ([maki] != '')</Filter>
     <TextSymbolizer placements="E" dx="50" wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Bob Bullock Texas State History Museum') and ([osm_id] = 3000001639372)</Filter>
+    <Filter>([name] = 'Harry Ransom Center') and ([osm_id] = 3000001639372)</Filter>
     <TextSymbolizer placements="E" dx="50" wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2784,12 +2784,12 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Harry Ransom Center') and ([osm_id] = 3000001639372) and ([maki] != '')</Filter>
+    <Filter>([name] = 'Bob Bullock Texas State History Museum') and ([osm_id] = 3000001639372) and ([maki] != '')</Filter>
     <TextSymbolizer placements="E" dx="50" wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Harry Ransom Center') and ([osm_id] = 3000001639372)</Filter>
+    <Filter>([name] = 'Bob Bullock Texas State History Museum') and ([osm_id] = 3000001639372)</Filter>
     <TextSymbolizer placements="E" dx="50" wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2804,13 +2804,18 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Lyndon B. Johnson Library') and ([osm_id] = 1000172662523) and ([maki] != '')</Filter>
+    <Filter>([name] = 'Thai How Are You') and ([osm_id] = 1000000566159519) and ([maki] != '')</Filter>
     <TextSymbolizer wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Lyndon B. Johnson Library') and ([osm_id] = 1000172662523)</Filter>
+    <Filter>([name] = 'Thai How Are You') and ([osm_id] = 1000000566159519)</Filter>
     <TextSymbolizer wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'JP\'s Java') and ([osm_id] = 1000172662523)</Filter>
+    <TextSymbolizer wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -2844,22 +2849,22 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Crown and Anchor') and ([osm_id] = 1000000566159519) and ([maki] != '')</Filter>
+    <TextSymbolizer wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Crown and Anchor') and ([osm_id] = 1000000566159519)</Filter>
+    <TextSymbolizer wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Darrell K Royal-Texas Memorial Stadium') and ([osm_id] = 1000000566159519) and ([maki] != '')</Filter>
     <TextSymbolizer wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Darrell K Royal-Texas Memorial Stadium') and ([osm_id] = 1000000566159519)</Filter>
-    <TextSymbolizer wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Bite Mi') and ([osm_id] = 1000000566159519) and ([maki] != '')</Filter>
-    <TextSymbolizer wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Bite Mi') and ([osm_id] = 1000000566159519)</Filter>
     <TextSymbolizer wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2871,11 +2876,6 @@
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Lyndon B. Johnson Library') and ([osm_id] = 1000000566159519)</Filter>
     <TextSymbolizer wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'JP\'s Java') and ([osm_id] = 1000000566159519)</Filter>
-    <TextSymbolizer wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -2909,8 +2909,13 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'JP\'s Java') and ([osm_id] = 1000172662523)</Filter>
+    <Filter>([name] = 'Lyndon B. Johnson Library') and ([osm_id] = 1000172662523) and ([maki] != '')</Filter>
     <TextSymbolizer wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Lyndon B. Johnson Library') and ([osm_id] = 1000172662523)</Filter>
+    <TextSymbolizer wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -2934,12 +2939,22 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Thai How Are You') and ([osm_id] = 1000000566159519) and ([maki] != '')</Filter>
+    <Filter>([name] = 'Bite Mi') and ([osm_id] = 1000000566159519) and ([maki] != '')</Filter>
     <TextSymbolizer wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Thai How Are You') and ([osm_id] = 1000000566159519)</Filter>
+    <Filter>([name] = 'Bite Mi') and ([osm_id] = 1000000566159519)</Filter>
+    <TextSymbolizer wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Blanton Museum of Art') and ([osm_id] = 1000000566159519) and ([maki] != '')</Filter>
+    <TextSymbolizer wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Blanton Museum of Art') and ([osm_id] = 1000000566159519)</Filter>
     <TextSymbolizer wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2984,23 +2999,8 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Blanton Museum of Art') and ([osm_id] = 1000000566159519) and ([maki] != '')</Filter>
+    <Filter>([name] = 'JP\'s Java') and ([osm_id] = 1000000566159519)</Filter>
     <TextSymbolizer wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Blanton Museum of Art') and ([osm_id] = 1000000566159519)</Filter>
-    <TextSymbolizer wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Crown and Anchor') and ([osm_id] = 1000000566159519) and ([maki] != '')</Filter>
-    <TextSymbolizer wrap-width="190" dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Crown and Anchor') and ([osm_id] = 1000000566159519)</Filter>
-    <TextSymbolizer wrap-width="190" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -3010,6 +3010,11 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Harry Ransom Center') and ([maki] != '')</Filter>
+    <TextSymbolizer dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Bite Mi') and ([maki] != '')</Filter>
     <TextSymbolizer dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3044,12 +3049,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Bite Mi') and ([maki] != '')</Filter>
-    <TextSymbolizer dy="40" fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Bob Bullock Texas State History Museum')</Filter>
+    <Filter>([name] = 'Lyndon B. Johnson Library')</Filter>
     <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3064,22 +3064,22 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Harry Ransom Center')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Lyndon B. Johnson Library')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Darrell K Royal-Texas Memorial Stadium')</Filter>
     <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Harry Ransom Center')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Player\'s Restaurant')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Bob Bullock Texas State History Museum')</Filter>
     <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3096,12 +3096,12 @@
 <Style name="poi_label-campus/icon" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Crown and Anchor') and ([osm_id] = 3000001639372)</Filter>
+    <Filter>([name] = 'Bob Bullock Texas State History Museum') and ([osm_id] = 3000001639372)</Filter>
     <MarkersSymbolizer file="icon/america-football-24.svg" fill="#f3d437" stroke="#7e0a13" stroke-width="6" height="72" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Darrell K Royal-Texas Memorial Stadium') and ([osm_id] = 3000001639372)</Filter>
+    <Filter>([name] = 'Crown and Anchor') and ([osm_id] = 3000001639372)</Filter>
     <MarkersSymbolizer file="icon/america-football-24.svg" fill="#f3d437" stroke="#7e0a13" stroke-width="6" height="72" allow-overlap="true" />
   </Rule>
   <Rule>
@@ -3121,7 +3121,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Bob Bullock Texas State History Museum') and ([osm_id] = 3000001639372)</Filter>
+    <Filter>([name] = 'Darrell K Royal-Texas Memorial Stadium') and ([osm_id] = 3000001639372)</Filter>
     <MarkersSymbolizer file="icon/america-football-24.svg" fill="#f3d437" stroke="#7e0a13" stroke-width="6" height="72" allow-overlap="true" />
   </Rule>
   <Rule>
@@ -3151,7 +3151,32 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Crown and Anchor')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Harry Ransom Center')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Lyndon B. Johnson Library')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Darrell K Royal-Texas Memorial Stadium')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Bite Mi')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Player\'s Restaurant')</Filter>
     <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
   </Rule>
   <Rule>
@@ -3167,31 +3192,6 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Bob Bullock Texas State History Museum')</Filter>
-    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Player\'s Restaurant')</Filter>
-    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Darrell K Royal-Texas Memorial Stadium')</Filter>
-    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Crown and Anchor')</Filter>
-    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Lyndon B. Johnson Library')</Filter>
-    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Bite Mi')</Filter>
     <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
   </Rule>
   <Rule>
@@ -3212,26 +3212,12 @@
     <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
 </Style>
-<Style name="poi_label-zilker/other/label" filter-mode="first">
+<Style name="poi_label-zilker/label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Shady Grove') and ([osm_id] = 1000000368165063)</Filter>
+    <Filter>([name] = 'Zilker Disc Golf') and ([osm_id] = 1000000368165063)</Filter>
     <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Umlauf Sculpture Garden']]></TextSymbolizer>
   </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Shady Grove')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-</Style>
-<Style name="poi_label-zilker/other/icon" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Shady Grove')</Filter>
-    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
-  </Rule>
-</Style>
-<Style name="poi_label-zilker/label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Zilker Botanical Garden') and ([osm_id] = 1000000368165063)</Filter>
@@ -3254,12 +3240,12 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Austin Nature Center') and ([osm_id] = 1000003194303977)</Filter>
+    <Filter>([name] = 'Zilker Hillside Theater') and ([osm_id] = 1000313444167)</Filter>
     <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Zilker Hillside Theater') and ([osm_id] = 1000313444167)</Filter>
+    <Filter>([name] = 'Austin Nature Center') and ([osm_id] = 1000003194303977)</Filter>
     <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3275,21 +3261,26 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Zilker Disc Golf')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
-<Style name="poi_label-zilker/top/label" filter-mode="first">
+<Style name="poi_label-zilker/other/label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Barton Springs Pool')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([name] = 'Shady Grove') and ([osm_id] = 1000000368165063)</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA['Umlauf Sculpture Garden']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Shady Grove')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
-<Style name="poi_label-zilker/top/icon" filter-mode="first">
+<Style name="poi_label-zilker/other/icon" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Barton Springs Pool')</Filter>
-    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+    <Filter>([name] = 'Shady Grove')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
   </Rule>
 </Style>
 <Style name="poi_label-zilker/icon" filter-mode="first">
@@ -3310,6 +3301,11 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Zilker Disc Golf')</Filter>
+    <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Zilker Zephyr')</Filter>
     <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
   </Rule>
@@ -3318,9 +3314,18 @@
     <Filter>([name] = 'Umlauf Sculpture Garden and Museum')</Filter>
     <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
   </Rule>
+</Style>
+<Style name="poi_label-zilker/top/label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Zilker Disc Golf')</Filter>
+    <Filter>([name] = 'Barton Springs Pool')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="poi_label-zilker/top/icon" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Barton Springs Pool')</Filter>
     <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
 </Style>
@@ -3368,12 +3373,12 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([osm_id] = 1000003181780244) and ([name] = 'The Continental Club')</Filter>
+    <Filter>([osm_id] = 1000003181780244) and ([name] = 'Home Slice Pizza')</Filter>
     <TextSymbolizer placements="W" justify-alignment="right" dx="50" dy="50" allow-overlap="true" wrap-width="90" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([osm_id] = 1000003181780244) and ([name] = 'Home Slice Pizza')</Filter>
+    <Filter>([osm_id] = 1000003181780244) and ([name] = 'The Continental Club')</Filter>
     <TextSymbolizer placements="W" justify-alignment="right" dx="50" dy="50" allow-overlap="true" wrap-width="90" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3403,7 +3408,12 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([osm_id] = 1000003181780241) and ([name] = 'Home Slice Pizza')</Filter>
+    <Filter>([name] = 'Home Slice Pizza') and ([osm_id] = 1000003181780241)</Filter>
+    <TextSymbolizer placements="E" allow-overlap="true" wrap-width="90" justify-alignment="left" dx="50" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Home Slice Pizza')</Filter>
     <TextSymbolizer placements="E" allow-overlap="true" wrap-width="90" justify-alignment="left" dx="50" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3418,12 +3428,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Home Slice Pizza')</Filter>
-    <TextSymbolizer placements="E" allow-overlap="true" wrap-width="90" justify-alignment="left" dx="50" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'South Congress Cafe') and ([osm_id] = 1000003181780233)</Filter>
+    <Filter>([name] = 'Magnolia Cafe') and ([osm_id] = 1000003181780233)</Filter>
     <TextSymbolizer placements="W" allow-overlap="true" dx="50" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3443,17 +3448,17 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([osm_id] = 1000003181780241) and ([name] = 'South Congress Cafe')</Filter>
-    <TextSymbolizer placements="W" allow-overlap="true" dx="50" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Magnolia Cafe') and ([osm_id] = 1000003181780233)</Filter>
+    <Filter>([name] = 'South Congress Cafe') and ([osm_id] = 1000003181780233)</Filter>
     <TextSymbolizer placements="W" allow-overlap="true" dx="50" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'South Congress Cafe')</Filter>
+    <TextSymbolizer placements="W" allow-overlap="true" dx="50" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003181780241) and ([name] = 'South Congress Cafe')</Filter>
     <TextSymbolizer placements="W" allow-overlap="true" dx="50" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3485,17 +3490,17 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Hopdoddy')</Filter>
-    <MarkersSymbolizer file="icon/fast-food-24.svg" fill="#ffffff" stroke="#3152b4" stroke-width="6" height="84" allow-overlap="true" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([osm_id] = 1000003181780244) and ([name] = 'Hopdoddy')</Filter>
-    <MarkersSymbolizer file="icon/fast-food-24.svg" fill="#ffffff" stroke="#3152b4" stroke-width="6" height="84" allow-overlap="true" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([osm_id] = 1000003181780241) and ([name] = 'Hopdoddy')</Filter>
+    <MarkersSymbolizer file="icon/fast-food-24.svg" fill="#ffffff" stroke="#3152b4" stroke-width="6" height="84" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Hopdoddy') and ([osm_id] = 1000003181780244)</Filter>
+    <MarkersSymbolizer file="icon/fast-food-24.svg" fill="#ffffff" stroke="#3152b4" stroke-width="6" height="84" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Hopdoddy')</Filter>
     <MarkersSymbolizer file="icon/fast-food-24.svg" fill="#ffffff" stroke="#3152b4" stroke-width="6" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
@@ -3510,12 +3515,12 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Magnolia Cafe')</Filter>
+    <Filter>([osm_id] = 1000003181780241)</Filter>
     <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([osm_id] = 1000003181780241)</Filter>
+    <Filter>([name] = 'Magnolia Cafe')</Filter>
     <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
@@ -3573,6 +3578,11 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Little Woodrow\'s')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Hut\'s Hamburgers')</Filter>
     <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
@@ -3599,11 +3609,6 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'The Gingerman')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Little Woodrow\'s')</Filter>
     <TextSymbolizer fontset-name="fontset-0" fill="#f3d437" size="45" halo-fill="rgba(126, 10, 19, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" wrap-width="30" line-spacing="-15" justify-alignment="center" placement-type="simple" placements="S,SW,SE,E,W,SSW,SSE,N" text-transform="lowercase" character-spacing="0.25" dy="40" avoid-edges="false" allow-overlap="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3901,7 +3906,17 @@
 <Style name="poi_label-dirty/icon" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([name] = 'Casino El Camino')</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'Mohawk')</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190890891) and ([name] != 'HandleBar')</Filter>
     <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
   </Rule>
   <Rule>
@@ -3916,27 +3931,17 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([osm_id] = 1000003190890891) and ([name] != 'HandleBar')</Filter>
-    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Casino El Camino')</Filter>
-    <MarkersSymbolizer fill="#ffffff" stroke="#3152b4" stroke-width="6" file="icon/[maki]-24.svg" height="84" allow-overlap="true" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'The Hideout')</Filter>
     <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'The Driskill')</Filter>
+    <Filter>([name] = 'Eddie V\'s')</Filter>
     <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Eddie V\'s')</Filter>
+    <Filter>([name] = 'The Driskill')</Filter>
     <MarkersSymbolizer fill="#f3d437" stroke="#7e0a13" stroke-width="6" file="icon/[maki]-24.svg" height="72" allow-overlap="true" />
   </Rule>
   <Rule>
@@ -4052,17 +4057,12 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016) and ([name] = 'Clive Bar')</Filter>
+    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([name] = 'G\'Raj Mahal')</Filter>
-    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([osm_id] = 1000003190873016) and ([name] = 'Craft Pride')</Filter>
-    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([name] = 'Craft Pride')</Filter>
     <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -4072,7 +4072,12 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([osm_id] = 1000003190873016) and ([name] = 'Clive Bar')</Filter>
+    <Filter>([name] = 'Craft Pride')</Filter>
+    <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([osm_id] = 1000003190873016) and ([name] = 'Craft Pride')</Filter>
     <TextSymbolizer placements="W" dy="0" dx="50" wrap-width="0" fontset-name="fontset-0" fill="#ffffff" size="55" halo-fill="rgba(49, 82, 180, 0.15000000000000002)" halo-radius="6" halo-rasterizer="fast" line-spacing="-15" text-transform="lowercase" character-spacing="0.25" avoid-edges="false" allow-overlap="true" justify-alignment="center" placement-type="simple" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -5578,12 +5583,12 @@
     <StyleName>poi_label-soco/top/label</StyleName>
     <StyleName>poi_label-soco/other/icon</StyleName>
     <StyleName>poi_label-soco/other/label</StyleName>
-    <StyleName>poi_label-zilker/icon</StyleName>
     <StyleName>poi_label-zilker/top/icon</StyleName>
     <StyleName>poi_label-zilker/top/label</StyleName>
-    <StyleName>poi_label-zilker/label</StyleName>
+    <StyleName>poi_label-zilker/icon</StyleName>
     <StyleName>poi_label-zilker/other/icon</StyleName>
     <StyleName>poi_label-zilker/other/label</StyleName>
+    <StyleName>poi_label-zilker/label</StyleName>
     <StyleName>poi_label-campus/top/icon</StyleName>
     <StyleName>poi_label-campus/icon</StyleName>
     <StyleName>poi_label-campus/label</StyleName>

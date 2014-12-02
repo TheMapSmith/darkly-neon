@@ -484,7 +484,7 @@
   
   ::zilker 
     {
-    ::top [name="Barton Springs Pool"],[name="Zilker Disc Golf"] //,[name="Zilker Park"]
+    ::top [name="Barton Springs Pool"] //,[name="Zilker Park"]
       {
       ::icon {
         marker-fill:@poi_text;
@@ -520,7 +520,7 @@
     ::other [name="Shady Grove"],
     [name="Umlauf Sculpture Garden and Museum"],[name="Zilker Zephyr"],
     [name="Zilker Hillside Theater"][osm_id=1000313444167],
-    [name="Zilker Botanical Garden"],
+    [name="Zilker Botanical Garden"],[name="Zilker Disc Golf"],
     [name="Austin Nature Center"][osm_id=1000003194303977]
       {
       ::icon {
