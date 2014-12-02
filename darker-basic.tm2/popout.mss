@@ -83,7 +83,8 @@
   ::rainey 
    {
     ::top [name="Clive Bar"],[name="Icenhauer's"],[name="Banger's Sausage House & Beer Garden"],
-      [name="G'Raj Mahal"],[name="Craft Pride"],[osm_id=1000003190873016] //via313
+      [name="G'Raj Mahal"],[name="Craft Pride"],[osm_id=1000003190873016], //via313
+      [name="la Barbecue"]
       {
       ::icon {
         marker-fill:@poi_text;
@@ -180,7 +181,8 @@
   ::dirty 
     {
     ::top [name="Moonshine Bar & Grill"],[osm_id=1000003190890891], //houndstooth
-      [name="HandleBar"],[name="Chi'Lantro"],[name="Mohawk"]
+      [name="HandleBar"],[name="Chi'Lantro"],[name="Mohawk"],
+      [name="The Jackalope"],[name="Casino El Camino"]
       {
       ::icon [name!="HandleBar"] {
         marker-fill:@poi_text;
@@ -216,10 +218,18 @@
           text-dy: 90; }
         
         //wrap less
-          [name="Moonshine Bar & Grill"]
+          [name="Moonshine Bar & Grill"], //,[name="The Jackalope"]
+          [name="Casino El Camino"]
           {
           text-wrap-width: 190;
           }
+        
+        //east
+        [name="The Jackalope"],[name="Casino El Camino"] { 
+          text-placements: "E"; 
+          text-dx: 50; 
+          text-align: left;
+        }
         
         //top and stack houndstooth
         [osm_id=1000003190890891] { //houndstooth
@@ -277,7 +287,7 @@
   
   ::w6th 
     {
-    ::top [osm_id=1000003190877885]//[name="Jo's Coffee"]
+    ::top [osm_id=1000003190877885],[name="Antone's"]//[name="Jo's Coffee"]
       {
       ::icon {
         marker-fill:@poi_text;

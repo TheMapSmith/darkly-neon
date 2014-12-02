@@ -29,7 +29,10 @@
     [name="Epoch Coffee"], 
     [name="Qui"],
     [osm_id=1000003190873015],//via313
-    [name="East Side King"] 
+    [name="East Side King"],[name="Rio Rita"],
+    [name="Mozart's Coffee Roasters"],
+    [name="Dominican Joe Coffee Shop"],[name="Donn's Depot"],
+    [name="Rudy's Texas Bar-B-Q"]
     {
     
     ::icon { 
@@ -88,6 +91,11 @@
       [name="Violet Crown"] {
           text-placements: "N";
           text-dy: 35;
+        }
+      
+      //joe wrap less
+      [name="Dominican Joe Coffee Shop"] {
+        text-wrap-width: 250;
         }
       
       
