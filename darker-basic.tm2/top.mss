@@ -1,7 +1,7 @@
 // New Top POI - Central Austin
 #poi_label [zoom>=16] {
     [name="Franklin Barbecue"],
-    [name="East Side Pies"], 
+    [name="East Side Pies"][osm_id!= 1000269092876 ], 
     [name="Bennu Coffee"],
     [name="Salty Sow"],
     [name="Eastside Cafe"],
@@ -88,9 +88,9 @@
         }
       
       //adjust north
-      [name="Violet Crown"] {
+      [osm_id= 1000003196375766  ] {
           text-placements: "N";
-          text-dy: 35;
+          text-dy: 50;
         }
       
       //joe wrap less
