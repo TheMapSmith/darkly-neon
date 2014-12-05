@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map[]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#333333">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#010231">
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-97.8129,30.2634,16</Parameter>
+  <Parameter name="center">-97.7796,30.246,16</Parameter>
   <Parameter name="format">png24</Parameter>
   <Parameter name="maxzoom">20</Parameter>
   <Parameter name="minzoom">16</Parameter>
@@ -94,8 +94,8 @@
 <Style name="landuse" filter-mode="first">
   <Rule>
     <Filter>([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#424242" />
-    <LineSymbolizer stroke="#0f0f0f" stroke-width="1.5" />
+    <PolygonSymbolizer fill="#1a1b41" />
+    <LineSymbolizer stroke="#000000" stroke-width="1.5" />
   </Rule>
 </Style>
 <Layer name="landuse"
@@ -229,11 +229,11 @@
 <Style name="aeroway" filter-mode="first">
   <Rule>
     <Filter>([type] = 'runway')</Filter>
-    <LineSymbolizer stroke="#424242" stroke-width="25" stroke-linecap="square" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#1a1b41" stroke-width="25" stroke-linecap="square" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([type] = 'taxiway')</Filter>
-    <LineSymbolizer stroke="#424242" stroke-width="10" stroke-linecap="square" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#1a1b41" stroke-width="10" stroke-linecap="square" stroke-linejoin="round" />
   </Rule>
 </Style>
 <Style name="aeroway-outlinecrisp" filter-mode="first">
@@ -330,20 +330,20 @@
 <Style name="building-roof" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <PolygonSymbolizer fill="#666666" geometry-transform="translate(-2,-2.5)" clip="false" />
-    <LineSymbolizer stroke-width="0.5" stroke="#575757" geometry-transform="translate(-2,-2.5)" clip="false" />
+    <PolygonSymbolizer fill="#030695" geometry-transform="translate(-2,-2.5)" clip="false" />
+    <LineSymbolizer stroke-width="0.5" stroke="#03057f" geometry-transform="translate(-2,-2.5)" clip="false" />
   </Rule>
 </Style>
 <Style name="building-wall" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <PolygonSymbolizer fill="#5e5e5e" />
+    <PolygonSymbolizer fill="#030586" />
   </Rule>
 </Style>
 <Style name="building" filter-mode="first">
   <Rule>
-    <PolygonSymbolizer fill="#666666" />
-    <LineSymbolizer stroke="#808080" stroke-gamma="0.5" stroke-width="0.5" />
+    <PolygonSymbolizer fill="#030695" />
+    <LineSymbolizer stroke="#0408c7" stroke-gamma="0.5" stroke-width="0.5" />
   </Rule>
 </Style>
 <Style name="building-outlinecrisp" filter-mode="first">
@@ -6166,7 +6166,7 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([Name] != 'East 6th')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke-gamma="0.5" stroke="#999999" />
+    <LineSymbolizer stroke-width="0.5" stroke-gamma="0.5" stroke="#808198" />
   </Rule>
 </Style>
 <Layer name="map2"
@@ -6297,193 +6297,193 @@
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'Dirty 6th')</Filter>
-    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'So Co')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'Zilker')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'West 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'Rainey')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'Campus')</Filter>
-    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'grass') and ([Name] != 'East 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'Dirty 6th')</Filter>
-    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'So Co')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'Zilker')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'West 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'Rainey')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'Campus')</Filter>
-    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'pitch') and ([Name] != 'East 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'Dirty 6th')</Filter>
-    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'So Co')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'Zilker')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'West 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'Rainey')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'Campus')</Filter>
-    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'park') and ([Name] != 'East 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'Dirty 6th')</Filter>
-    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="5" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'So Co')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['South Congress']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'Zilker')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Zilker Park']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'West 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['West 6th St']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'Rainey')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['Rainey Street']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'Campus')</Filter>
-    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
+    <TextSymbolizer wrap-width="100" line-spacing="-55" fill="#ffffff" face-name="Avenir Black" size="90" justify-alignment="center" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['UT Campus']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] = 'Capital')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA['State Capitol']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([Name] != 'East 6th')</Filter>
-    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(102, 102, 102, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#ffffff" face-name="Avenir Black" size="90" wrap-width="200" justify-alignment="center" line-spacing="-35" halo-fill="rgba(3, 6, 149, 0.5)" halo-radius="10" allow-overlap="true" ><![CDATA[[Name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="centroids"
