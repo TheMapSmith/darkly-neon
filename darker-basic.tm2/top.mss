@@ -94,7 +94,7 @@
         }
       
       //joe wrap less
-      [name="Dominican Joe Coffee Shop"] {
+      [name="Dominican Joe Coffee Shop"],[name="Rudy's Texas Bar-B-Q"] {
         text-wrap-width: 250;
         }
       
